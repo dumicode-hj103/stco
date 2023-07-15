@@ -13,10 +13,10 @@ ul, ol { list-style:none; }
 table { margin:0; padding:0; border-spacing:0; border:0; } 
 img, fieldset { border:0; vertical-align:top } 
 address, em { font-style:normal; font-weight:400; } 
-input, select, button, textarea { color:#1c1c1c; font-size:16px; line-height:1.625; font-family:'Noto Sans KR',sans-serif; vertical-align:middle; } 
+input, select, button, textarea { color:#1c1c1c; font-size:16px; line-height:1.625; font-family:'Spoqa Han Sans Neo',sans-serif; vertical-align:middle; } 
 
 /* Base */
-body { background:#fff; color:#1c1c1c; font-size:16px; line-height:1.625; font-weight:400; font-family:'Noto Sans KR',sans-serif; text-align:left; } 
+body { background:#fff; color:#1c1c1c; font-size:16px; line-height:1.625; font-weight:400; font-family:'Spoqa Han Sans Neo',sans-serif; text-align:left; } 
 
 hr { display:none; } 
 a { color:#1c1c1c; text-decoration:none; } 

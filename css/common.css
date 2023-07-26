@@ -1,0 +1,128 @@
+#header {z-index: 2; position: fixed; top:0; left:0; right:0; display: flex; justify-content: space-between; align-items: center; height:40px; padding:0 13px 0 17px;}
+#header .logo {display:block; width: 126px; height:18px;}
+#header .logo img {width: 100%;}
+#header .toolBox {display: flex; align-items: center; justify-content: center;}
+#header .toolBox * + * {margin-left: 10px;}
+#header .btnCart {position: relative; display:block; width:31px; height:22px; padding-right: 13px; }
+#header .btnCart img {width: 100%;}
+#header .btnCart .num {position: absolute; top:3px; right:3px; width: 19px; height: 15px; background:url(../images/bg_icon_cart_num.png) no-repeat 0 0; background-size: 100%; color:#FFF; font-weight: 300; font-size: 10px; line-height: 15px; text-align: center;}
+#header .btnSearch {display: block; width: 19px; height: 19px;}
+#header .btnSearch img {width: 100%;}
+
+.imgFull {width: 100%;}
+.swiperMainVisual {position: relative;}
+.swiperMainVisual .swiperBox {position: relative;}
+.swiperMainVisual .swiperBox .txtBox {position: absolute; left:25px; bottom:82px;}
+.swiperMainVisual .swiperBox .txtBox .titSwiper {color:#FFF; font-size:29px; font-weight: 400; line-height: 36px;}
+.swiperMainVisual .swiperBox .txtBox .txtSwiper {color:#FFF; font-size:13px; font-weight: 400; line-height: 15px; margin-top: 20px;}
+.swiperMainVisual .swiperScrollbar {z-index: 2; position: absolute; left:25px; bottom:45px; width:220px; height:1px; background: #ababab;}
+.swiperMainVisual .swiperScrollbar .swiper-scrollbar-drag {background: #FFF;}
+.swiperMainVisual .btnSwiperPrev {z-index: 2; position: absolute; right:45px; bottom:35px; width: 25px; height: 25px; background:url(../images/img_swiper_prev.png) no-repeat center center; background-size:8px;}
+.swiperMainVisual .btnSwiperNext {z-index: 2; position: absolute; right:15px; bottom:35px; width: 25px; height: 25px; background:url(../images/img_swiper_next.png) no-repeat center center; background-size:8px;}
+
+.swiperCate {position: relative; padding:35px 12px 65px;}
+.swiperCate .swiper-slide {width:64px;}
+.swiperCate .swiper-slide + .swiper-slide {margin-left: 12px;}
+.swiperCate .swiper-slide .swiperBox {text-align: center;}
+.swiperCate .swiper-slide .swiperBox .txtCate {display: block; color:#3d3d3d; font-size: 13px; font-weight: 400; line-height: 15px; margin-top: 10px;}
+.swiperCate .swiperScrollbar {position: absolute; left:50%; bottom:35px; height:1px; width:68px; margin-left: -34px; background: #d9d9d9;}
+
+.imgCateBox {}
+.imgCateBox .itemCate {position: relative;}
+.imgCateBox .itemCate .infoBox {position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: flex; justify-content: center; align-items: center; flex-direction: column;}
+.imgCateBox .itemCate .infoBox .titInfo {color: #FFF; font-size: 21px; line-height: 21px; font-weight: 500;}
+.imgCateBox .itemCate .infoBox .btnView {display: flex; justify-content: center; align-items: center; width: 78px; height:28px; border:1px solid #FFF; color:#FFF; font-size: 13px; font-weight: 400; line-height: 15px;; margin-top: 50px;}
+
+.swiperTipBar {position: relative; margin:45px 12px 0;}
+.swiperTipBar .swiperBox {padding:25px 15px; background: #cf152d;}
+.swiperTipBar .txtSwiper {color: #FFF; font-size: 15px; font-weight: 400; line-height: 15px; }
+.swiperTipBar .toolBar {position: absolute; z-index: 2; top:50%; right:15px; display: flex; justify-content: center; align-items: center; height:16px; margin-top: -8px; padding:0 11px; border-radius: 7px; background:rgba(0,0,0,.3)}
+.swiperTipBar .toolBar .swipePagination  {font-size: 11px; color:#FFF; line-height: 16px;}
+.swiperTipBar .toolBar .btnPause {display: block; width: 12px; height: 12px; margin-right: 5px; background:url(../images/icon_swiper_pause.png) no-repeat center center; background-size:4px; text-indent: -999px; overflow:hidden;}
+
+.sectionBox {margin-top: 50px; padding:0 12px;}
+.sectionBox .avatarBox {display: flex; align-items: center;}
+.sectionBox .avatarBox .imgAvatar {display: block; width: 45px; height: 45px; margin-right: 8px;}
+.sectionBox .avatarBox .txtAvatar {color: #767676; font-size: 15px; line-height: 15px; font-weight: 400;}
+.sectionBox .avatarBox + .titSection {margin-top: 15px;}
+.sectionBox .titSection {color: #1c1c1c; font-size: 23px; font-weight: 700; line-height: 23px;}
+.sectionBox .txtSection {color: #767676; font-size: 16px; font-weight: 400; line-height: 20px;}
+.sectionBox .titSection + .txtSection {margin-top: 10px;}
+.sectionBox .titSection + .sectionCont {margin-top: 20px;}
+.sectionBox .txtSection + .sectionCont {margin-top: 20px;}
+.listProd {display:flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-top: -25px;}
+.listProd li {flex:none; width:calc(50% - 3px); margin-top: 25px;;}
+.listProd.c2 li {flex:none; width:calc(50% - 3px); margin-top: 25px;}
+.listProd.c3 li {flex:none; width:calc(33.333% - 3px); margin-top: 25px;}
+.listProd .prodBox {position: relative;}
+.listProd .prodBox .prodImgBox {position: relative;}
+.listProd .prodBox .prodImgBox.border {box-shadow:inset 0 0 0 1px #ebebeb;}
+.listProd .prodBox .flag {position: absolute; top:5px; right:5px; display: block; width: 13px; height: 17px; background:url(../images/icon_flag_off.png) no-repeat center center; background-size: 100%; overflow:hidden; text-indent: -999px;}
+.listProd .prodBox .flag.on {background-image: url(../images/icon_flag_on.png);}
+.listProd .prodBox .activityBox {position: absolute; left:1px; bottom:1px; display: flex; align-items: center;}
+.listProd .prodBox .activityBox .itemActivity {width: 44px; height:16px; font-size: 10px; line-height: 16px; text-align: center;}
+.listProd .prodBox .activityBox .itemActivity.red {box-shadow: 0 0 0 1px #cf152d; background: #cf152d; color:#FFF;}
+.listProd .prodBox .activityBox .itemActivity.white {box-shadow: 0 0 0 1px #1c1c1c; background: #FFF; color:#1c1c1c;}
+.listProd .prodBox .activityBox .itemActivity + .itemActivity {margin-left: 1px;}
+.listProd .prodBox .btnPlay {position: absolute; right:5px; bottom:5px; width: 18px; height: 18px; background: url(../images/icon_play.png) no-repeat center center; background-size: 100%; overflow:hidden; text-indent: -999px;;}
+.listProd .prodBox .titProd {color: #1f1e1e; font-size: 11px; font-weight: 700; line-height: 11px; margin-top: 11px;}
+.listProd .prodBox .txtProd {color: #545454; font-size: 13px; font-weight: 400; line-height: 13px; margin-top: 8px; overflow:hidden; text-overflow: ellipsis; white-space: nowrap;}
+.listProd .prodBox .priceBox {display: flex; align-items: end; margin-top: 10px;}
+.listProd .prodBox .priceBox .oldPrice {color: #b1b1b1; font-size: 10px; font-weight: 400; line-height: 10px; text-decoration:line-through;}
+.listProd .prodBox .priceBox .newPrice {color: #1c1c1c; font-size: 15px; font-weight: 700; line-height: 15px;}
+.listProd .prodBox .priceBox .discount {color: #cf152d; font-size: 11px; font-weight: 700; line-height: 11px;}
+.listProd .prodBox .priceBox .oldPrice + .newPrice {margin-left: 10px;}
+.listProd .prodBox .priceBox .newPrice + .discount {margin-left: 10px;}
+.listProd .prodBox .colorBox {display: flex; margin-top: 8px;}
+.listProd .prodBox .colorBox .itemColor {display: block; width: 8px; height: 8px; border-radius: 1px;}
+.listProd .prodBox .colorBox * + * {margin-left: 2px;}
+.listProd .prodBox .colorBox .btnColorAdd {display: block; background: #999999 url(../images/icon_add.png) no-repeat center center; background-size: 4px; width: 8px; height: 8px; border-radius: 1px;}
+.listProd .prodBox .tagBox {display: flex; margin-top: 12px;}
+.listProd .prodBox .tagBox * + * {margin-left: 2px;}
+.listProd .prodBox .tagBox .itemTag {display: block; padding:0 3px; height:14px; background: #f5f6f9; color:#1a465f; font-size: 8px; line-height: 14px;}
+
+.btnMore {display: flex; justify-content: center; align-items: center; width: 180px; height:38px; margin:40px auto 0; box-shadow:inset 0 0 0 1px #444;}
+.btnMore .txtMore {color: #444444; font-size: 12px; line-height: 12px; font-weight: 400;}
+.btnMore .iconMore {margin-left: 10px; display: block; width: 3px; height:6px; background:url(../images/icon_btn_arrow_right.png) no-repeat center center; background-size: 100%;}
+
+.fontFamily1 {font-family: 'Spoqa Han Sans Neo', sans-serif;}
+.fontFamily2 {font-family: 'Red Hat Display', sans-serif;}
+
+.listLook {display: flex; justify-content: space-between; align-items: center; flex-wrap:wrap; margin-top: -6px;}
+.listLook li {flex:0 0 calc(50% - 3px); margin-top: 6px;}
+
+.swiperShopByLook {position: relative; padding-bottom: 30px;}
+.swiperShopByLook .swiperScrollbar {z-index: 2; position: absolute; left:0; bottom:0; width: 100%; height:2px; background: #efefef;}
+.swiperShopByLook .swiperScrollbar .swiper-scrollbar-drag {background: #111;}
+
+.swiperOnlineExclusive {position: relative; padding-bottom: 30px;}
+.swiperOnlineExclusive .swiperCont .titOE {margin-top: 20px; color:#1c1c1c; font-size: 18px; font-weight: 700; line-height: 18px;}
+.swiperOnlineExclusive .swiperCont .txtOE {margin-top: 10px; color:#7c7c7c; font-size: 13px; font-weight: 400; line-height: 13px;}
+.swiperOnlineExclusive .swiperScrollbar {z-index: 2; position: absolute; left:0; bottom:0; width: 100%; height:2px; background: #efefef;}
+.swiperOnlineExclusive .swiperScrollbar .swiper-scrollbar-drag {background: #111;}
+
+.imgReview {margin-bottom: 5px;}
+
+.swiperReview {position: relative; padding-bottom: 30px;}
+.swiperReview .swiperScrollbar {z-index: 2; position: absolute; left:0; bottom:0; width: 100%; height:2px; background: #efefef;}
+.swiperReview .swiperScrollbar .swiper-scrollbar-drag {background: #111;}
+
+#footer {margin-top: 90px; padding:30px 15px; background: #f3f3f3;}
+#footer .csBox .titCs {color: #272727; font-size: 16px; line-height: 16px; font-weight: 700;}
+#footer .csBox .titCs .txtPhone {margin-left: 8px;}
+#footer .csBox .txtCs {margin-top: 10px; color: #272727; font-size: 12px; line-height: 16px;}
+#footer .contactBox {margin-top: 20px;}
+#footer .contactBox .txtContact1 {display: flex; align-items: center;}
+#footer .contactBox .txtContact1 span {display: flex; align-items: center; color:#000; font-size: 11px; line-height: 11px; font-weight: 400;}
+#footer .contactBox .txtContact1 span + span {margin-left: 13px;}
+#footer .contactBox .txtContact1 .iconArrow {display: block; width: 5px; height: 6px; background:url(../images/icon_btn_arrow_down.png) no-repeat center center; background-size: 100%; margin-left: 5px;}
+#footer .contactBox .txtContact2 {margin-top: 10px; color: #6c6c6c; font-size: 11px; font-weight: 400; line-height: 16px;}
+#footer .contactBox .listLink {margin-top: 5px; display: flex; align-items: center;}
+#footer .contactBox .listLink li + li {margin-left: 8px;}
+#footer .contactBox .listLink li a {color: #6c6c6c; font-size: 11px; line-height: 14px; font-weight: 400; text-decoration: underline;} 
+#footer .contactBox .listLink2 {margin-top: 20px; display: flex; align-items: center;}
+#footer .contactBox .listLink2 li {position: relative;}
+#footer .contactBox .listLink2 li + li {margin-left: 25px;}
+#footer .contactBox .listLink2 li + li::before {content:''; position: absolute; left:-13px; top:50%; width: 1px; height:6px; margin-top: -3px; background: #6a6a68;}
+#footer .contactBox .listLink2 li a {color: #6c6c6c; font-size: 11px; line-height: 14px; font-weight: 400;} 
+#footer .copyright {margin-top: 18px; color: #6a6a68; font-size: 9px; line-height: 9px; font-weight: 400;}

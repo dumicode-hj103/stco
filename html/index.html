@@ -1,37 +1,761 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <title>title</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
-    <meta name="format-detection" content="telephone=no" />
 
-    <link type="text/css" rel="stylesheet" href="../css/swiper.min.css" />
-    <link type="text/css" rel="stylesheet" href="../css/style.css" />
+<head>
+  <title>title</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
+  <meta name="format-detection" content="telephone=no" />
 
-    <script src="../js/jquery-1.12.4.min.js"></script>
-    <script src="../js/swiper.min.js"></script>
-    <!-- ui js -->
-    <script src="../js/design.js"></script>
-  </head>
+  <link type="text/css" rel="stylesheet" href="../css/swiper-bundle.min.css" />
+  <link type="text/css" rel="stylesheet" href="../css/style.css" />
 
-  <body>
+  <script src="../js/jquery-3.7.0.min.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
+  <!-- ui js -->
+  <script src="../js/design.js"></script>
+</head>
 
-    <div id="wrap">
+<body>
 
-      <!-- header -->
-      <header id="header"></header>
-      <!--// header -->
+  <div id="wrap">
 
-      <!-- container -->
-      <div id="container"></div>
-      <!--// container -->
+    <!-- header -->
+    <header id="header">
+      <div class="logoBox">
+        <a href="#" class="logo">
+          <img src="../images/logo_white.png" alt="STCO onlinemall" />
+        </a>
+      </div>
+      <div class="toolBox">
+        <a href="#" class="btnCart">
+          <img src="../images/icon_cart_white.png" alt="Cart" />
+          <span class="num">0</span>
+        </a>
+        <a href="#" class="btnSearch">
+          <img src="../images/icon_search_white.png" alt="Search" />
+        </a>
+      </div>
 
-      <!-- footer -->
-      <footer id="footer"></footer>
-      <!--// footer end -->
+    </header>
+    <!--// header -->
 
+    <!-- container -->
+    <div id="container">
+      <div class="swiperMainVisual">
+        <div class="swiperScrollbar"></div>
+        <div class="btnSwiperPrev"></div>
+        <div class="btnSwiperNext"></div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiperBox">
+                <img class="imgFull" src="../images/img_main_visual_01.jpg" alt="" />
+                <div class="txtBox">
+                  <h2 class="titSwiper">
+                    NEW IN
+                    <br />
+                    포멀vs캐주얼
+                  </h2>
+                  <p class="txtSwiper">
+                    출근길에 툭, 포멀한 룩에도 어울리는 셔츠
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiperBox">
+                <img class="imgFull" src="../images/img_main_visual_02.jpg" alt="" />
+                <div class="txtBox">
+                  <h2 class="titSwiper">
+                    NEW IN
+                    <br />
+                    포멀vs캐주얼
+                  </h2>
+                  <p class="txtSwiper">
+                    출근길에 툭, 포멀한 룩에도 어울리는 셔츠
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiperBox">
+                <img class="imgFull" src="../images/img_main_visual_03.jpg" alt="" />
+                <div class="txtBox">
+                  <h2 class="titSwiper">
+                    NEW IN
+                    <br />
+                    포멀vs캐주얼
+                  </h2>
+                  <p class="txtSwiper">
+                    출근길에 툭, 포멀한 룩에도 어울리는 셔츠
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        $(function () {
+          var swiperMainVisual = new Swiper(".swiperMainVisual .swiper", {
+            autoplay: {
+              delay: 2000,
+              stopOnLastSlide: false,
+              disableOnInteraction: true,
+            },
+            navigation: {
+              nextEl: '.swiperMainVisual .btnSwiperNext',
+              prevEl: '.swiperMainVisual .btnSwiperPrev',
+            },
+            scrollbar: {
+              el: ".swiperMainVisual .swiperScrollbar",
+            },
+            loop: true
+          });
+        })
+      </script>
+
+      <div class="swiperCate">
+        <div class="swiperScrollbar"></div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiperBox">
+                <a href="#">
+                  <span class="imgCate"><img class="imgFull" src="../images/img_cate_01.png" alt="" /></span>
+                  <span class="txtCate">1+1쿠폰</span>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiperBox">
+                <a href="#">
+                  <span class="imgCate"><img class="imgFull" src="../images/img_cate_02.png" alt="" /></span>
+                  <span class="txtCate">Exclusive</span>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiperBox">
+                <a href="#">
+                  <span class="imgCate"><img class="imgFull" src="../images/img_cate_03.png" alt="" /></span>
+                  <span class="txtCate">SALE</span>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiperBox">
+                <a href="#">
+                  <span class="imgCate"><img class="imgFull" src="../images/img_cate_04.png" alt="" /></span>
+                  <span class="txtCate">TOP</span>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiperBox">
+                <a href="#">
+                  <span class="imgCate"><img class="imgFull" src="../images/img_cate_05.png" alt="" /></span>
+                  <span class="txtCate">PANTS</span>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiperBox">
+                <a href="#">
+                  <span class="imgCate"><img class="imgFull" src="../images/img_cate_06.png" alt="" /></span>
+                  <span class="txtCate">SUIT</span>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiperBox">
+                <a href="#">
+                  <span class="imgCate"><img class="imgFull" src="../images/img_cate_07.png" alt="" /></span>
+                  <span class="txtCate">OUTER</span>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiperBox">
+                <a href="#">
+                  <span class="imgCate"><img class="imgFull" src="../images/img_cate_08.png" alt="" /></span>
+                  <span class="txtCate">ACC</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        $(function () {
+          var swiperCate = new Swiper(".swiperCate .swiper", {
+            slidesPerView: 'auto',
+            scrollbar: {
+              el: ".swiperCate .swiperScrollbar",
+            },
+          });
+        })
+      </script>
+
+      <div class="imgCateBox">
+        <div class="itemCate">
+          <img class="imgFull" src="../images/img_visual_cate_01.jpg" alt="">
+          <div class="infoBox">
+            <h3 class="titInfo">NEW ARRIVALS</h3>
+            <a href="#" class="btnView">VIEW</a>
+          </div>
+        </div>
+        <div class="itemCate">
+          <img class="imgFull" src="../images/img_visual_cate_02.jpg" alt="">
+          <div class="infoBox">
+            <h3 class="titInfo">BEST SELLER</h3>
+            <a href="#" class="btnView">VIEW</a>
+          </div>
+        </div>
+        <div class="itemCate">
+          <img class="imgFull" src="../images/img_visual_cate_03.jpg" alt="">
+          <div class="infoBox">
+            <h3 class="titInfo">SUMMER STYLING</h3>
+            <a href="#" class="btnView">VIEW</a>
+          </div>
+        </div>
+        <div class="itemCate">
+          <img class="imgFull" src="../images/img_visual_cate_04.jpg" alt="">
+          <div class="infoBox">
+            <h3 class="titInfo">SEASON OFF</h3>
+            <a href="#" class="btnView">VIEW</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiperTipBar">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiperBox">
+                <p class="txtSwiper">페이코를 통한 온라인몰 쇼핑 팁 111!</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiperBox">
+                <p class="txtSwiper">페이코를 통한 온라인몰 쇼핑 팁 222!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="toolBar">
+          <a href="#" class="btnPause">Pause</a>
+          <div class="swipePagination"></div>
+        </div>
+      </div>
+      <script>
+        $(function () {
+          var swiperTipBar = new Swiper(".swiperTipBar .swiper", {
+            loop: true,
+            autoplay: {
+              delay: 2000,
+              stopOnLastSlide: false,
+              disableOnInteraction: true,
+            },
+            effect: "fade",
+            pagination: {
+              el: ".swiperTipBar .swipePagination",
+              type: "fraction",
+            },
+          });
+
+          $('.swiperTipBar .btnPause').click(function () {
+            swiperTipBar.autoplay.stop();
+            return false;
+          })
+        })
+      </script>
+
+      <div class="sectionBox">
+        <h2 class="titSection">봄에 주목할만한 셔츠</h2>
+        <div class="sectionCont">
+          <ul class="listProd">
+            <li>
+              <div class="prodBox">
+                <div class="prodImgBox border">
+                  <a href="#" class="imgProd">
+                    <img class="imgFull" src="../images/img_prod_01.jpg" alt="" />
+                  </a>
+                  <a href="javascript:void(0);" class="flag">Flag</a>
+                  <div class="activityBox">
+                    <span class="itemActivity red">타임특가</span>
+                    <span class="itemActivity white">묶음할인</span>
+                  </div>
+                  <a href="#" class="btnPlay">Play</a>
+                </div>
+                <h3 class="titProd fontFamily2">STCO</h3>
+                <p class="txtProd">베이직핏 워셔블 가디건</p>
+                <div class="priceBox">
+                  <span class="oldPrice">329,000</span>
+                  <span class="newPrice">199,000</span>
+                  <span class="discount">20%</span>
+                </div>
+                <div class="colorBox">
+                  <a href="javascript:void(0);" class="itemColor" style="background-color:#e7e7e7;"></a>
+                  <a href="javascript:void(0);" class="itemColor" style="background-color:#e6dfd5;"></a>
+                  <a href="javascript:void(0);" class="itemColor" style="background-color:#b7cce6;"></a>
+                  <a href="javascript:void(0);" class="itemColor" style="background-color:#e5d5e6;"></a>
+                  <a href="javascript:void(0);" class="itemColor" style="background-color:#9ea79d;"></a>
+                  <a href="javascript:void(0);" class="btnColorAdd"></a>
+                </div>
+                <div class="tagBox">
+                  <a href="#" class="itemTag fontFamily2">BIG</a>
+                  <a href="#" class="itemTag">오늘출발</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="prodBox">
+                <div class="prodImgBox border">
+                  <a href="#" class="imgProd">
+                    <img class="imgFull" src="../images/img_prod_02.jpg" alt="" />
+                  </a>
+                  <a href="javascript:void(0);" class="flag on">Flag</a>
+                  <div class="activityBox">
+                    <span class="itemActivity red">주말특가</span>
+                  </div>
+                </div>
+                <h3 class="titProd fontFamily2">CODI GALLERY</h3>
+                <p class="txtProd">가먼트다잉 밴딩 와이드 치노 팬 long text</p>
+                <div class="priceBox">
+                  <span class="oldPrice">89,000</span>
+                  <span class="newPrice">39,000</span>
+                  <span class="discount">40%</span>
+                </div>
+                <div class="colorBox">
+                  <a href="javascript:void(0);" class="itemColor" style="background-color:#cfbb98;"></a>
+                  <a href="javascript:void(0);" class="itemColor" style="background-color:#222939;"></a>
+                  <a href="javascript:void(0);" class="itemColor" style="background-color:#6b8f68;"></a>
+                </div>
+                <div class="tagBox">
+                  <a href="#" class="itemTag">단품가능</a>
+                  <a href="#" class="itemTag">블랙라벨</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="prodBox">
+                <div class="prodImgBox border">
+                  <a href="#" class="imgProd">
+                    <img class="imgFull" src="../images/img_prod_03.jpg" alt="" />
+                  </a>
+                  <a href="javascript:void(0);" class="flag">Flag</a>
+                </div>
+                <h3 class="titProd fontFamily2">STCO</h3>
+                <p class="txtProd">울블렌드 셔츠 카라 니트 </p>
+                <div class="priceBox">
+                  <span class="oldPrice">329,000</span>
+                  <span class="newPrice">199,000</span>
+                  <span class="discount">20%</span>
+                </div>
+                <div class="colorBox">
+                  <a href="javascript:void(0);" class="itemColor" style="background-color:#e7e7e7;"></a>
+                  <a href="javascript:void(0);" class="itemColor" style="background-color:#e6dfd5;"></a>
+                  <a href="javascript:void(0);" class="itemColor" style="background-color:#b7cce6;"></a>
+                  <a href="javascript:void(0);" class="itemColor" style="background-color:#e5d5e6;"></a>
+                  <a href="javascript:void(0);" class="itemColor" style="background-color:#9ea79d;"></a>
+                  <a href="javascript:void(0);" class="btnColorAdd"></a>
+                </div>
+                <div class="tagBox">
+                  <a href="#" class="itemTag">주니어</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="prodBox">
+                <div class="prodImgBox border">
+                  <a href="#" class="imgProd">
+                    <img class="imgFull" src="../images/img_prod_04.jpg" alt="" />
+                  </a>
+                  <a href="javascript:void(0);" class="flag on">Flag</a>
+                  <div class="activityBox">
+                    <span class="itemActivity red">주말특가</span>
+                  </div>
+                </div>
+                <h3 class="titProd fontFamily2">CODI GALLERY</h3>
+                <p class="txtProd">싱글 브레스티드 크링클 자켓</p>
+                <div class="priceBox">
+                  <span class="oldPrice">89,000</span>
+                  <span class="newPrice">39,000</span>
+                  <span class="discount">40%</span>
+                </div>
+                <div class="colorBox">
+                  <a href="javascript:void(0);" class="itemColor" style="background-color:#cfbb98;"></a>
+                  <a href="javascript:void(0);" class="itemColor" style="background-color:#222939;"></a>
+                  <a href="javascript:void(0);" class="itemColor" style="background-color:#6b8f68;"></a>
+                </div>
+                <div class="tagBox">
+                  <a href="#" class="itemTag">단품가능</a>
+                  <a href="#" class="itemTag">블랙라벨</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="btnMore">
+            <span class="txtMore">상품더보기</span>
+            <span class="iconMore"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sectionBox">
+        <h2 class="titSection fontFamily2">SHOP by LOOK</h2>
+        <div class="sectionCont">
+          <div class="swiperShopByLook">
+            <div class="swiperScrollbar"></div>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiperCont">
+                    <ul class="listLook">
+                      <li>
+                        <a href="#">
+                          <img class="imgFull" src="../images/img_look_01.jpg" alt="" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img class="imgFull" src="../images/img_look_02.jpg" alt="" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img class="imgFull" src="../images/img_look_03.jpg" alt="" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img class="imgFull" src="../images/img_look_04.jpg" alt="" />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiperCont">
+                    <ul class="listLook">
+                      <li>
+                        <a href="#">
+                          <img class="imgFull" src="../images/img_look_01.jpg" alt="" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img class="imgFull" src="../images/img_look_02.jpg" alt="" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img class="imgFull" src="../images/img_look_03.jpg" alt="" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img class="imgFull" src="../images/img_look_04.jpg" alt="" />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script>
+            $(function () {
+              var swiperShopByLook = new Swiper(".swiperShopByLook .swiper", {
+                slidesPerView: 'auto',
+                scrollbar: {
+                  el: ".swiperShopByLook .swiperScrollbar",
+                },
+              });
+            })
+          </script>
+        </div>
+      </div>
+
+      <div class="sectionBox">
+        <h2 class="titSection fontFamily2">ONLINE EXCLUSIVE</h2>
+        <p class="txtSection">놓치면 후회하는 세일 특가</p>
+        <div class="sectionCont">
+          <div class="swiperOnlineExclusive">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiperCont">
+                    <a href="#">
+                      <img class="imgFull" src="../images/img_online_01.jpg" alt="">
+                    </a>
+                    <h3 class="titOE">미리 만나는 시즌 오프</h3>
+                    <p class="txtOE">역시즌~40% OFF+10%쿠폰</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiperCont">
+                    <a href="#">
+                      <img class="imgFull" src="../images/img_online_01.jpg" alt="">
+                    </a>
+                    <h3 class="titOE">미리 만나는 시즌 오프</h3>
+                    <p class="txtOE">역시즌~40% OFF+10%쿠폰</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiperCont">
+                    <a href="#">
+                      <img class="imgFull" src="../images/img_online_01.jpg" alt="">
+                    </a>
+                    <h3 class="titOE">미리 만나는 시즌 오프</h3>
+                    <p class="txtOE">역시즌~40% OFF+10%쿠폰</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiperScrollbar"></div>
+          </div>
+          <script>
+            $(function () {
+              var swiperOnlineExclusive = new Swiper(".swiperOnlineExclusive .swiper", {
+                slidesPerView: 'auto',
+                scrollbar: {
+                  el: ".swiperOnlineExclusive .swiperScrollbar",
+                },
+              });
+            })
+          </script>
+        </div>
+      </div>
+
+      <div class="sectionBox">
+        <div class="avatarBox">
+          <a href="javascript" class="imgAvatar">
+            <img class="imgFull" src="../images/img_avatar.png" alt="" />
+          </a>
+          <span class="txtAvatar fontFamily2">STCO</span>
+        </div>
+        <h2 class="titSection fontFamily2">COMFORT WEAR</h2>
+        <p class="txtSection">
+          고밀도 코튼으로 부드러운 착용감과 포켓 디테일을 더해 데일리로 깔끔하게 연출이 가능합니다.
+        </p>
+        <div class="sectionCont">
+          <div class="swiperReview">
+            <div class="swiperScrollbar"></div>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiperCont">
+                    <div class="imgReview">
+                      <img class="imgFull" src="../images/img_review_01.jpg" alt="" />
+                    </div>
+                    <ul class="listProd c3">
+                      <li>
+                        <div class="prodBox">
+                          <div class="prodImgBox">
+                            <a href="#" class="imgProd">
+                              <img class="imgFull" src="../images/img_prod_review_01.jpg" alt="" />
+                            </a>
+                            <a href="javascript:void(0);" class="flag">Flag</a>
+                          </div>
+                          <p class="txtProd">울블렌드 셔츠 카라 니트 </p>
+                          <div class="priceBox">
+                            <span class="newPrice">199,000</span>
+                          </div>
+                          <div class="colorBox">
+                            <a href="javascript:void(0);" class="itemColor" style="background-color:#e7e7e7;"></a>
+                            <a href="javascript:void(0);" class="itemColor" style="background-color:#e6dfd5;"></a>
+                            <a href="javascript:void(0);" class="itemColor" style="background-color:#b7cce6;"></a>
+                            <a href="javascript:void(0);" class="itemColor" style="background-color:#e5d5e6;"></a>
+                            <a href="javascript:void(0);" class="itemColor" style="background-color:#9ea79d;"></a>
+                            <a href="javascript:void(0);" class="btnColorAdd"></a>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="prodBox">
+                          <div class="prodImgBox">
+                            <a href="#" class="imgProd">
+                              <img class="imgFull" src="../images/img_prod_review_02.jpg" alt="" />
+                            </a>
+                            <a href="javascript:void(0);" class="flag">Flag</a>
+                          </div>
+                          <p class="txtProd">울블렌드 셔츠 카라 니트 </p>
+                          <div class="priceBox">
+                            <span class="newPrice">199,000</span>
+                          </div>
+                          <div class="colorBox">
+                            <a href="javascript:void(0);" class="itemColor" style="background-color:#e7e7e7;"></a>
+                            <a href="javascript:void(0);" class="itemColor" style="background-color:#e6dfd5;"></a>
+                            <a href="javascript:void(0);" class="itemColor" style="background-color:#b7cce6;"></a>
+                            <a href="javascript:void(0);" class="itemColor" style="background-color:#e5d5e6;"></a>
+                            <a href="javascript:void(0);" class="itemColor" style="background-color:#9ea79d;"></a>
+                            <a href="javascript:void(0);" class="btnColorAdd"></a>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="prodBox">
+                          <div class="prodImgBox">
+                            <a href="#" class="imgProd">
+                              <img class="imgFull" src="../images/img_prod_review_03.jpg" alt="" />
+                            </a>
+                            <a href="javascript:void(0);" class="flag">Flag</a>
+                          </div>
+                          <p class="txtProd">울블렌드 셔츠 카라 니트 </p>
+                          <div class="priceBox">
+                            <span class="newPrice">199,000</span>
+                          </div>
+                          <div class="colorBox">
+                            <a href="javascript:void(0);" class="itemColor" style="background-color:#e7e7e7;"></a>
+                            <a href="javascript:void(0);" class="itemColor" style="background-color:#e6dfd5;"></a>
+                            <a href="javascript:void(0);" class="itemColor" style="background-color:#b7cce6;"></a>
+                            <a href="javascript:void(0);" class="itemColor" style="background-color:#e5d5e6;"></a>
+                            <a href="javascript:void(0);" class="itemColor" style="background-color:#9ea79d;"></a>
+                            <a href="javascript:void(0);" class="btnColorAdd"></a>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiperCont">
+                    <div class="imgReview">
+                      <img class="imgFull" src="../images/img_review_01.jpg" alt="" />
+                    </div>
+                    <ul class="listProd c3">
+                      <li>
+                        <div class="prodBox">
+                          <div class="prodImgBox">
+                            <a href="#" class="imgProd">
+                              <img class="imgFull" src="../images/img_prod_review_01.jpg" alt="" />
+                            </a>
+                            <a href="javascript:void(0);" class="flag">Flag</a>
+                          </div>
+                          <p class="txtProd">울블렌드 셔츠 카라 니트 </p>
+                          <div class="priceBox">
+                            <span class="newPrice">199,000</span>
+                          </div>
+                          <div class="colorBox">
+                            <a href="javascript:void(0);" class="itemColor" style="background-color:#e7e7e7;"></a>
+                            <a href="javascript:void(0);" class="itemColor" style="background-color:#e6dfd5;"></a>
+                            <a href="javascript:void(0);" class="itemColor" style="background-color:#b7cce6;"></a>
+                            <a href="javascript:void(0);" class="itemColor" style="background-color:#e5d5e6;"></a>
+                            <a href="javascript:void(0);" class="itemColor" style="background-color:#9ea79d;"></a>
+                            <a href="javascript:void(0);" class="btnColorAdd"></a>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="prodBox">
+                          <div class="prodImgBox">
+                            <a href="#" class="imgProd">
+                              <img class="imgFull" src="../images/img_prod_review_02.jpg" alt="" />
+                            </a>
+                            <a href="javascript:void(0);" class="flag">Flag</a>
+                          </div>
+                          <p class="txtProd">울블렌드 셔츠 카라 니트 </p>
+                          <div class="priceBox">
+                            <span class="newPrice">199,000</span>
+                          </div>
+                          <div class="colorBox">
+                            <a href="javascript:void(0);" class="itemColor" style="background-color:#e7e7e7;"></a>
+                            <a href="javascript:void(0);" class="itemColor" style="background-color:#e6dfd5;"></a>
+                            <a href="javascript:void(0);" class="itemColor" style="background-color:#b7cce6;"></a>
+                            <a href="javascript:void(0);" class="itemColor" style="background-color:#e5d5e6;"></a>
+                            <a href="javascript:void(0);" class="itemColor" style="background-color:#9ea79d;"></a>
+                            <a href="javascript:void(0);" class="btnColorAdd"></a>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="prodBox">
+                          <div class="prodImgBox">
+                            <a href="#" class="imgProd">
+                              <img class="imgFull" src="../images/img_prod_review_03.jpg" alt="" />
+                            </a>
+                            <a href="javascript:void(0);" class="flag">Flag</a>
+                          </div>
+                          <p class="txtProd">울블렌드 셔츠 카라 니트 </p>
+                          <div class="priceBox">
+                            <span class="newPrice">199,000</span>
+                          </div>
+                          <div class="colorBox">
+                            <a href="javascript:void(0);" class="itemColor" style="background-color:#e7e7e7;"></a>
+                            <a href="javascript:void(0);" class="itemColor" style="background-color:#e6dfd5;"></a>
+                            <a href="javascript:void(0);" class="itemColor" style="background-color:#b7cce6;"></a>
+                            <a href="javascript:void(0);" class="itemColor" style="background-color:#e5d5e6;"></a>
+                            <a href="javascript:void(0);" class="itemColor" style="background-color:#9ea79d;"></a>
+                            <a href="javascript:void(0);" class="btnColorAdd"></a>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script>
+            $(function () {
+              var swiperShopByLook = new Swiper(".swiperReview .swiper", {
+                slidesPerView: 'auto',
+                scrollbar: {
+                  el: ".swiperReview .swiperScrollbar",
+                },
+              });
+            })
+          </script>
+        </div>
+      </div>
+      
     </div>
+    <!--// container -->
 
-  </body>
+    <!-- footer -->
+    <footer id="footer">
+      <div class="csBox">
+        <h2 class="titCs">고객센터  <a href="tel:070-4687-7342" class="txtPhone">070-4687-7342</a></h2>
+        <p class="txtCs">
+          운영시간 평일 10:00 - 17:00 (토∙일, 공휴일 휴무) 
+          <br/>
+          점심시간 평일 12:00 - 13:00
+        </p>
+      </div>
+      <div class="contactBox">
+        <p class="txtContact1">
+          <span>(주)에스티오</span>
+          <span>사업자 정보 <i class="iconArrow"></i></span>
+        </p>
+        <p class="txtContact2">
+          서울시 강서구 양천로 583 우림블루나인비지니스센터 B동 15층 
+          <br/>
+          대표자 : 김흥수 /  사업자등록번호 : 206-81-79031
+          <br/>
+          통신판매업신고 : 제2009 서울강서 0684호 / 개인정보관리책임자 : 김기만
+          <br/>
+          대표메일주소 : stoonline@stco.co.kr
+        </p>
+        <ul class="listLink">
+          <li><a href="#" class="linkContact">이용약관</a></li>
+          <li><a href="#" class="linkContact">개인정보처리방침</a></li>
+        </ul>
+        <ul class="listLink2">
+          <li><a href="#">회사소개</a></li>
+          <li><a href="#">고객센터</a></li>
+          <li><a href="#">에스크로가입확인</a></li>
+        </ul>
+      </div>
+      <p class="copyright fontFamily2">Copyright(c) STo. All right reserved</p>
+    </footer>
+    <!--// footer end -->
+
+  </div>
+
+</body>
+
 </html>

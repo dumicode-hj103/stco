@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>STCO</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <link type="text/css" rel="stylesheet" href="../css/swiper-bundle.min.css" />
+  <link type="text/css" rel="stylesheet" href="../css/style.css" />
+
+  <script src="../js/jquery-3.7.0.min.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
+  <!-- ui js -->
+  <script src="../js/design.js"></script>
+</head>
+
+<body>
+
+  <div id="wrap">
+
+    <!-- header -->
+    <header id="header" class="bgWhite">
+      <a href="#" class="btnPrev black">Prev</a>
+      <a href="#" class="btnCate arrow">SHIRTS</a>
+      <div class="toolBox">
+        <a href="#" class="btnCart black">
+          <span class="num">0</span>
+        </a>
+        <a href="#" class="btnSearch black">Search</a>
+      </div>
+    </header>
+    <!--// header -->
+
+    <!-- Cate Menu -->
+    <div class="cateMenuBox">
+      <ul class="listMenu">
+        <li><a href="#">SHIRTS</a></li>
+        <li><a href="#">SUIT&SET-UP</a></li>
+        <li><a href="#">TOP</a></li>
+        <li><a href="#">PANTS</a></li>
+        <li><a href="#">OUTER</a></li>
+        <li><a href="#">ACC</a></li>
+      </ul>
+    </div>
+    <!-- //Cate Menu -->
+
+    <!-- container -->
+    <div id="container">
+      <div class="subContainer">
+        <!-- filter -->
+        <div class="filterCateBox">
+          <ul class="listFilterCate">
+            <li><a href="#" class="on">전체보기</a></li>
+            <li><a href="#">드레스셔츠</a></li>
+            <li><a href="#">캐주얼셔츠</a></li>
+          </ul>
+        </div>
+
+        <!-- swiper Product -->
+        <div class="swiperBox">
+          <div class="swiperProdStyle2">
+            <div class="swiperScrollbar"></div>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiperCont">
+                    <div class="prodBox">
+                      <a href="#" class="prodImgBox">
+                        <img src="../images/img_swiper_prod_cate_01.jpg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiperCont">
+                    <div class="prodBox">
+                      <a href="#" class="prodImgBox">
+                        <img src="../images/img_swiper_prod_cate_01.jpg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script>
+            $(function () {
+              var swiperProdStyle2 = new Swiper(".swiperProdStyle2 .swiper", {
+                scrollbar: {
+                  el: ".swiperProdStyle2 .swiperScrollbar",
+                },
+              });
+            })
+          </script>
+        </div>
+        
+
+        <!-- list Product -->
+        <div class="listProdBox">
+          <div class="listHead">
+            <p class="txtCount">1,354개의 상품</p>
+            <div class="toolBox">
+              <a href="#" class="btnFilter">필터</a>
+              <a href="#" class="btnSort">추천순</a>
+            </div>
+          </div>
+          <div class="listCont">
+            <ul class="listProdStyle1">
+              <li>
+                <div class="prodBoxStyle1">
+                  <div class="prodImgBox border">
+                    <a href="#" class="imgProd">
+                      <img src="../images/img_prod_01.jpg" alt="" />
+                    </a>
+                    <a href="javascript:void(0);" class="flag">Flag</a>
+                    <div class="activityBox">
+                      <span class="itemActivity red">타임특가</span>
+                      <span class="itemActivity white">묶음할인</span>
+                    </div>
+                    <a href="#" class="btnPlay">Play</a>
+                  </div>
+                  <h3 class="titProd fontFamily2">STCO</h3>
+                  <p class="txtProd">베이직핏 워셔블 가디건</p>
+                  <div class="priceBox">
+                    <span class="oldPrice">329,000</span>
+                    <span class="newPrice">199,000</span>
+                    <span class="discount">20%</span>
+                  </div>
+                  <div class="colorBox">
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#e7e7e7;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#e6dfd5;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#b7cce6;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#e5d5e6;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#9ea79d;"></a>
+                    <a href="javascript:void(0);" class="btnColorAdd"></a>
+                  </div>
+                  <div class="tagBox">
+                    <a href="#" class="itemTag fontFamily2">BIG</a>
+                    <a href="#" class="itemTag">오늘출발</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="prodBoxStyle1">
+                  <div class="prodImgBox border">
+                    <a href="#" class="imgProd">
+                      <img src="../images/img_prod_02.jpg" alt="" />
+                    </a>
+                    <a href="javascript:void(0);" class="flag on">Flag</a>
+                    <div class="activityBox">
+                      <span class="itemActivity red">주말특가</span>
+                    </div>
+                  </div>
+                  <h3 class="titProd fontFamily2">CODI GALLERY</h3>
+                  <p class="txtProd">가먼트다잉 밴딩 와이드 치노 팬 long text</p>
+                  <div class="priceBox">
+                    <span class="oldPrice">89,000</span>
+                    <span class="newPrice">39,000</span>
+                    <span class="discount">40%</span>
+                  </div>
+                  <div class="colorBox">
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#cfbb98;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#222939;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#6b8f68;"></a>
+                  </div>
+                  <div class="tagBox">
+                    <a href="#" class="itemTag">단품가능</a>
+                    <a href="#" class="itemTag">블랙라벨</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="prodBoxStyle1">
+                  <div class="prodImgBox border">
+                    <a href="#" class="imgProd">
+                      <img src="../images/img_prod_03.jpg" alt="" />
+                    </a>
+                    <a href="javascript:void(0);" class="flag">Flag</a>
+                  </div>
+                  <h3 class="titProd fontFamily2">STCO</h3>
+                  <p class="txtProd">울블렌드 셔츠 카라 니트 </p>
+                  <div class="priceBox">
+                    <span class="oldPrice">329,000</span>
+                    <span class="newPrice">199,000</span>
+                    <span class="discount">20%</span>
+                  </div>
+                  <div class="colorBox">
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#e7e7e7;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#e6dfd5;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#b7cce6;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#e5d5e6;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#9ea79d;"></a>
+                    <a href="javascript:void(0);" class="btnColorAdd"></a>
+                  </div>
+                  <div class="tagBox">
+                    <a href="#" class="itemTag">주니어</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="prodBoxStyle1">
+                  <div class="prodImgBox border">
+                    <a href="#" class="imgProd">
+                      <img src="../images/img_prod_04.jpg" alt="" />
+                    </a>
+                    <a href="javascript:void(0);" class="flag on">Flag</a>
+                    <div class="activityBox">
+                      <span class="itemActivity red">주말특가</span>
+                    </div>
+                  </div>
+                  <h3 class="titProd fontFamily2">CODI GALLERY</h3>
+                  <p class="txtProd">싱글 브레스티드 크링클 자켓</p>
+                  <div class="priceBox">
+                    <span class="oldPrice">89,000</span>
+                    <span class="newPrice">39,000</span>
+                    <span class="discount">40%</span>
+                  </div>
+                  <div class="colorBox">
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#cfbb98;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#222939;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#6b8f68;"></a>
+                  </div>
+                  <div class="tagBox">
+                    <a href="#" class="itemTag">단품가능</a>
+                    <a href="#" class="itemTag">블랙라벨</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="csBox">
+        <h2 class="titCs">고객센터 <a href="tel:070-4687-7342" class="txtPhone">070-4687-7342</a></h2>
+        <p class="txtCs">
+          운영시간 평일 10:00 - 17:00 (토∙일, 공휴일 휴무)
+          <br />
+          점심시간 평일 12:00 - 13:00
+        </p>
+      </div>
+      <div class="contactBox">
+        <p class="txtContact1">
+          <span>(주)에스티오</span>
+          <span>사업자 정보 <i class="iconArrow"></i></span>
+        </p>
+        <p class="txtContact2">
+          서울시 강서구 양천로 583 우림블루나인비지니스센터 B동 15층
+          <br />
+          대표자 : 김흥수 / 사업자등록번호 : 206-81-79031
+          <br />
+          통신판매업신고 : 제2009 서울강서 0684호 / 개인정보관리책임자 : 김기만
+          <br />
+          대표메일주소 : stoonline@stco.co.kr
+        </p>
+        <ul class="listLink">
+          <li><a href="#" class="linkContact">이용약관</a></li>
+          <li><a href="#" class="linkContact">개인정보처리방침</a></li>
+        </ul>
+        <ul class="listLink2">
+          <li><a href="#">회사소개</a></li>
+          <li><a href="#">고객센터</a></li>
+          <li><a href="#">에스크로가입확인</a></li>
+        </ul>
+      </div>
+      <p class="copyright fontFamily2">Copyright(c) STo. All right reserved</p>
+    </footer>
+    <!--// footer end -->
+
+    <!-- Bot Menu -->
+    <div class="botMenuWrap">
+      <div class="botMenuBox">
+        <ul class="botMenu">
+          <li>
+            <a href="javascript:void(0);" class="itemMenu cate" onclick="openPop('popCategory')">카테고리</a>
+          </li>
+          <li>
+            <a id="btnBrand" href="javascript:void(0);" onclick="botBrandClick(this)" class="itemMenu brand">브랜드</a>
+          </li>
+          <li>
+            <a href="#" class="itemMenu home">홈</a>
+          </li>
+          <li>
+            <a href="#" class="itemMenu my">MY</a>
+          </li>
+          <li>
+            <a href="#" class="itemMenu flag">찜</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- // Bot Menu -->
+
+    <!-- float button -->
+    <div class="floatButtonBox">
+      <ul class="floatButton">
+        <li><a href="#" class="itemButton"><img src="../images/icon_record.png" alt="Record"></a></li>
+        <li><a href="#" id="btnTop" class="itemButton"><img src="../images/icon_top.png" alt="Top"></a></li>
+      </ul>
+    </div>
+    <!-- // float button -->
+  </div>
+
+</body>
+
+</html>

@@ -2,7 +2,7 @@
 <html lang="ko">
 
 <head>
-  <title>title</title>
+  <title>STCO</title>
   <meta charset="UTF-8" />
   <meta name="viewport"
     content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
@@ -15,6 +15,12 @@
   <script src="../js/swiper-bundle.min.js"></script>
   <!-- ui js -->
   <script src="../js/design.js"></script>
+  <script>
+    $(function(){
+      openPop('popNotice');
+      openPop('popBotSlide');
+    })
+  </script>
 </head>
 
 <body>
@@ -24,18 +30,13 @@
     <!-- header -->
     <header id="header">
       <div class="logoBox">
-        <a href="#" class="logo">
-          <img src="../images/logo_white.png" alt="STCO onlinemall" />
-        </a>
+        <a href="#" class="logo white">STCO onlinemall</a>
       </div>
       <div class="toolBox">
-        <a href="#" class="btnCart">
-          <img src="../images/icon_cart_white.png" alt="Cart" />
+        <a href="#" class="btnCart white">
           <span class="num">0</span>
         </a>
-        <a href="#" class="btnSearch">
-          <img src="../images/icon_search_white.png" alt="Search" />
-        </a>
+        <a href="#" class="btnSearch white">Search</a>
       </div>
 
     </header>
@@ -43,6 +44,7 @@
 
     <!-- container -->
     <div id="container">
+      <!-- Visual -->
       <div class="swiperMainVisual">
         <div class="swiperScrollbar"></div>
         <div class="btnSwiperPrev"></div>
@@ -50,8 +52,8 @@
         <div class="swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div class="swiperBox">
-                <img class="imgFull" src="../images/img_main_visual_01.jpg" alt="" />
+              <div class="swiperCont">
+                <img src="../images/img_main_visual_01.jpg" alt="" />
                 <div class="txtBox">
                   <h2 class="titSwiper">
                     NEW IN
@@ -65,8 +67,8 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="swiperBox">
-                <img class="imgFull" src="../images/img_main_visual_02.jpg" alt="" />
+              <div class="swiperCont">
+                <img src="../images/img_main_visual_02.jpg" alt="" />
                 <div class="txtBox">
                   <h2 class="titSwiper">
                     NEW IN
@@ -80,8 +82,8 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="swiperBox">
-                <img class="imgFull" src="../images/img_main_visual_03.jpg" alt="" />
+              <div class="swiperCont">
+                <img src="../images/img_main_visual_03.jpg" alt="" />
                 <div class="txtBox">
                   <h2 class="titSwiper">
                     NEW IN
@@ -117,70 +119,71 @@
         })
       </script>
 
+      <!-- Category swiper -->
       <div class="swiperCate">
         <div class="swiperScrollbar"></div>
         <div class="swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div class="swiperBox">
+              <div class="swiperCont">
                 <a href="#">
-                  <span class="imgCate"><img class="imgFull" src="../images/img_cate_01.png" alt="" /></span>
+                  <span class="imgCate"><img src="../images/img_cate_01.png" alt="" /></span>
                   <span class="txtCate">1+1쿠폰</span>
                 </a>
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="swiperBox">
+              <div class="swiperCont">
                 <a href="#">
-                  <span class="imgCate"><img class="imgFull" src="../images/img_cate_02.png" alt="" /></span>
+                  <span class="imgCate"><img src="../images/img_cate_02.png" alt="" /></span>
                   <span class="txtCate">Exclusive</span>
                 </a>
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="swiperBox">
+              <div class="swiperCont">
                 <a href="#">
-                  <span class="imgCate"><img class="imgFull" src="../images/img_cate_03.png" alt="" /></span>
+                  <span class="imgCate"><img src="../images/img_cate_03.png" alt="" /></span>
                   <span class="txtCate">SALE</span>
                 </a>
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="swiperBox">
+              <div class="swiperCont">
                 <a href="#">
-                  <span class="imgCate"><img class="imgFull" src="../images/img_cate_04.png" alt="" /></span>
+                  <span class="imgCate"><img src="../images/img_cate_04.png" alt="" /></span>
                   <span class="txtCate">TOP</span>
                 </a>
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="swiperBox">
+              <div class="swiperCont">
                 <a href="#">
-                  <span class="imgCate"><img class="imgFull" src="../images/img_cate_05.png" alt="" /></span>
+                  <span class="imgCate"><img src="../images/img_cate_05.png" alt="" /></span>
                   <span class="txtCate">PANTS</span>
                 </a>
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="swiperBox">
+              <div class="swiperCont">
                 <a href="#">
-                  <span class="imgCate"><img class="imgFull" src="../images/img_cate_06.png" alt="" /></span>
+                  <span class="imgCate"><img src="../images/img_cate_06.png" alt="" /></span>
                   <span class="txtCate">SUIT</span>
                 </a>
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="swiperBox">
+              <div class="swiperCont">
                 <a href="#">
-                  <span class="imgCate"><img class="imgFull" src="../images/img_cate_07.png" alt="" /></span>
+                  <span class="imgCate"><img src="../images/img_cate_07.png" alt="" /></span>
                   <span class="txtCate">OUTER</span>
                 </a>
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="swiperBox">
+              <div class="swiperCont">
                 <a href="#">
-                  <span class="imgCate"><img class="imgFull" src="../images/img_cate_08.png" alt="" /></span>
+                  <span class="imgCate"><img src="../images/img_cate_08.png" alt="" /></span>
                   <span class="txtCate">ACC</span>
                 </a>
               </div>
@@ -199,30 +202,31 @@
         })
       </script>
 
+      <!-- NEW ARRIVALS / BEST SELLER / SUMMER STYLING / SEASON OFF -->
       <div class="imgCateBox">
         <div class="itemCate">
-          <img class="imgFull" src="../images/img_visual_cate_01.jpg" alt="">
+          <img src="../images/img_visual_cate_01.jpg" alt="">
           <div class="infoBox">
             <h3 class="titInfo">NEW ARRIVALS</h3>
             <a href="#" class="btnView">VIEW</a>
           </div>
         </div>
         <div class="itemCate">
-          <img class="imgFull" src="../images/img_visual_cate_02.jpg" alt="">
+          <img src="../images/img_visual_cate_02.jpg" alt="">
           <div class="infoBox">
             <h3 class="titInfo">BEST SELLER</h3>
             <a href="#" class="btnView">VIEW</a>
           </div>
         </div>
         <div class="itemCate">
-          <img class="imgFull" src="../images/img_visual_cate_03.jpg" alt="">
+          <img src="../images/img_visual_cate_03.jpg" alt="">
           <div class="infoBox">
             <h3 class="titInfo">SUMMER STYLING</h3>
             <a href="#" class="btnView">VIEW</a>
           </div>
         </div>
         <div class="itemCate">
-          <img class="imgFull" src="../images/img_visual_cate_04.jpg" alt="">
+          <img src="../images/img_visual_cate_04.jpg" alt="">
           <div class="infoBox">
             <h3 class="titInfo">SEASON OFF</h3>
             <a href="#" class="btnView">VIEW</a>
@@ -230,16 +234,17 @@
         </div>
       </div>
 
+      <!-- Tip Bar -->
       <div class="swiperTipBar">
         <div class="swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div class="swiperBox">
+              <div class="swiperCont">
                 <p class="txtSwiper">페이코를 통한 온라인몰 쇼핑 팁 111!</p>
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="swiperBox">
+              <div class="swiperCont">
                 <p class="txtSwiper">페이코를 통한 온라인몰 쇼핑 팁 222!</p>
               </div>
             </div>
@@ -273,15 +278,16 @@
         })
       </script>
 
+      <!-- 봄에 주목할만한 셔츠 -->
       <div class="sectionBox">
         <h2 class="titSection">봄에 주목할만한 셔츠</h2>
         <div class="sectionCont">
-          <ul class="listProd">
+          <ul class="listProdStyle1">
             <li>
-              <div class="prodBox">
+              <div class="prodBoxStyle1">
                 <div class="prodImgBox border">
                   <a href="#" class="imgProd">
-                    <img class="imgFull" src="../images/img_prod_01.jpg" alt="" />
+                    <img src="../images/img_prod_01.jpg" alt="" />
                   </a>
                   <a href="javascript:void(0);" class="flag">Flag</a>
                   <div class="activityBox">
@@ -312,10 +318,10 @@
               </div>
             </li>
             <li>
-              <div class="prodBox">
+              <div class="prodBoxStyle1">
                 <div class="prodImgBox border">
                   <a href="#" class="imgProd">
-                    <img class="imgFull" src="../images/img_prod_02.jpg" alt="" />
+                    <img src="../images/img_prod_02.jpg" alt="" />
                   </a>
                   <a href="javascript:void(0);" class="flag on">Flag</a>
                   <div class="activityBox">
@@ -341,10 +347,10 @@
               </div>
             </li>
             <li>
-              <div class="prodBox">
+              <div class="prodBoxStyle1">
                 <div class="prodImgBox border">
                   <a href="#" class="imgProd">
-                    <img class="imgFull" src="../images/img_prod_03.jpg" alt="" />
+                    <img src="../images/img_prod_03.jpg" alt="" />
                   </a>
                   <a href="javascript:void(0);" class="flag">Flag</a>
                 </div>
@@ -369,10 +375,10 @@
               </div>
             </li>
             <li>
-              <div class="prodBox">
+              <div class="prodBoxStyle1">
                 <div class="prodImgBox border">
                   <a href="#" class="imgProd">
-                    <img class="imgFull" src="../images/img_prod_04.jpg" alt="" />
+                    <img src="../images/img_prod_04.jpg" alt="" />
                   </a>
                   <a href="javascript:void(0);" class="flag on">Flag</a>
                   <div class="activityBox">
@@ -398,13 +404,14 @@
               </div>
             </li>
           </ul>
-          <div class="btnMore">
+          <a href="#" class="btnMore">
             <span class="txtMore">상품더보기</span>
             <span class="iconMore"></span>
-          </div>
+          </a>
         </div>
       </div>
 
+      <!-- ShopByLook -->
       <div class="sectionBox">
         <h2 class="titSection fontFamily2">SHOP by LOOK</h2>
         <div class="sectionCont">
@@ -416,23 +423,23 @@
                   <div class="swiperCont">
                     <ul class="listLook">
                       <li>
-                        <a href="#">
-                          <img class="imgFull" src="../images/img_look_01.jpg" alt="" />
+                        <a href="javascript:openPop('popShopByLook')">
+                          <img src="../images/img_look_01.jpg" alt="" />
                         </a>
                       </li>
                       <li>
-                        <a href="#">
-                          <img class="imgFull" src="../images/img_look_02.jpg" alt="" />
+                        <a href="javascript:openPop('popShopByLook')">
+                          <img src="../images/img_look_02.jpg" alt="" />
                         </a>
                       </li>
                       <li>
-                        <a href="#">
-                          <img class="imgFull" src="../images/img_look_03.jpg" alt="" />
+                        <a href="javascript:openPop('popShopByLook')">
+                          <img src="../images/img_look_03.jpg" alt="" />
                         </a>
                       </li>
                       <li>
-                        <a href="#">
-                          <img class="imgFull" src="../images/img_look_04.jpg" alt="" />
+                        <a href="javascript:openPop('popShopByLook')">
+                          <img src="../images/img_look_04.jpg" alt="" />
                         </a>
                       </li>
                     </ul>
@@ -442,23 +449,23 @@
                   <div class="swiperCont">
                     <ul class="listLook">
                       <li>
-                        <a href="#">
-                          <img class="imgFull" src="../images/img_look_01.jpg" alt="" />
+                        <a href="javascript:openPop('popShopByLook')">
+                          <img src="../images/img_look_01.jpg" alt="" />
                         </a>
                       </li>
                       <li>
-                        <a href="#">
-                          <img class="imgFull" src="../images/img_look_02.jpg" alt="" />
+                        <a href="javascript:openPop('popShopByLook')">
+                          <img src="../images/img_look_02.jpg" alt="" />
                         </a>
                       </li>
                       <li>
-                        <a href="#">
-                          <img class="imgFull" src="../images/img_look_03.jpg" alt="" />
+                        <a href="javascript:openPop('popShopByLook')">
+                          <img src="../images/img_look_03.jpg" alt="" />
                         </a>
                       </li>
                       <li>
-                        <a href="#">
-                          <img class="imgFull" src="../images/img_look_04.jpg" alt="" />
+                        <a href="javascript:openPop('popShopByLook')">
+                          <img src="../images/img_look_04.jpg" alt="" />
                         </a>
                       </li>
                     </ul>
@@ -480,6 +487,7 @@
         </div>
       </div>
 
+      <!-- ONLINE EXCLUSIVE -->
       <div class="sectionBox">
         <h2 class="titSection fontFamily2">ONLINE EXCLUSIVE</h2>
         <p class="txtSection">놓치면 후회하는 세일 특가</p>
@@ -490,7 +498,7 @@
                 <div class="swiper-slide">
                   <div class="swiperCont">
                     <a href="#">
-                      <img class="imgFull" src="../images/img_online_01.jpg" alt="">
+                      <img src="../images/img_online_01.jpg" alt="">
                     </a>
                     <h3 class="titOE">미리 만나는 시즌 오프</h3>
                     <p class="txtOE">역시즌~40% OFF+10%쿠폰</p>
@@ -499,7 +507,7 @@
                 <div class="swiper-slide">
                   <div class="swiperCont">
                     <a href="#">
-                      <img class="imgFull" src="../images/img_online_01.jpg" alt="">
+                      <img src="../images/img_online_01.jpg" alt="">
                     </a>
                     <h3 class="titOE">미리 만나는 시즌 오프</h3>
                     <p class="txtOE">역시즌~40% OFF+10%쿠폰</p>
@@ -508,7 +516,7 @@
                 <div class="swiper-slide">
                   <div class="swiperCont">
                     <a href="#">
-                      <img class="imgFull" src="../images/img_online_01.jpg" alt="">
+                      <img src="../images/img_online_01.jpg" alt="">
                     </a>
                     <h3 class="titOE">미리 만나는 시즌 오프</h3>
                     <p class="txtOE">역시즌~40% OFF+10%쿠폰</p>
@@ -531,10 +539,11 @@
         </div>
       </div>
 
+      <!-- REVIEW -->
       <div class="sectionBox">
         <div class="avatarBox">
           <a href="javascript" class="imgAvatar">
-            <img class="imgFull" src="../images/img_avatar.png" alt="" />
+            <img src="../images/img_avatar.png" alt="" />
           </a>
           <span class="txtAvatar fontFamily2">STCO</span>
         </div>
@@ -550,14 +559,14 @@
                 <div class="swiper-slide">
                   <div class="swiperCont">
                     <div class="imgReview">
-                      <img class="imgFull" src="../images/img_review_01.jpg" alt="" />
+                      <img src="../images/img_review_01.jpg" alt="" />
                     </div>
-                    <ul class="listProd c3">
+                    <ul class="listProdStyle1 c3">
                       <li>
-                        <div class="prodBox">
+                        <div class="prodBoxStyle1">
                           <div class="prodImgBox">
                             <a href="#" class="imgProd">
-                              <img class="imgFull" src="../images/img_prod_review_01.jpg" alt="" />
+                              <img src="../images/img_prod_review_01.jpg" alt="" />
                             </a>
                             <a href="javascript:void(0);" class="flag">Flag</a>
                           </div>
@@ -576,10 +585,10 @@
                         </div>
                       </li>
                       <li>
-                        <div class="prodBox">
+                        <div class="prodBoxStyle1">
                           <div class="prodImgBox">
                             <a href="#" class="imgProd">
-                              <img class="imgFull" src="../images/img_prod_review_02.jpg" alt="" />
+                              <img src="../images/img_prod_review_02.jpg" alt="" />
                             </a>
                             <a href="javascript:void(0);" class="flag">Flag</a>
                           </div>
@@ -598,10 +607,10 @@
                         </div>
                       </li>
                       <li>
-                        <div class="prodBox">
+                        <div class="prodBoxStyle1">
                           <div class="prodImgBox">
                             <a href="#" class="imgProd">
-                              <img class="imgFull" src="../images/img_prod_review_03.jpg" alt="" />
+                              <img src="../images/img_prod_review_03.jpg" alt="" />
                             </a>
                             <a href="javascript:void(0);" class="flag">Flag</a>
                           </div>
@@ -625,14 +634,14 @@
                 <div class="swiper-slide">
                   <div class="swiperCont">
                     <div class="imgReview">
-                      <img class="imgFull" src="../images/img_review_01.jpg" alt="" />
+                      <img src="../images/img_review_01.jpg" alt="" />
                     </div>
-                    <ul class="listProd c3">
+                    <ul class="listProdStyle1 c3">
                       <li>
-                        <div class="prodBox">
+                        <div class="prodBoxStyle1">
                           <div class="prodImgBox">
                             <a href="#" class="imgProd">
-                              <img class="imgFull" src="../images/img_prod_review_01.jpg" alt="" />
+                              <img src="../images/img_prod_review_01.jpg" alt="" />
                             </a>
                             <a href="javascript:void(0);" class="flag">Flag</a>
                           </div>
@@ -651,10 +660,10 @@
                         </div>
                       </li>
                       <li>
-                        <div class="prodBox">
+                        <div class="prodBoxStyle1">
                           <div class="prodImgBox">
                             <a href="#" class="imgProd">
-                              <img class="imgFull" src="../images/img_prod_review_02.jpg" alt="" />
+                              <img src="../images/img_prod_review_02.jpg" alt="" />
                             </a>
                             <a href="javascript:void(0);" class="flag">Flag</a>
                           </div>
@@ -673,10 +682,10 @@
                         </div>
                       </li>
                       <li>
-                        <div class="prodBox">
+                        <div class="prodBoxStyle1">
                           <div class="prodImgBox">
                             <a href="#" class="imgProd">
-                              <img class="imgFull" src="../images/img_prod_review_03.jpg" alt="" />
+                              <img src="../images/img_prod_review_03.jpg" alt="" />
                             </a>
                             <a href="javascript:void(0);" class="flag">Flag</a>
                           </div>
@@ -712,17 +721,17 @@
           </script>
         </div>
       </div>
-      
+
     </div>
     <!--// container -->
 
     <!-- footer -->
     <footer id="footer">
       <div class="csBox">
-        <h2 class="titCs">고객센터  <a href="tel:070-4687-7342" class="txtPhone">070-4687-7342</a></h2>
+        <h2 class="titCs">고객센터 <a href="tel:070-4687-7342" class="txtPhone">070-4687-7342</a></h2>
         <p class="txtCs">
-          운영시간 평일 10:00 - 17:00 (토∙일, 공휴일 휴무) 
-          <br/>
+          운영시간 평일 10:00 - 17:00 (토∙일, 공휴일 휴무)
+          <br />
           점심시간 평일 12:00 - 13:00
         </p>
       </div>
@@ -732,12 +741,12 @@
           <span>사업자 정보 <i class="iconArrow"></i></span>
         </p>
         <p class="txtContact2">
-          서울시 강서구 양천로 583 우림블루나인비지니스센터 B동 15층 
-          <br/>
-          대표자 : 김흥수 /  사업자등록번호 : 206-81-79031
-          <br/>
+          서울시 강서구 양천로 583 우림블루나인비지니스센터 B동 15층
+          <br />
+          대표자 : 김흥수 / 사업자등록번호 : 206-81-79031
+          <br />
           통신판매업신고 : 제2009 서울강서 0684호 / 개인정보관리책임자 : 김기만
-          <br/>
+          <br />
           대표메일주소 : stoonline@stco.co.kr
         </p>
         <ul class="listLink">
@@ -754,6 +763,419 @@
     </footer>
     <!--// footer end -->
 
+    <!-- Bot Menu -->
+    <div class="botMenuWrap">
+      <div class="botMenuBox">
+        <ul class="botMenu">
+          <li>
+            <a href="javascript:void(0);" class="itemMenu cate" onclick="openPop('popCategory')">카테고리</a>
+          </li>
+          <li>
+            <a id="btnBrand" href="javascript:void(0);" onclick="botBrandClick(this)" class="itemMenu brand">브랜드</a>
+          </li>
+          <li>
+            <a href="#" class="itemMenu home">홈</a>
+          </li>
+          <li>
+            <a href="#" class="itemMenu my">MY</a>
+          </li>
+          <li>
+            <a href="#" class="itemMenu flag">찜</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- // Bot Menu -->
+
+    <!-- float button -->
+    <div class="floatButtonBox">
+      <ul class="floatButton">
+        <li><a href="#" class="itemButton"><img src="../images/icon_record.png" alt="Record"></a></li>
+        <li><a href="#" id="btnTop" class="itemButton"><img src="../images/icon_top.png" alt="Top"></a></li>
+      </ul>
+    </div>
+    <!-- // float button -->
+
+    <!-- pop brand -->
+    <div class="popBox" id="popBrand">
+      <div class="mask"></div>
+      <div class="popCont popBotBrand">
+        <ul class="listBrand">
+          <li><a href="#" class="itemBrand"><img src="../images/img_brand_01.png" alt="diems" /></a></li>
+          <li><a href="#" class="itemBrand"><img src="../images/img_brand_02.png" alt="zerolounge" /></a></li>
+          <li><a href="#" class="itemBrand"><img src="../images/img_brand_03.png" alt="stco" /></a></li>
+          <li><a href="#" class="itemBrand"><img src="../images/img_brand_04.png" alt="코디갤러리" /></a></li>
+          <li><a href="#" class="itemBrand"><img src="../images/img_brand_05.png" alt="코디주니어" /></a></li>
+          <li><a href="#" class="itemBrand"><img src="../images/img_brand_06.png" alt="하우스" /></a></li>
+        </ul>
+        <button class="btnCloseDown" onclick="$('#btnBrand').click()">닫기</button>
+      </div>
+    </div>
+    <!-- // pop brand -->
+
+    <!-- pop bot -->
+    <div class="popBox" id="popBotSlide">
+      <div class="popCont popBotSlide">
+        <div class="swiperPopVisual">
+          <div class="swipePagination"></div>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiperCont">
+                  <a href="#"><img src="../images/img_pop_visual_01.png" alt="" /></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiperCont">
+                  <a href="#"><img src="../images/img_pop_visual_01.png" alt="" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          $(function () {
+            var swiperPopVisual = new Swiper(".swiperPopVisual .swiper", {
+              loop: true,
+              autoplay: {
+                delay: 2000,
+                stopOnLastSlide: false,
+                disableOnInteraction: true,
+              },
+              effect:'fade',
+              pagination: {
+                el: ".swiperPopVisual .swipePagination",
+                type: "fraction",
+              },
+            });
+          })
+        </script>
+        <div class="closeBox">
+          <button class="btnClose" onclick="closePopToday(this)">오늘 하루 그만보기</button>
+          <button class="btnClose" onclick="closePop(this)">닫기</button>
+        </div>
+      </div>
+    </div>
+    <!-- // pop bot -->
+
+    <!-- pop notice -->
+    <div class="popBox" id="popNotice">
+      <div class="mask"></div>
+      <div class="popCont popNotice">
+        <div class="imgBox">
+          <img src="../images/img_pop_notice.jpg" alt="
+          설 연휴로 인한 배송지연안내 
+          설 연휴로 인하여 아래와 같은 일정으로  배송 될 예정이오니
+          고객님들의 양해 부탁드립니다. 
+          - 1월18일 오전 9시 30분 이전주문 완료 →  1/20일 이전 배송
+          - 1/19~20일 주문 완료 건 →  1/25일 순차 배송 
+          " />
+        </div>
+        <div class="closeBox">
+          <button class="btnClose" onclick="closePopToday(this)">오늘 하루 그만보기</button>
+          <button class="btnClose" onclick="closePop(this)">닫기</button>
+        </div>
+      </div>
+    </div>
+    <!-- //pop notice -->
+
+    <!-- pop shopbylook -->
+    <div class="popBox" id="popShopByLook">
+      <div class="mask"></div>
+      <div class="popCont popShopByLook">
+        <div class="closeBox">
+          <button class="btnClose" onclick="closePop(this);">닫기</button>
+        </div>
+        <div class="swiperProdImg">
+          <div class="btnSwiperPrev"></div>
+          <div class="btnSwiperNext"></div>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiperCont">
+                  <div class="imgBox">
+                    <img src="../images/img_swiperProImg_01.jpg" alt="" />
+                  </div>
+                  <div class="numBox">
+                    <a href="#" class="num" style="margin:23.666% 0 0 33.888%;">1</a>
+                    <a href="#" class="num" style="margin:39.722% 0 0 50%;">2</a>
+                    <a href="#" class="num" style="margin:49.305% 0 0 42.361%;">3</a>
+                    <a href="#" class="num" style="margin:70.833% 0 0 66.666%;">4</a>
+                    <a href="#" class="num" style="margin:110.416% 0 0 47.305%;">5</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiperCont">
+                  <div class="imgBox">
+                    <img src="../images/img_swiperProImg_01.jpg" alt="" />
+                  </div>
+                  <div class="numBox">
+                    <a href="#" class="num" style="margin:23.666% 0 0 33.888%;">1</a>
+                    <a href="#" class="num" style="margin:39.722% 0 0 50%;">2</a>
+                    <a href="#" class="num" style="margin:49.305% 0 0 42.361%;">3</a>
+                    <a href="#" class="num" style="margin:70.833% 0 0 66.666%;">4</a>
+                    <a href="#" class="num" style="margin:110.416% 0 0 47.305%;">5</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          $(function () {
+            var swiperProdImg = new Swiper(".swiperProdImg .swiper", {
+              navigation: {
+                nextEl: '.swiperProdImg .btnSwiperNext',
+                prevEl: '.swiperProdImg .btnSwiperPrev',
+              },
+            });
+          })
+        </script>
+        <ul class="listProdStyle2">
+          <li>
+            <div class="prodBoxStyle2">
+              <div class="infoBox">
+                <span class="num">1</span>
+                <div class="prodInfoBox">
+                  <h3 class="titProd fontFamily2">STCO</h3>
+                  <p class="txtProd">베이직핏 워셔블 가디건 long text test long text test</p>
+                  <div class="priceBox">
+                    <span class="oldPrice">329,000</span>
+                    <span class="newPrice">199,000</span>
+                    <span class="discount">20%</span>
+                  </div>
+                  <div class="colorBox">
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#e7e7e7;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#e6dfd5;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#b7cce6;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#e5d5e6;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#9ea79d;"></a>
+                    <a href="javascript:void(0);" class="btnColorAdd"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="prodImgBox">
+                <a href="#"><img src="../images/img_prod_shopbylook_01.jpg" alt="" /></a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="prodBoxStyle2">
+              <div class="infoBox">
+                <span class="num">2</span>
+                <div class="prodInfoBox">
+                  <h3 class="titProd fontFamily2">STCO</h3>
+                  <p class="txtProd">클래식핏 와이드카라 스트라이프 셔츠</p>
+                  <div class="priceBox">
+                    <span class="oldPrice">329,000</span>
+                    <span class="newPrice">199,000</span>
+                    <span class="discount">20%</span>
+                  </div>
+                  <div class="colorBox">
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#e7e7e7;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#e6dfd5;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#b7cce6;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#e5d5e6;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#9ea79d;"></a>
+                    <a href="javascript:void(0);" class="btnColorAdd"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="prodImgBox">
+                <a href="#"><img src="../images/img_prod_shopbylook_02.jpg" alt="" /></a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="prodBoxStyle2">
+              <div class="infoBox">
+                <span class="num">3</span>
+                <div class="prodInfoBox">
+                  <h3 class="titProd fontFamily2">STCO</h3>
+                  <p class="txtProd">블랙 포인트 팁 버클 정장 자동 벨트</p>
+                  <div class="priceBox">
+                    <span class="oldPrice">329,000</span>
+                    <span class="newPrice">199,000</span>
+                    <span class="discount">20%</span>
+                  </div>
+                  <div class="colorBox">
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#e7e7e7;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#e6dfd5;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#b7cce6;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#e5d5e6;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#9ea79d;"></a>
+                    <a href="javascript:void(0);" class="btnColorAdd"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="prodImgBox">
+                <a href="#"><img src="../images/img_prod_shopbylook_03.jpg" alt="" /></a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="prodBoxStyle2">
+              <div class="infoBox">
+                <span class="num">4</span>
+                <div class="prodInfoBox">
+                  <h3 class="titProd fontFamily2">STCO</h3>
+                  <p class="txtProd">아이보리 스판 테이퍼드 데님팬츠</p>
+                  <div class="priceBox">
+                    <span class="oldPrice">329,000</span>
+                    <span class="newPrice">199,000</span>
+                    <span class="discount">20%</span>
+                  </div>
+                  <div class="colorBox">
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#e7e7e7;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#e6dfd5;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#b7cce6;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#e5d5e6;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#9ea79d;"></a>
+                    <a href="javascript:void(0);" class="btnColorAdd"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="prodImgBox">
+                <a href="#"><img src="../images/img_prod_shopbylook_04.jpg" alt="" /></a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="prodBoxStyle2">
+              <div class="infoBox">
+                <span class="num">5</span>
+                <div class="prodInfoBox">
+                  <h3 class="titProd fontFamily2">STCO</h3>
+                  <p class="txtProd">블랙 베지터블 페니 로퍼</p>
+                  <div class="priceBox">
+                    <span class="oldPrice">329,000</span>
+                    <span class="newPrice">199,000</span>
+                    <span class="discount">20%</span>
+                  </div>
+                  <div class="colorBox">
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#e7e7e7;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#e6dfd5;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#b7cce6;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#e5d5e6;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#9ea79d;"></a>
+                    <a href="javascript:void(0);" class="btnColorAdd"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="prodImgBox">
+                <a href="#"><img src="../images/img_prod_shopbylook_05.jpg" alt="" /></a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- // pop shopbylook -->
+
+    <!-- pop category -->
+    <div class="popBox" id="popCategory">
+      <div class="popCont popCategory">
+        <div class="popHeader">
+          <a href="#" class="logo">STCO onlinemall</a>
+          <button class="btnClose" onclick="closePop(this);">닫기</button>
+        </div>
+        <div class="categoryWrap">
+          <div class="accountBox">
+            <a href="#" class="txtAccount">홍길동 <strong class="suffix">님 즐거운 쇼핑되세요!</strong></a>
+            <a href="#" class="btnCart black">
+              <span class="num">0</span>
+            </a>
+          </div>
+          <div class="accountBox">
+            <ul class="listBtn">
+              <li><a href="#" class="itemBtn">로그인</a></li>
+              <li><a href="#" class="itemBtn">회원가입</a></li>
+            </ul>
+          </div>
+          <ul class="category">
+            <li>
+              <a href="#">DRESS SHIRTS</a>
+              <ul class="subCategory">
+                <li><a href="#">모두보기</a></li>
+                <li><a href="#">에센셜라인</a></li>
+                <li><a href="#">BLACK LINE</a></li>
+                <li><a href="#">RENEW WORK</a></li>
+                <li><a href="#">하이브리드</a></li>
+                <li><a href="#">씨티보이</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">CASUAL SHIRTS</a>
+            </li>
+            <li>
+              <a href="#">SUIT & SET-UP</a>
+            </li>
+            <li>
+              <a href="#">TOP</a>
+            </li>
+            <li>
+              <a href="#">PANTS</a>
+            </li>
+            <li>
+              <a href="#">OUTER</a>
+            </li>
+            <li>
+              <a href="#">ACC</a>
+            </li>
+          </ul>
+          <ul class="menu">
+            <li><a href="#" class="fontFamily2 on">SALE</a></li>
+            <li><a href="#" class="fontFamily2">BEST</a></li>
+            <li><a href="#" class="fontFamily2">LOOK BOOK</a></li>
+          </ul>
+          <div class="swiperCateProdBox">
+            <h2 class="titSwiper">Shop, stories & more</h2>
+            <div class="swiperCateProd">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="swiperCont">
+                      <div class="imgProd">
+                        <a href="#"><img src="../images/img_prod_category_01.jpg" alt="" /></a>
+                        <h3 class="titProd">Shop Suit</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiperCont">
+                      <div class="imgProd">
+                        <a href="#"><img src="../images/img_prod_category_02.jpg" alt="" /></a>
+                        <h3 class="titProd">Shop Denim</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiperCont">
+                      <div class="imgProd">
+                        <a href="#"><img src="../images/img_prod_category_03.jpg" alt="" /></a>
+                        <h3 class="titProd">Shop Shirts</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <script>        
+              var swiperCateProd = new Swiper ('.swiperCateProd .swiper', {
+                slidesPerView: 'auto',
+              })        
+              </script>
+          </div>
+          <ul class="menu">
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">주문/배송조회</a></li>
+            <li><a href="#">자주하는질문</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- //pop category -->
   </div>
 
 </body>

@@ -1,40 +1,50 @@
-#header {z-index: 2; position: fixed; top:0; left:0; right:0; display: flex; justify-content: space-between; align-items: center; height:40px; padding:0 13px 0 17px;}
-#header .logo {display:block; width: 126px; height:18px;}
-#header .logo img {width: 100%;}
+body.openPop {overflow:hidden;}
+
+#header {z-index: 3; position: fixed; top:0; left:0; right:0; display: flex; justify-content: space-between; align-items: center; height:55px; padding:0 13px 0 17px;}
+#header.bgWhite {background: #FFF; border-bottom: 1px solid #ddd;}
+#header .logo.white {display:block; width: 126px; height:18px; background:url(../images/logo_white.png) no-repeat center center; background-size: 100%; overflow:hidden; text-indent: -999px;}
 #header .toolBox {display: flex; align-items: center; justify-content: center;}
 #header .toolBox * + * {margin-left: 10px;}
-#header .btnCart {position: relative; display:block; width:31px; height:22px; padding-right: 13px; }
-#header .btnCart img {width: 100%;}
-#header .btnCart .num {position: absolute; top:3px; right:3px; width: 19px; height: 15px; background:url(../images/bg_icon_cart_num.png) no-repeat 0 0; background-size: 100%; color:#FFF; font-weight: 300; font-size: 10px; line-height: 15px; text-align: center;}
-#header .btnSearch {display: block; width: 19px; height: 19px;}
-#header .btnSearch img {width: 100%;}
+#header .btnCart {position: relative; display:block; width:31px; height:22px; padding-right: 13px;}
+#header .btnCart.white {background:url(../images/icon_cart_white.png) no-repeat left center; background-size:18px;} 
+#header .btnCart.white .num {position: absolute; top:3px; right:3px; width: 19px; height: 15px; background:#cf152d; background-size: 100%; color:#FFF; font-weight: 300; font-size: 10px; line-height: 15px; text-align: center;}
+#header .btnCart.black {background:url(../images/icon_cart_black.png) no-repeat left center; background-size:18px;}
+#header .btnCart.black .num {position: absolute; top:3px; right:3px; width: 19px; height: 15px; background:#000000; border-radius: 5px; color:#FFF; font-weight: 300; font-size: 10px; line-height: 15px; text-align: center;}
+#header .btnSearch {display: block; width: 19px; height: 19px; overflow:hidden; text-indent: -999px;}
+#header .btnSearch.white {background:url(../images/icon_search_white.png) no-repeat center center; background-size:100%;}
+#header .btnSearch.black {background:url(../images/icon_search_black.png) no-repeat center center; background-size:100%;}
+#header .btnPrev {display: block; width: 24px; height:24px; margin-left: -12px; overflow: hidden; text-indent: -999px;}
+#header .btnPrev.white {background:url(../images/btn_prev_white.png) no-repeat center center; background-size: 12px;}
+#header .btnPrev.black {background:url(../images/btn_prev_black.png) no-repeat center center; background-size: 12px;}
+#header .titPage {position: absolute; left:50%; top:50%; transform: translate(-50%,-50%); color:#FFF; font-weight: 700; font-size: 21px; line-height: 23px;}
+#header .btnCate {position: absolute; left:50%; top:50%; transform: translate(-50%,-50%); color:#000; font-weight: 700; font-size: 21px; line-height: 23px;}
+#header .btnCate.arrow {padding-right:18px;}
+#header .btnCate.arrow::after {content:''; position: absolute; top:50%; right:0; width:10px; height: 7px; margin: -4px; background: url(../images/icon_btn_arrow_down_blod.png) no-repeat center center; background-size:100%;}
 
-.imgFull {width: 100%;}
 .swiperMainVisual {position: relative;}
-.swiperMainVisual .swiperBox {position: relative;}
-.swiperMainVisual .swiperBox .txtBox {position: absolute; left:25px; bottom:82px;}
-.swiperMainVisual .swiperBox .txtBox .titSwiper {color:#FFF; font-size:29px; font-weight: 400; line-height: 36px;}
-.swiperMainVisual .swiperBox .txtBox .txtSwiper {color:#FFF; font-size:13px; font-weight: 400; line-height: 15px; margin-top: 20px;}
+.swiperMainVisual .swiperCont {position: relative;}
+.swiperMainVisual .swiperCont .txtBox {position: absolute; left:25px; bottom:82px;}
+.swiperMainVisual .swiperCont .txtBox .titSwiper {color:#FFF; font-size:29px; font-weight: 400; line-height: 36px;}
+.swiperMainVisual .swiperCont .txtBox .txtSwiper {color:#FFF; font-size:13px; font-weight: 400; line-height: 15px; margin-top: 20px;}
 .swiperMainVisual .swiperScrollbar {z-index: 2; position: absolute; left:25px; bottom:45px; width:220px; height:1px; background: #ababab;}
 .swiperMainVisual .swiperScrollbar .swiper-scrollbar-drag {background: #FFF;}
-.swiperMainVisual .btnSwiperPrev {z-index: 2; position: absolute; right:45px; bottom:35px; width: 25px; height: 25px; background:url(../images/img_swiper_prev.png) no-repeat center center; background-size:8px;}
-.swiperMainVisual .btnSwiperNext {z-index: 2; position: absolute; right:15px; bottom:35px; width: 25px; height: 25px; background:url(../images/img_swiper_next.png) no-repeat center center; background-size:8px;}
+.swiperMainVisual .btnSwiperPrev {z-index: 2; position: absolute; right:45px; bottom:35px; width: 25px; height: 25px; background:url(../images/btn_swiper_prev.png) no-repeat center center; background-size:8px;}
+.swiperMainVisual .btnSwiperNext {z-index: 2; position: absolute; right:15px; bottom:35px; width: 25px; height: 25px; background:url(../images/btn_swiper_next.png) no-repeat center center; background-size:8px;}
 
 .swiperCate {position: relative; padding:35px 12px 65px;}
 .swiperCate .swiper-slide {width:64px;}
 .swiperCate .swiper-slide + .swiper-slide {margin-left: 12px;}
-.swiperCate .swiper-slide .swiperBox {text-align: center;}
-.swiperCate .swiper-slide .swiperBox .txtCate {display: block; color:#3d3d3d; font-size: 13px; font-weight: 400; line-height: 15px; margin-top: 10px;}
+.swiperCate .swiper-slide .swiperCont {text-align: center;}
+.swiperCate .swiper-slide .swiperCont .txtCate {display: block; color:#3d3d3d; font-size: 13px; font-weight: 400; line-height: 15px; margin-top: 10px;}
 .swiperCate .swiperScrollbar {position: absolute; left:50%; bottom:35px; height:1px; width:68px; margin-left: -34px; background: #d9d9d9;}
 
-.imgCateBox {}
 .imgCateBox .itemCate {position: relative;}
 .imgCateBox .itemCate .infoBox {position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: flex; justify-content: center; align-items: center; flex-direction: column;}
 .imgCateBox .itemCate .infoBox .titInfo {color: #FFF; font-size: 21px; line-height: 21px; font-weight: 500;}
 .imgCateBox .itemCate .infoBox .btnView {display: flex; justify-content: center; align-items: center; width: 78px; height:28px; border:1px solid #FFF; color:#FFF; font-size: 13px; font-weight: 400; line-height: 15px;; margin-top: 50px;}
 
 .swiperTipBar {position: relative; margin:45px 12px 0;}
-.swiperTipBar .swiperBox {padding:25px 15px; background: #cf152d;}
+.swiperTipBar .swiperCont {padding:25px 15px; background: #cf152d;}
 .swiperTipBar .txtSwiper {color: #FFF; font-size: 15px; font-weight: 400; line-height: 15px; }
 .swiperTipBar .toolBar {position: absolute; z-index: 2; top:50%; right:15px; display: flex; justify-content: center; align-items: center; height:16px; margin-top: -8px; padding:0 11px; border-radius: 7px; background:rgba(0,0,0,.3)}
 .swiperTipBar .toolBar .swipePagination  {font-size: 11px; color:#FFF; line-height: 16px;}
@@ -50,36 +60,64 @@
 .sectionBox .titSection + .txtSection {margin-top: 10px;}
 .sectionBox .titSection + .sectionCont {margin-top: 20px;}
 .sectionBox .txtSection + .sectionCont {margin-top: 20px;}
-.listProd {display:flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-top: -25px;}
-.listProd li {flex:none; width:calc(50% - 3px); margin-top: 25px;;}
-.listProd.c2 li {flex:none; width:calc(50% - 3px); margin-top: 25px;}
-.listProd.c3 li {flex:none; width:calc(33.333% - 3px); margin-top: 25px;}
-.listProd .prodBox {position: relative;}
-.listProd .prodBox .prodImgBox {position: relative;}
-.listProd .prodBox .prodImgBox.border {box-shadow:inset 0 0 0 1px #ebebeb;}
-.listProd .prodBox .flag {position: absolute; top:5px; right:5px; display: block; width: 13px; height: 17px; background:url(../images/icon_flag_off.png) no-repeat center center; background-size: 100%; overflow:hidden; text-indent: -999px;}
-.listProd .prodBox .flag.on {background-image: url(../images/icon_flag_on.png);}
-.listProd .prodBox .activityBox {position: absolute; left:1px; bottom:1px; display: flex; align-items: center;}
-.listProd .prodBox .activityBox .itemActivity {width: 44px; height:16px; font-size: 10px; line-height: 16px; text-align: center;}
-.listProd .prodBox .activityBox .itemActivity.red {box-shadow: 0 0 0 1px #cf152d; background: #cf152d; color:#FFF;}
-.listProd .prodBox .activityBox .itemActivity.white {box-shadow: 0 0 0 1px #1c1c1c; background: #FFF; color:#1c1c1c;}
-.listProd .prodBox .activityBox .itemActivity + .itemActivity {margin-left: 1px;}
-.listProd .prodBox .btnPlay {position: absolute; right:5px; bottom:5px; width: 18px; height: 18px; background: url(../images/icon_play.png) no-repeat center center; background-size: 100%; overflow:hidden; text-indent: -999px;;}
-.listProd .prodBox .titProd {color: #1f1e1e; font-size: 11px; font-weight: 700; line-height: 11px; margin-top: 11px;}
-.listProd .prodBox .txtProd {color: #545454; font-size: 13px; font-weight: 400; line-height: 13px; margin-top: 8px; overflow:hidden; text-overflow: ellipsis; white-space: nowrap;}
-.listProd .prodBox .priceBox {display: flex; align-items: end; margin-top: 10px;}
-.listProd .prodBox .priceBox .oldPrice {color: #b1b1b1; font-size: 10px; font-weight: 400; line-height: 10px; text-decoration:line-through;}
-.listProd .prodBox .priceBox .newPrice {color: #1c1c1c; font-size: 15px; font-weight: 700; line-height: 15px;}
-.listProd .prodBox .priceBox .discount {color: #cf152d; font-size: 11px; font-weight: 700; line-height: 11px;}
-.listProd .prodBox .priceBox .oldPrice + .newPrice {margin-left: 10px;}
-.listProd .prodBox .priceBox .newPrice + .discount {margin-left: 10px;}
-.listProd .prodBox .colorBox {display: flex; margin-top: 8px;}
-.listProd .prodBox .colorBox .itemColor {display: block; width: 8px; height: 8px; border-radius: 1px;}
-.listProd .prodBox .colorBox * + * {margin-left: 2px;}
-.listProd .prodBox .colorBox .btnColorAdd {display: block; background: #999999 url(../images/icon_add.png) no-repeat center center; background-size: 4px; width: 8px; height: 8px; border-radius: 1px;}
-.listProd .prodBox .tagBox {display: flex; margin-top: 12px;}
-.listProd .prodBox .tagBox * + * {margin-left: 2px;}
-.listProd .prodBox .tagBox .itemTag {display: block; padding:0 3px; height:14px; background: #f5f6f9; color:#1a465f; font-size: 8px; line-height: 14px;}
+
+.listProdStyle1 {display:flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-top: -25px;}
+.listProdStyle1 li {flex:none; width:calc(50% - 3px); margin-top: 25px;;}
+.listProdStyle1.c2 li {flex:none; width:calc(50% - 3px); margin-top: 25px;}
+.listProdStyle1.c3 li {flex:none; width:calc(33.333% - 3px); margin-top: 25px;}
+
+.listProdStyle2 {padding:10px 15px;}
+.listProdStyle2 li {border-bottom: 1px solid #d9d9d9;}
+
+.prodBoxStyle1 {position: relative;}
+.prodBoxStyle1 .prodImgBox {position: relative;}
+.prodBoxStyle1 .prodImgBox.border {box-shadow:inset 0 0 0 1px #ebebeb;}
+.prodBoxStyle1 .flag {position: absolute; top:5px; right:5px; display: block; width: 13px; height: 17px; background:url(../images/icon_flag_off.png) no-repeat center center; background-size: 100%; overflow:hidden; text-indent: -999px;}
+.prodBoxStyle1 .flag.on {background-image: url(../images/icon_flag_on.png);}
+.prodBoxStyle1 .activityBox {position: absolute; left:1px; bottom:1px; display: flex; align-items: center;}
+.prodBoxStyle1 .activityBox .itemActivity {width: 44px; height:16px; font-size: 10px; line-height: 16px; text-align: center;}
+.prodBoxStyle1 .activityBox .itemActivity.red {box-shadow: 0 0 0 1px #cf152d; background: #cf152d; color:#FFF;}
+.prodBoxStyle1 .activityBox .itemActivity.white {box-shadow: 0 0 0 1px #1c1c1c; background: #FFF; color:#1c1c1c;}
+.prodBoxStyle1 .activityBox .itemActivity + .itemActivity {margin-left: 1px;}
+.prodBoxStyle1 .btnPlay {position: absolute; right:5px; bottom:5px; width: 18px; height: 18px; background: url(../images/icon_play.png) no-repeat center center; background-size: 100%; overflow:hidden; text-indent: -999px;;}
+.prodBoxStyle1 .titProd {color: #1f1e1e; font-size: 11px; font-weight: 700; line-height: 11px; margin-top: 11px;}
+.prodBoxStyle1 .txtProd {color: #545454; font-size: 13px; font-weight: 400; line-height: 15px; margin-top: 8px; overflow:hidden; text-overflow: ellipsis; white-space: nowrap;}
+.prodBoxStyle1 .priceBox {display: flex; align-items: end; margin-top: 10px;}
+.prodBoxStyle1 .priceBox .oldPrice {color: #b1b1b1; font-size: 10px; font-weight: 400; line-height: 10px; text-decoration:line-through;}
+.prodBoxStyle1 .priceBox .newPrice {color: #1c1c1c; font-size: 15px; font-weight: 700; line-height: 15px;}
+.prodBoxStyle1 .priceBox .discount {color: #cf152d; font-size: 11px; font-weight: 700; line-height: 11px;}
+.prodBoxStyle1 .priceBox .oldPrice + .newPrice {margin-left: 10px;}
+.prodBoxStyle1 .priceBox .newPrice + .discount {margin-left: 10px;}
+.prodBoxStyle1 .colorBox {display: flex; margin-top: 8px;}
+.prodBoxStyle1 .colorBox .itemColor {display: block; width: 8px; height: 8px; border-radius: 1px;}
+.prodBoxStyle1 .colorBox * + * {margin-left: 2px;}
+.prodBoxStyle1 .colorBox .btnColorAdd {display: block; background: #999999 url(../images/icon_add.png) no-repeat center center; background-size: 4px; width: 8px; height: 8px; border-radius: 1px;}
+.prodBoxStyle1 .tagBox {display: flex; margin-top: 12px;}
+.prodBoxStyle1 .tagBox * + * {margin-left: 2px;}
+.prodBoxStyle1 .tagBox .itemTag {display: block; padding:0 3px; height:14px; background: #f5f6f9; color:#1a465f; font-size: 8px; line-height: 14px;}
+.prodBoxStyle1 .layerBox {position: absolute; z-index: 1; left:0; right: 0; top: 0; bottom: 0; background: rgba(0,0,0,.4); display: flex; justify-content: center; align-items: center;}
+.prodBoxStyle1 .layerBox .txtLayer {color:#FFF; font-size: 15px; line-height: 17px; font-weight: 500;}
+
+
+.prodBoxStyle2 {display: flex; justify-content: space-between; align-items: center; padding:15px 0;}
+.prodBoxStyle2 .infoBox {display: flex; align-items: center; width:calc(100% - 90px)}
+.prodBoxStyle2 .num {flex:none; width: 22px; height: 22px; background: #7c7c7c; border-radius: 11px; color:#FFF; font-size: 15px; font-weight: 400; text-align: center; line-height: 22px;}
+.prodBoxStyle2 .num + .prodInfoBox {margin-left: 15px;}
+.prodBoxStyle2 .infoBox .prodInfoBox {width:90%;}
+.prodBoxStyle2 .infoBox + .prodImgBox {margin-left: 15px;}
+.prodBoxStyle2 .titProd {color: #1f1e1e; font-size: 11px; font-weight: 700; line-height: 11px; margin-top: 11px;}
+.prodBoxStyle2 .txtProd {color: #545454; font-size: 13px; font-weight: 400; line-height: 15px; margin-top: 8px; overflow:hidden; text-overflow: ellipsis; white-space: nowrap;}
+.prodBoxStyle2 .priceBox {display: flex; align-items: end; margin-top: 10px;}
+.prodBoxStyle2 .priceBox .oldPrice {color: #b1b1b1; font-size: 10px; font-weight: 400; line-height: 10px; text-decoration:line-through;}
+.prodBoxStyle2 .priceBox .newPrice {color: #1c1c1c; font-size: 15px; font-weight: 700; line-height: 15px;}
+.prodBoxStyle2 .priceBox .discount {color: #cf152d; font-size: 11px; font-weight: 700; line-height: 11px;}
+.prodBoxStyle2 .priceBox .oldPrice + .newPrice {margin-left: 10px;}
+.prodBoxStyle2 .priceBox .newPrice + .discount {margin-left: 10px;}
+.prodBoxStyle2 .colorBox {display: flex; margin-top: 8px;}
+.prodBoxStyle2 .colorBox .itemColor {display: block; width: 8px; height: 8px; border-radius: 1px;}
+.prodBoxStyle2 .colorBox * + * {margin-left: 2px;}
+.prodBoxStyle2 .colorBox .btnColorAdd {display: block; background: #999999 url(../images/icon_add.png) no-repeat center center; background-size: 4px; width: 8px; height: 8px; border-radius: 1px;}
+.prodBoxStyle2 .prodImgBox {flex:none; width: 75px; height:112.5px;}
 
 .btnMore {display: flex; justify-content: center; align-items: center; width: 180px; height:38px; margin:40px auto 0; box-shadow:inset 0 0 0 1px #444;}
 .btnMore .txtMore {color: #444444; font-size: 12px; line-height: 12px; font-weight: 400;}
@@ -126,3 +164,156 @@
 #footer .contactBox .listLink2 li + li::before {content:''; position: absolute; left:-13px; top:50%; width: 1px; height:6px; margin-top: -3px; background: #6a6a68;}
 #footer .contactBox .listLink2 li a {color: #6c6c6c; font-size: 11px; line-height: 14px; font-weight: 400;} 
 #footer .copyright {margin-top: 18px; color: #6a6a68; font-size: 9px; line-height: 9px; font-weight: 400;}
+
+.botMenuWrap {height:74px;}
+.botMenuWrap .botMenuBox {position: fixed; z-index: 9; left:0; bottom:0; right:0;}
+.botMenuWrap .botMenuBox .botMenu {display: flex; justify-content: space-around; align-items: center; background: #FFF; border-top: 1px solid #e7e7e7;}
+.botMenuWrap .botMenuBox .botMenu li {flex:0 0 20%;}
+.botMenuWrap .botMenuBox .botMenu .itemMenu {display: block; height:74px; padding-top: 48px; color: #3d3d3d; font-size:11px; line-height:11px; text-align: center; background-repeat: no-repeat;}
+.botMenuWrap .botMenuBox .botMenu .itemMenu.cate {background-image:url(../images/icon_bot_cate.png); background-size: 25px; background-position: center 18px;}
+.botMenuWrap .botMenuBox .botMenu .itemMenu.brand {background-image:url(../images/icon_bot_brand.png); background-size: 22px; background-position: center 15px;}
+.botMenuWrap .botMenuBox .botMenu .itemMenu.brand.on {background-image: url(../images/icon_bot_brand_on.png);}
+.botMenuWrap .botMenuBox .botMenu .itemMenu.home {background-image:url(../images/icon_bot_home.png); background-size: 26px; background-position: center 13px;}
+.botMenuWrap .botMenuBox .botMenu .itemMenu.my {background-image:url(../images/icon_bot_my.png); background-size: 20px; background-position: center 15px;}
+.botMenuWrap .botMenuBox .botMenu .itemMenu.flag {background-image:url(../images/icon_bot_flag.png); background-size: 15px; background-position: center 16px;}
+
+.openBotBrand .popBox .mask {z-index: 8;}
+
+.floatButtonBox {position: fixed; z-index: 8; right:10px; bottom:88px;}
+.floatButtonBox .floatButton li + li {margin-top: 6px;}
+.floatButtonBox .floatButton .itemButton {display: block; width:40px; height:40px; border-radius: 20px; box-shadow: 0 0 10px rgba(0,0,0,.2);}
+
+.popBox .mask {display: none; position: fixed; z-index: 9; left: 0; top: 0; right: 0; bottom: 0; background: rgba(0,0,0,.8);}
+.popBox .mask + * {z-index: 9;}
+.popBox .popCont {z-index: 10; display: none;}
+.popBox.on .popCont {display: block;}
+.popBox.on .mask {display: block;}
+
+.popBox.on .popBotBrand {bottom:75px;}
+.popBox .popBotBrand {display:block; z-index: 8; position: fixed; left:0; right:0; bottom:-100%; padding:20px 12px; border-radius: 5px 5px 0 0; background: #FFF; transition: bottom .3s;}
+.popBox .popBotBrand .btnCloseDown {display: block; width: 27px; height:20.5px; margin:10px auto 0; background: url(../images/btn_close_arrowDown.png) no-repeat center center; background-size:100%; overflow:hidden; text-indent: -999px;}
+.popBox .popBotBrand .listBrand li + li {margin-top: 10px;}
+
+.popBox .popBotSlide {position: fixed; z-index: 9; left:50%; bottom:0; width:100%; max-width:460px; transform: translateX(-50%);}
+.popBox .popBotSlide .swiperPopVisual {position: relative;}
+.popBox .popBotSlide .swiperPopVisual .swipePagination  {position: absolute; z-index: 2; top:11px; left:auto; right:7px; bottom:auto; width: 40px; height:15px; background:rgba(0,0,0,.3); border-radius: 8px; color:#FFF; font-size: 9px; line-height: 15px; font-weight: 400; text-align: center;}
+.popBox .popBotSlide .closeBox {display: flex; justify-content: space-between; align-items: center; height:40px; padding:0 12px; background: #FFF;}
+.popBox .popBotSlide .closeBox .txtClose {color: #6a6a68; font-size: 12px; font-weight: 400;}
+.popBox .popBotSlide .closeBox .btnClose {color: #6a6a68; font-size: 12px; font-weight: 400; background: none;}
+
+.popBox .popNotice {position: fixed; left:50%; top:30%; width:80%; max-width:300px; transform: translate(-50%, -50%);;}
+.popBox .popNotice .closeBox {display: flex; justify-content: space-between; align-items: center; height:30px; padding:0 12px; background: #FFF;}
+.popBox .popNotice .closeBox .txtClose {color: #6a6a68; font-size: 12px; font-weight: 400;}
+.popBox .popNotice .closeBox .btnClose {color: #6a6a68; font-size: 12px; font-weight: 400; background: none;}
+
+.popBox .popShopByLook {position: fixed; left:0; top:0; right:0; bottom:0; margin-top: 50px; background: #FFF; overflow-y:auto;}
+.popBox .popShopByLook .closeBox {z-index: 11; position: fixed; left:0; top:0; right:0; background: #FFF; display: flex; height:50px; justify-content: end; align-items: center; padding:0 14px;}
+.popBox .popShopByLook .btnClose {display: block; width: 22px; height: 22px; background:url(../images/btn_close_x_black.png) no-repeat center center; background-size:100%; overflow:hidden; text-indent: -999px;}
+.popBox .popShopByLook .swiperProdImg {position: relative;}
+.popBox .popShopByLook .swiperProdImg .swiperCont {position: relative;}
+.popBox .popShopByLook .swiperProdImg .swiperCont .num {z-index: 10; position: absolute; left: 0; top: 0; width: 24px; height: 24px; border:1px solid #FFF; background: #1c1c1c; text-align: center; color:#fff; font-size: 15px; line-height: 24px; font-weight: 400; border-radius: 12px;}
+.popBox .popShopByLook .swiperProdImg .btnSwiperPrev {z-index: 2; position: absolute; left: 15px; top:50%; width: 22px; height: 40px; margin-top: -20px;; background:url(../images/btn_swiper_prev_2.png) no-repeat center center; background-size:100%;}
+.popBox .popShopByLook .swiperProdImg .btnSwiperNext {z-index: 2; position: absolute; right:15px; top:50%; width: 22px; height: 40px; margin-top: -20px; background:url(../images/btn_swiper_next_2.png) no-repeat center center; background-size:100%;}
+
+.popBox.on .popCategory {left:0;}
+.popBox.on .popCategory .popHeader {left:0;}
+.popBox .popCategory {display: block; position: fixed; left:-100%; top:0; bottom:0; width: 100%; margin-top: 50px; background: #FFF; overflow-y:auto; overflow-x:hidden; transition: left .3s;}
+.popBox .popCategory .popHeader {position: fixed; left:-100%; top:0; width:100%; display: flex; justify-content: space-between; align-items: center; height:50px; padding:0 20px; background: #1c1c1c; transition: left .3s;}
+.popBox .popCategory .popHeader .logo {display: block; width: 133px; background:url(../images/logo_white.png) no-repeat center center; background-size: 100%; overflow:hidden; text-indent: -999px;}
+.popBox .popCategory .popHeader .btnClose {display: block; width: 17px; background:url(../images/btn_close_x_white.png) no-repeat center center; background-size: 100%; overflow: hidden; text-indent: -999px;}
+.popBox .popCategory .categoryWrap {padding:0 20px;}
+.popBox .popCategory .accountBox {display: flex; justify-content: space-between; align-items: center; height:68px; border-bottom: 1px solid #d0d0d0;}
+.popBox .popCategory .accountBox .txtAccount {position: relative; display: flex; align-items: center; padding-right: 15px; color: #231f20; font-size: 17px; font-weight: 700;}
+.popBox .popCategory .accountBox .txtAccount::after {content:''; position: absolute; top:50%; right:0; width:6px; height:10.5px; margin-top:-6px; background:url(../images/icon_btn_arrow_right.png) no-repeat center center; background-size: 100%;}
+.popBox .popCategory .accountBox .txtAccount .suffix {margin-left: 5px; font-weight: 400;}
+.popBox .popCategory .accountBox .listBtn {display: flex; align-items: center;}
+.popBox .popCategory .accountBox .listBtn li {position: relative;}
+.popBox .popCategory .accountBox .listBtn li + li {margin-left: 40px;}
+.popBox .popCategory .accountBox .listBtn li + li::before {content:''; position: absolute; left:-20px; top:50%; width: 1px; height:10px; margin-top: -5px; background: #1c1c1c;}
+.popBox .popCategory .accountBox .listBtn .itemBtn {color:#1c1c1c; font-size:16px; font-weight: 400;}
+.popBox .popCategory .btnCart {position: relative; display:block; width:31px; height:22px; padding-right: 13px; background:url(../images/icon_cart_black.png) no-repeat left center; background-size:18px;}
+.popBox .popCategory .btnCart .num {position: absolute; top:3px; right:3px; width: 19px; height: 15px; background:#000000; border-radius: 5px; color:#FFF; font-weight: 300; font-size: 10px; line-height: 15px; text-align: center;}
+
+
+.popBox .popCategory .category {padding:30px 0; border-bottom: 1px solid #d0d0d0;}
+.popBox .popCategory .category > li + li {margin-top: 30px;}
+.popBox .popCategory .category > li > a {position: relative; display: block; padding-right: 20px; color: #1c1c1c; font-size: 17px; font-weight: 500; {font-family: 'Red Hat Display', sans-serif;}}
+.popBox .popCategory .category > li > a::after {content:''; position: absolute; top:50%; right:0; width:7px; height:5px; margin-top: -3px; background: url(../images/icon_list_arrow_up.png) no-repeat center center; background-size: 100%; transform:rotate(180deg); transition: transform .1s;}
+.popBox .popCategory .category > li.on > a::after {transform: rotate(0);}
+.popBox .popCategory .category > li .subCategory {display: none;}
+.popBox .popCategory .category > li.on .subCategory {display: block;}
+.popBox .popCategory .menu {padding:35px 0; border-bottom: 1px solid #d0d0d0;}
+.popBox .popCategory .menu li + li {margin-top: 30px;}
+.popBox .popCategory .menu a {color: #1c1c1c; font-size: 15px; font-weight: 500;}
+.popBox .popCategory .menu a.on {color:#cf152d;}
+.popBox .popCategory .swiperCateProdBox {padding:35px 0; border-bottom: 1px solid #d0d0d0;}
+.popBox .popCategory .swiperCateProdBox .titSwiper {color: #1c1c1c; font-size: 23px; line-height: 25px; font-weight: 700;}
+.popBox .popCategory .swiperCateProd {margin-top: 15px;}
+.popBox .popCategory .swiperCateProd .swiper {overflow:visible;}
+.popBox .popCategory .swiperCateProd .swiper-slide {width:150px;}
+.popBox .popCategory .swiperCateProd .swiper-slide + .swiper-slide {margin-left: 6px;}
+.popBox .popCategory .swiperCateProd .titProd {margin-top: 10px; color: #1c1c1c; font-size: 12px; line-height: 14px; font-weight: 400;}
+
+.tabStyle1 .tabTitle {display:flex; flex-wrap:wrap; border-top: 1px solid #1c1c1c; border-bottom: 1px solid #1c1c1c;}
+.tabStyle1 .tabTitle li {position: relative; flex:0 0 33.333%;}
+.tabStyle1 .tabTitle li::after {content:''; position: absolute; left:0; bottom:0; right:0; height:1px; width:100%; background: #d9d9d9;}
+.tabStyle1 .tabTitle li .itemTitle {display:flex; justify-content: center; align-items: center; height:48px; color: #7c7c7c; font-size: 15px; line-height: 17px; font-weight: 400;}
+.tabStyle1 .tabTitle li.on .itemTitle {color:#1c1c1c; font-weight: 700;}
+.tabStyle1 .tabCont {display: none; margin-top: 38px;}
+.tabStyle1 .tabCont .itemCont + .itemCont {margin-top: 25px;}
+.tabStyle1 .tabCont.on {display: block;}
+
+.cateMenuBox {display: none; position: fixed; z-index: 1; left:0; top: 55px; right:0; background: #FFF;}
+.cateMenuBox .listMenu {display: flex; flex-wrap:wrap; justify-content: space-between; padding:15px 0;}
+.cateMenuBox .listMenu li {flex:0 0 50%;}
+.cateMenuBox .listMenu li a {display: flex; justify-content: center; align-items: center; height:40px; color:#000; font-size: 16px; font-weight: 500;}
+.openCateMenu .cateMenuBox {display: block;}
+
+.subContainer {margin-top: 55px;}
+
+.filterCateBox {padding:12px; border-bottom:1px solid #e6e2e0;}
+.filterCateBox .listFilterCate {display: flex; align-items: center; flex-wrap:wrap;}
+.filterCateBox .listFilterCate li {margin-right: 5px;}
+.filterCateBox .listFilterCate a {display: flex; justify-content: center; align-items: center; height:33px; padding:0 15px; border-radius: 20px; color: #a0a0a0; font-size: 14px; font-weight: 400; box-shadow: inset 0 0 0 1px #dddddd;}
+.filterCateBox .listFilterCate a.on {background: #1c1c1c; color:#FFF; box-shadow: none;}
+
+.listProdBox {padding:35px 12px;}
+.listProdBox .listHead {display: flex; justify-content: space-between; align-items: center;}
+.listProdBox .listHead .txtCount {color: #1c1c1c; font-size: 13px; line-height: 15px; font-weight: 400;}
+.listProdBox .listHead .toolBox {display: flex; align-items: center;}
+.listProdBox .listHead .toolBox * + * {margin-left: 20px;}
+.listProdBox .listHead .toolBox a {display: flex; color: #1c1c1c; font-size: 13px; line-height: 13px;}
+.listProdBox .listHead .toolBox .btnFilter {padding-left:17px; background:url(../images/icon_filter.png) no-repeat left center; background-size:13px;}
+.listProdBox .listHead .toolBox .btnSort {padding-left:17px; background:url(../images/icon_sort.png) no-repeat left center; background-size:14px;}
+.listProdBox .listHead + .listCont {margin-top: 23px;}
+
+.swiperProdBox {position: relative;}
+.swiperProdBox {padding:40px 12px;}
+.swiperProdBox .txtDRESSSHIRTS {width: 210px; margin:0 auto;}
+.swiperProdBox .titSwiper + .txtSwiper {margin-top: 13px; font-family: 'Red Hat Display', sans-serif; color: #767676; font-size: 13px; line-height: 15px; font-weight: 400;}
+.swiperProdBox .txtSwiper + .swiperBox {margin-top: 25px;}
+.swiperProdStyle1 {position: relative;}
+.swiperProdStyle1 .swiper-slide {width:40%;}
+.swiperProdStyle1 .swiper-slide + .swiper-slide {margin-left: 4px;}
+.swiperProdStyle1 .swiperCont .titProd {margin-top: 15px; color: #1c1c1c; font-size: 14px; line-height: 16px; font-weight: 700; overflow:hidden; text-overflow: ellipsis; white-space: nowrap;}
+.swiperProdStyle1 .swiperCont .txtProd {margin-top: 10px; color: #5c5c5c; font-size: 11px; line-height: 16px; font-weight: 400;}
+.swiperProdStyle1 .swiperCont .btnGo {display: inline-flex; justify-content: center; align-items: center; color:#FFF; font-size: 10px; height:18px; padding:0 4px; background: #1c1c1c; margin-top: 14px;}
+.swiperProdStyle1 .swiperScrollbar {z-index: 2; position: absolute; left:0; bottom:-35px; width:100%; height:2px; background: #efefef;}
+.swiperProdStyle1 .swiperScrollbar .swiper-scrollbar-drag {background: #111;}
+
+.swiperProdStyle2 {position: relative;}
+.swiperProdStyle2 .swiperScrollbar {z-index: 2; position: absolute; left:50%; bottom:40px; width:50px; margin-left:-25px; height:2px; background: #868985;}
+.swiperProdStyle2 .swiperScrollbar .swiper-scrollbar-drag {background: #FFF;}
+
+
+.txtCenter {text-align: center;}
+@media (min-width:480px){
+  .popBox .popBotBrand .listBrand {display:flex; justify-content: space-between; align-items: center; flex-wrap:wrap;}
+  .popBox .popBotBrand .listBrand li {flex:0 0 calc(50% - 5px); margin-bottom: 10px;}
+  .popBox .popBotBrand .listBrand li + li {margin-top: 0;}
+}
+
+@media (min-width:480px){
+  .tabStyle1 .tabTitle {flex-wrap:nowrap;}
+  .tabStyle1 .tabTitle li {position: relative; flex:1 1 auto;}
+}

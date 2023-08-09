@@ -24,7 +24,6 @@
     <!-- header -->
     <header id="header" class="bgWhite">
       <a href="#" class="btnPrev black">Prev</a>
-      <a href="#" class="btnCate arrow">SHIRTS</a>
       <div class="toolBox">
         <a href="#" class="btnCart black">
           <span class="num">0</span>
@@ -34,109 +33,28 @@
     </header>
     <!--// header -->
 
-    <!-- Cate Menu -->
-    <div class="cateMenuBox">
-      <ul class="listMenu">
-        <li><a href="#">SHIRTS</a></li>
-        <li><a href="#">SUIT&SET-UP</a></li>
-        <li><a href="#">TOP</a></li>
-        <li><a href="#">PANTS</a></li>
-        <li><a href="#">OUTER</a></li>
-        <li><a href="#">ACC</a></li>
-      </ul>
-    </div>
-    <!-- //Cate Menu -->
-
     <!-- container -->
     <div id="container">
       <div class="subContainer">
-        <!-- filter -->
-        <div class="filterCateBox">
-          <ul class="listFilterCate">
-            <li><a href="#">전체보기</a></li>
-            <li><a href="#" class="on">드레스셔츠</a></li>
-            <li><a href="#">캐주얼셔츠</a></li>
-          </ul>
-        </div>
-
-        <!-- DRESS SHIRTS -->
-        <div class="swiperProdBox">
-          <h2 class="titSwiper txtSwiperStyle2">
-            DRESS SHIRTS
-          </h2>
-          <p class="txtSwiper txtCenter">FIND YOUR FAVORITE FABRIC</p>
-          <div class="swiperBox">
-            <div class="swiperProdStyle1">
-              <div class="swiperScrollbar"></div>
-              <div class="swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="swiperCont">
-                      <div class="prodBox">
-                        <a href="#" class="prodImgBox">
-                          <img src="../images/img_DRESS_SHIRTS_01.jpg" alt="" />
-                        </a>
-                        <h3 class="titProd">크로스핏 수트</h3>
-                        <p class="txtProd">
-                          맞추지 않아도 맞춤처럼 딱 맞게! 맞춤 수트 대신 크로스핏 수트로 편하고 빠르게!
-                        </p>
-                        <a href="#" class="btnGo">바로가기</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="swiperCont">
-                      <div class="prodBox">
-                        <a href="#" class="prodImgBox">
-                          <img src="../images/img_DRESS_SHIRTS_02.jpg" alt="" />
-                        </a>
-                        <h3 class="titProd">프리미엄 이태리 수트</h3>
-                        <p class="txtProd">
-                          이태리 유럽의 럭셔리 수입원단과 시크릿 패턴으로 만든 고급 수트를 만나보세요
-                        </p>
-                        <a href="#" class="btnGo">바로가기</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="swiperCont">
-                      <div class="prodBox">
-                        <a href="#" class="prodImgBox">
-                          <img src="../images/img_DRESS_SHIRTS_03.jpg" alt="" />
-                        </a>
-                        <h3 class="titProd">시티보이 오버핏 셋업</h3>
-                        <p class="txtProd">
-                          여유로운 오버핏 실루엣의 시티보이 셋업. 일반 셋업보다 편안하고 캐주얼한 무드
-                        </p>
-                        <a href="#" class="btnGo">바로가기</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <script>
-              $(function () {
-                var swiperProdStyle1 = new Swiper(".swiperProdStyle1 .swiper", {
-                  slidesPerView: 2.5,
-                  spaceBetween:4,
-                  scrollbar: {
-                    el: ".swiperProdStyle1 .swiperScrollbar",
-                  },
-                });
-              })
-            </script>
+        <!-- Exhibition -->
+        <div class="exhibitionBox">
+          <div class="titBox">
+            <h2 class="titExhibition">[STCO] CONTEMPORARY SPRING COAT</h2>
+            <p class="txtDate">23.02.10 – 23.04.30</p>
           </div>
+          <div class="imgExhibition">
+            <img src="../images/img_exhibition.jpg" alt="" />
+          </div>
+          <p class="txtExhibition">[댄디 셋업] 한 벌만 있어도 회사, 데이트, 예식장에도 모두 어울리는 만능 아이템</p>
         </div>
-        
 
         <!-- list Product -->
         <div class="listProdBox">
           <div class="listHead">
             <p class="txtCount">1,354개의 상품</p>
             <div class="toolBox">
-              <a href="#" class="btnFilter">필터</a>
-              <a href="#" class="btnSort">추천순</a>
+              <button class="btnSort">추천상품</button>
+              <button class="btnSetting"></button>
             </div>
           </div>
           <div class="listCont">
@@ -207,6 +125,9 @@
               <li>
                 <div class="prodBoxStyle1">
                   <div class="prodImgBox border">
+                    <div class="layerBox">
+                      <p class="txtLayer">SOLD OUT</p>
+                    </div>
                     <a href="#" class="imgProd">
                       <img src="../images/img_prod_03.jpg" alt="" />
                     </a>
@@ -234,6 +155,7 @@
               </li>
               <li>
                 <div class="prodBoxStyle1">
+
                   <div class="prodImgBox border">
                     <a href="#" class="imgProd">
                       <img src="../images/img_prod_04.jpg" alt="" />

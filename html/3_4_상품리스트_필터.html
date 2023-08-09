@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>STCO</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <link type="text/css" rel="stylesheet" href="../css/swiper-bundle.min.css" />
+  <link type="text/css" rel="stylesheet" href="../css/style.css" />
+
+  <script src="../js/jquery-3.7.0.min.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
+  <!-- ui js -->
+  <script src="../js/design.js"></script>
+</head>
+
+<body>
+
+  <div id="wrap">
+
+    <!-- header -->
+    <header id="header" class="bgWhite">
+      <a href="#" class="btnPrev black">Prev</a>
+      <a href="#" class="btnCate arrow">SHIRTS</a>
+      <div class="toolBox">
+        <a href="#" class="btnCart black">
+          <span class="num">0</span>
+        </a>
+        <a href="#" class="btnSearch black">Search</a>
+      </div>
+    </header>
+    <!--// header -->
+
+    <!-- Cate Menu -->
+    <div class="cateMenuBox">
+      <ul class="listMenu">
+        <li><a href="#">SHIRTS</a></li>
+        <li><a href="#">SUIT&SET-UP</a></li>
+        <li><a href="#">TOP</a></li>
+        <li><a href="#">PANTS</a></li>
+        <li><a href="#">OUTER</a></li>
+        <li><a href="#">ACC</a></li>
+      </ul>
+    </div>
+    <!-- //Cate Menu -->
+
+    <!-- container -->
+    <div id="container">
+      <div class="subContainer">
+        <!-- filter -->
+        <div class="filterCateBox">
+          <ul class="listFilterCate">
+            <li><a href="#" class="on">전체보기</a></li>
+            <li><a href="#">드레스셔츠</a></li>
+            <li><a href="#">캐주얼셔츠</a></li>
+          </ul>
+        </div>
+
+        <!-- list Product -->
+        <div class="listProdBox">
+          <div class="listHead">
+            <p class="txtCount">1,354개의 상품</p>
+            <div class="toolBox">
+              <a href="javascript:openPop('popFilter')" class="btnFilter">필터</a>
+              <a href="#" class="btnSort">추천순</a>
+            </div>
+          </div>
+          <div class="listCont">
+            <ul class="listProdStyle1">
+              <li>
+                <div class="prodBoxStyle1">
+                  <div class="prodImgBox border">
+                    <a href="#" class="imgProd">
+                      <img src="../images/img_prod_01.jpg" alt="" />
+                    </a>
+                    <a href="javascript:void(0);" class="flag">Flag</a>
+                    <div class="activityBox">
+                      <span class="itemActivity red">타임특가</span>
+                      <span class="itemActivity white">묶음할인</span>
+                    </div>
+                    <a href="#" class="btnPlay">Play</a>
+                  </div>
+                  <h3 class="titProd ">STCO</h3>
+                  <p class="txtProd">베이직핏 워셔블 가디건</p>
+                  <div class="priceBox">
+                    <span class="oldPrice">329,000</span>
+                    <span class="newPrice">199,000</span>
+                    <span class="discount">20%</span>
+                  </div>
+                  <div class="colorBox">
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#e7e7e7;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#e6dfd5;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#b7cce6;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#e5d5e6;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#9ea79d;"></a>
+                    <a href="javascript:void(0);" class="btnColorAdd"></a>
+                  </div>
+                  <div class="tagBox">
+                    <a href="#" class="itemTag ">BIG</a>
+                    <a href="#" class="itemTag">오늘출발</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="prodBoxStyle1">
+                  <div class="prodImgBox border">
+                    <a href="#" class="imgProd">
+                      <img src="../images/img_prod_02.jpg" alt="" />
+                    </a>
+                    <a href="javascript:void(0);" class="flag on">Flag</a>
+                    <div class="activityBox">
+                      <span class="itemActivity red">주말특가</span>
+                    </div>
+                  </div>
+                  <h3 class="titProd ">CODI GALLERY</h3>
+                  <p class="txtProd">가먼트다잉 밴딩 와이드 치노 팬 long text</p>
+                  <div class="priceBox">
+                    <span class="oldPrice">89,000</span>
+                    <span class="newPrice">39,000</span>
+                    <span class="discount">40%</span>
+                  </div>
+                  <div class="colorBox">
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#cfbb98;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#222939;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#6b8f68;"></a>
+                  </div>
+                  <div class="tagBox">
+                    <a href="#" class="itemTag">단품가능</a>
+                    <a href="#" class="itemTag">블랙라벨</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="prodBoxStyle1">
+                  <div class="prodImgBox border">
+                    <div class="layerBox">
+                      <p class="txtLayer">SOLD OUT</p>
+                    </div>
+                    <a href="#" class="imgProd">
+                      <img src="../images/img_prod_03.jpg" alt="" />
+                    </a>
+                    <a href="javascript:void(0);" class="flag">Flag</a>
+                  </div>
+                  <h3 class="titProd ">STCO</h3>
+                  <p class="txtProd">울블렌드 셔츠 카라 니트 </p>
+                  <div class="priceBox">
+                    <span class="oldPrice">329,000</span>
+                    <span class="newPrice">199,000</span>
+                    <span class="discount">20%</span>
+                  </div>
+                  <div class="colorBox">
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#e7e7e7;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#e6dfd5;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#b7cce6;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#e5d5e6;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#9ea79d;"></a>
+                    <a href="javascript:void(0);" class="btnColorAdd"></a>
+                  </div>
+                  <div class="tagBox">
+                    <a href="#" class="itemTag">주니어</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="prodBoxStyle1">
+
+                  <div class="prodImgBox border">
+                    <a href="#" class="imgProd">
+                      <img src="../images/img_prod_04.jpg" alt="" />
+                    </a>
+                    <a href="javascript:void(0);" class="flag on">Flag</a>
+                    <div class="activityBox">
+                      <span class="itemActivity red">주말특가</span>
+                    </div>
+                  </div>
+                  <h3 class="titProd ">CODI GALLERY</h3>
+                  <p class="txtProd">싱글 브레스티드 크링클 자켓</p>
+                  <div class="priceBox">
+                    <span class="oldPrice">89,000</span>
+                    <span class="newPrice">39,000</span>
+                    <span class="discount">40%</span>
+                  </div>
+                  <div class="colorBox">
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#cfbb98;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#222939;"></a>
+                    <a href="javascript:void(0);" class="itemColor" style="background-color:#6b8f68;"></a>
+                  </div>
+                  <div class="tagBox">
+                    <a href="#" class="itemTag">단품가능</a>
+                    <a href="#" class="itemTag">블랙라벨</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="csBox">
+        <h2 class="titCs">고객센터 <a href="tel:070-4687-7342" class="txtPhone">070-4687-7342</a></h2>
+        <p class="txtCs">
+          운영시간 평일 10:00 - 17:00 (토∙일, 공휴일 휴무)
+          <br />
+          점심시간 평일 12:00 - 13:00
+        </p>
+      </div>
+      <div class="contactBox">
+        <p class="txtContact1">
+          <span>(주)에스티오</span>
+          <button class="toggleContact2">사업자 정보 <i class="iconArrow"></i></button>
+        </p>
+        <p class="txtContact2">
+          서울시 강서구 양천로 583 우림블루나인비지니스센터 B동 15층
+          <br />
+          대표자 : 김흥수 / 사업자등록번호 : 206-81-79031
+          <br />
+          통신판매업신고 : 제2009 서울강서 0684호 / 개인정보관리책임자 : 안중태
+          <br />
+          대표메일주소 : stoonline@stco.co.kr
+        </p>
+        <ul class="listLink">
+          <li><a href="#" class="linkContact">이용약관</a></li>
+          <li><a href="#" class="linkContact">개인정보처리방침</a></li>
+        </ul>
+        <ul class="listLink2">
+          <li><a href="#">회사소개</a></li>
+          <li><a href="#">고객센터</a></li>
+          <li><a href="#">에스크로가입확인</a></li>
+        </ul>
+      </div>
+      <p class="copyright ">Copyright© STO. All right reserved</p>
+    </footer>
+    <!--// footer end -->
+
+    <!-- Bot Menu -->
+    <div class="botMenuWrap">
+      <div class="botMenuBox">
+        <ul class="botMenu">
+          <li>
+            <a href="javascript:void(0);" class="itemMenu cate" onclick="openPop('popCategory')">카테고리</a>
+          </li>
+          <li>
+            <a id="btnBrand" href="javascript:void(0);" onclick="botBrandClick(this)" class="itemMenu brand">브랜드</a>
+          </li>
+          <li>
+            <a href="#" class="itemMenu home">홈</a>
+          </li>
+          <li>
+            <a href="#" class="itemMenu my">MY</a>
+          </li>
+          <li>
+            <a href="#" class="itemMenu flag">찜</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- // Bot Menu -->
+
+    <!-- float button -->
+    <div class="floatButtonBox">
+      <ul class="floatButton">
+        <li><a href="#" class="itemButton"><img src="../images/icon_record.png" alt="Record"></a></li>
+        <li><a href="#" id="btnTop" class="itemButton"><img src="../images/icon_top.png" alt="Top"></a></li>
+      </ul>
+    </div>
+    <!-- // float button -->
+
+    <!-- pop filter -->
+    <div class="popBox" id="popFilter">
+      <div class="mask"></div>
+      <div class="popCont popFilter">
+        <div class="popHead">
+          <a href="javascript:void(0);" onclick="closePop(this);" class="btnPrev">Prev</a>
+          <h2 class="titPopHead">필터</h2>
+        </div>
+        <div class="popBody">
+          <div class="filterOptionBox">
+            <div class="itemFilterOption on">
+              <button class="titFilterOption">브랜드</button>
+              <div class="contFilter">
+                <ul class="listFilter c2">
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkBrand" id="checkBrand1">
+                      <label for="checkBrand1">STCO</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkBrand" id="checkBrand2">
+                      <label for="checkBrand2">DIEMS</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkBrand" id="checkBrand3">
+                      <label for="checkBrand3">코디갤러리</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkBrand" id="checkBrand4">
+                      <label for="checkBrand4">제로라운지</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkBrand" id="checkBrand5">
+                      <label for="checkBrand5">코디주니어</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkBrand" id="checkBrand6">
+                      <label for="checkBrand6">HAUS</label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="itemFilterOption on">
+              <button class="titFilterOption">소재</button>
+              <div class="contFilter">
+                <ul class="listFilter c2">
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkMaterial" id="checkMaterial1">
+                      <label for="checkMaterial1">쭉 [신축성] (23)</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkMaterial" id="checkMaterial2">
+                      <label for="checkMaterial2">폼 [고밀도] (21)</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkMaterial" id="checkMaterial3">
+                      <label for="checkMaterial3">뽀송 [땀배출] (12)</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkMaterial" id="checkMaterial4">
+                      <label for="checkMaterial4">툭 [구김적음] (6)</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkMaterial" id="checkMaterial5">
+                      <label for="checkMaterial5">RENEW WORK (23)</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkMaterial" id="checkMaterial6">
+                      <label for="checkMaterial6">블랙라인 (6)</label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="itemFilterOption on">
+              <button class="titFilterOption">핏</button>
+              <div class="contFilter">
+                <ul class="listFilter c2">
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkFit1" id="checkFit1">
+                      <label for="checkFit1">릴렉스핏 (23)</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkFit" id="checkFit2">
+                      <label for="checkFit2">슬림핏 (21)</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkFit" id="checkFit3">
+                      <label for="checkFit3">컴포트핏 (12)</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkFit" id="checkFit4">
+                      <label for="checkFit4">오버핏 (6)</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkFit" id="checkFit5">
+                      <label for="checkFit5">클래시핏 (23)</label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="itemFilterOption on">
+              <button class="titFilterOption">디테일</button>
+              <div class="contFilter">
+                <ul class="listFilter c2">
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkDetail" id="checkDetail1">
+                      <label for="checkDetail1">레귤러카라</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkDetail" id="checkDetail2">
+                      <label for="checkDetail2">와이드카라</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkDetail" id="checkDetail3">
+                      <label for="checkDetail3">버튼다운카라</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkDetail" id="checkDetail4">
+                      <label for="checkDetail4">헨리넥카라</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkDetail" id="checkDetail5">
+                      <label for="checkDetail5">오픈카라</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkDetail" id="checkDetail6">
+                      <label for="checkDetail6">반소매</label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="itemFilterOption on">
+              <button class="titFilterOption">색상</button>
+              <div class="contFilter">
+                <ul class="listFilter color">
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkColor" id="checkColor1">
+                      <label for="checkColor1" style="background-color: #1c1c1c;"></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkColor" id="checkColor2">
+                      <label for="checkColor2" style="background-color: #ffffff;"></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkColor" id="checkColor3">
+                      <label for="checkColor3" style="background-color: #959595;"></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkColor" id="checkColor4">
+                      <label for="checkColor4" style="background-color: #083047;"></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkColor" id="checkColor5">
+                      <label for="checkColor5" style="background-color: #077dbf;"></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkColor" id="checkColor6">
+                      <label for="checkColor6" style="background-color: #1e7a36;"></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkColor" id="checkColor7">
+                      <label for="checkColor7" style="background-color: #5d5c3b;"></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkColor" id="checkColor8">
+                      <label for="checkColor8" style="background-color: #f32569;"></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkColor" id="checkColor9">
+                      <label for="checkColor9" style="background-color: #197f8d;"></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkColor" id="checkColor10">
+                      <label for="checkColor10" style="background-color: #82391a;"></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkColor" id="checkColor11">
+                      <label for="checkColor11" style="background-color: #ffda37;"></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkColor" id="checkColor12">
+                      <label for="checkColor12" style="background-color: #e50c1f;"></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkColor" id="checkColor13">
+                      <label for="checkColor13" style="background-color: #7e1b6d;"></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkColor" id="checkColor14">
+                      <label for="checkColor14" style="background-color: #fe711f;"></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkColor" id="checkColor15">
+                      <label for="checkColor15" style="background-color: #fe711f;"></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkColor" id="checkColor16">
+                      <label for="checkColor16" style="background-color: #c4d74c;"></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkColor" id="checkColor17">
+                      <label for="checkColor17" style="background-color: #4a1976;"></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkColor" id="checkColor18">
+                      <label for="checkColor18" style="background-color: #b5ddf3;"></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkColor" id="checkColor19">
+                      <label for="checkColor19" style="background-color: #fae1b0;"></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkColor" id="checkColor20">
+                      <label for="checkColor20" style="background-color: #d1cab9;"></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkColor" id="checkColor21">
+                      <label for="checkColor21" style="background-color: #b5f3e2;"></label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="itemFilterOption on">
+              <button class="titFilterOption">사이즈</button>
+              <div class="contFilter">
+                <div class="itemSubCont">
+                  <h3 class="titSubFilterOption">상의</h3>
+                  <ul class="listFilter c3">
+                    <li>
+                      <div class="filterOption">
+                        <input type="checkbox" name="checkCoat" id="checkCoat1">
+                        <label for="checkCoat1">95</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="filterOption">
+                        <input type="checkbox" name="checkCoat" id="checkCoat2">
+                        <label for="checkCoat2">100</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="filterOption">
+                        <input type="checkbox" name="checkCoat" id="checkCoat3">
+                        <label for="checkCoat3">105</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="filterOption">
+                        <input type="checkbox" name="checkCoat" id="checkCoat4">
+                        <label for="checkCoat4">110</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="filterOption">
+                        <input type="checkbox" name="checkCoat" id="checkCoat5">
+                        <label for="checkCoat5">115</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="filterOption">
+                        <input type="checkbox" name="checkCoat" id="checkCoat6">
+                        <label for="checkCoat6">120</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="filterOption">
+                        <input type="checkbox" name="checkCoat" id="checkCoat7">
+                        <label for="checkCoat7">S</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="filterOption">
+                        <input type="checkbox" name="checkCoat" id="checkCoat8">
+                        <label for="checkCoat8">M</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="filterOption">
+                        <input type="checkbox" name="checkCoat" id="checkCoat9">
+                        <label for="checkCoat9">L</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="filterOption">
+                        <input type="checkbox" name="checkCoat" id="checkCoat10">
+                        <label for="checkCoat10">XL</label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="itemSubCont">
+                  <h3 class="titSubFilterOption">하의</h3>
+                  <ul class="listFilter c3">
+                    <li>
+                      <div class="filterOption">
+                        <input type="checkbox" name="checkPants" id="checkPants1">
+                        <label for="checkPants1">78</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="filterOption">
+                        <input type="checkbox" name="checkPants" id="checkPants2">
+                        <label for="checkPants2">80</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="filterOption">
+                        <input type="checkbox" name="checkPants" id="checkPants3">
+                        <label for="checkPants3">82</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="filterOption">
+                        <input type="checkbox" name="checkPants" id="checkPants4">
+                        <label for="checkPants4">84</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="filterOption">
+                        <input type="checkbox" name="checkPants" id="checkPants5">
+                        <label for="checkPants5">86</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="filterOption">
+                        <input type="checkbox" name="checkPants" id="checkPants6">
+                        <label for="checkPants6">88</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="filterOption">
+                        <input type="checkbox" name="checkPants" id="checkPants7">
+                        <label for="checkPants7">S</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="filterOption">
+                        <input type="checkbox" name="checkPants" id="checkPants8">
+                        <label for="checkPants8">M</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="filterOption">
+                        <input type="checkbox" name="checkPants" id="checkPants9">
+                        <label for="checkPants9">L</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="filterOption">
+                        <input type="checkbox" name="checkPants" id="checkPants10">
+                        <label for="checkPants10">XL</label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="itemFilterOption on">
+              <button class="titFilterOption">시즌</button>
+              <div class="contFilter">
+                <ul class="listFilter c3">
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkSeason" id="checkSeason1">
+                      <label for="checkSeason1">봄</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkSeason" id="checkSeason2">
+                      <label for="checkSeason2">여름</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkSeason" id="checkSeason3">
+                      <label for="checkSeason3">가을</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filterOption">
+                      <input type="checkbox" name="checkSeason" id="checkSeason4">
+                      <label for="checkSeason4">겨울</label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="itemFilterOption on">
+              <button class="titFilterOption">가격대 설정</button>
+              <div class="contFilter">
+                <div class="priceFilter">
+                  <div id="priceRangeScroll" class="priceRangeScroll">
+                    <button class="begin"><span>0원</span></button>
+                    <button class="end"><span>1,000,000+</span></button>
+                  </div>
+                  <div class="priceRangeInput">
+                    <input type="text" class="textPrice" placeholder="0원">
+                    <span class="sign">~</span>
+                    <input type="text" class="textPrice" placeholder="1,000,000원">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filterResult">
+              <button class="buttonFilterResult">블루</button>
+              <button class="buttonFilterResult">2-BUTTON</button>
+              <button class="buttonFilterResult">릴렉스핏</button>
+              <button class="buttonFilterResult">기능성소재</button>
+            </div>
+            <div class="btnFilterBox">
+              <button class="btnFilterReset">Resize</button>
+              <button class="btnFilterSubmit">상품보기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- // pop filter -->
+  </div>
+
+</body>
+
+</html>

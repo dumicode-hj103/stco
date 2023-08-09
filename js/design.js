@@ -1,6 +1,15 @@
 $(function () {
   $(window).scroll(function () {
+    if($(window).scrollTop() > 0){
+      $('body').addClass('headerFixed');
+    }else{
+      $('body').removeClass('headerFixed');
+    }
+  });
 
+  $('.contactBox .toggleContact2').click(function(){
+    $(this).toggleClass('on');
+    $('.contactBox .txtContact2').toggle();
   });
 
   $('#btnTop').click(function () {
@@ -23,6 +32,11 @@ $(function () {
 
   $('#header .btnCate').click(function(){
     $('body').toggleClass('openCateMenu');
+    return false;
+  });
+
+  $('.filterOptionBox .itemFilterOption .titFilterOption').click(function(){
+    $(this).parent('.itemFilterOption').toggleClass('on');
   });
 });
 

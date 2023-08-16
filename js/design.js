@@ -38,6 +38,10 @@ $(function () {
   $('.filterOptionBox .itemFilterOption .titFilterOption').click(function(){
     $(this).parent('.itemFilterOption').toggleClass('on');
   });
+
+  $('.tbl1v1 .trData').click(function(){
+    $(this).next().toggleClass('on');
+  });
 });
 
 function openPop(id) {

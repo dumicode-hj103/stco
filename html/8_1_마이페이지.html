@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>STCO</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <link type="text/css" rel="stylesheet" href="../css/swiper-bundle.min.css" />
+  <link type="text/css" rel="stylesheet" href="../css/style.css" />
+
+  <script src="../js/jquery-3.7.0.min.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
+  <!-- ui js -->
+  <script src="../js/design.js"></script>
+</head>
+
+<body>
+
+  <div id="wrap">
+
+    <!-- header -->
+    <header id="header" class="bgWhite">
+      <a href="#" class="btnPrev black">Prev</a>
+      <h1 class="titPage black">마이페이지</h1>
+      <div class="toolBox">
+        <a href="#" class="btnCart black">
+          <span class="num">0</span>
+        </a>
+        <a href="javascript:openPop('popSearch')" class="btnSearch black">Search</a>
+      </div>
+    </header>
+    <!--// header -->
+
+    <!-- container -->
+    <div id="container">
+      <div class="subContainer">
+       <div class="myPageWrap">
+        <div class="accountBox1">
+          <div class="leftBox">
+            <a href="#" class="btnLevel">회원등급</a>
+            <p class="txtName">홍길동님</p>
+          </div>
+          <div class="rightBox">
+            <a href="#" class="btnRight">등급혜택</a>
+            <a href="#" class="btnRight">정보수정</a>
+          </div>
+        </div>
+        <div class="accountBox2">
+          <ul>
+            <li>
+              <a href="#" class="itemAccountBox2">
+                <span class="titAccountBox2">0</span>
+                <span class="txtAccountBox2">쿠폰</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="itemAccountBox2">
+                <span class="titAccountBox2">3000</span>
+                <span class="txtAccountBox2">마일리지</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="itemAccountBox2">
+                <span class="titAccountBox2 iconShipping"></span>
+                <span class="txtAccountBox2">주문/배송조회</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="accountBox3">
+          <ul class="shopProcess">
+            <li>
+              <div class="itemProcess">
+                <a href="#" class="numProcess">0</a>
+                <p class="txtProcess">입금대기중</p>
+              </div>
+            </li>
+            <li>
+              <div class="itemProcess">
+                <a href="#" class="numProcess">0</a>
+                <p class="txtProcess">결제완료</p>
+              </div>
+            </li>
+            <li>
+              <div class="itemProcess">
+                <a href="#" class="numProcess on">2</a>
+                <p class="txtProcess">상품/배송준비</p>
+              </div>
+            </li>
+            <li>
+              <div class="itemProcess">
+                <a href="#" class="numProcess">0</a>
+                <p class="txtProcess">배송중</p>
+              </div>
+            </li>
+            <li>
+              <div class="itemProcess">
+                <a href="#" class="numProcess on">6</a>
+                <p class="txtProcess">배송완료</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="accountBox4">
+          <ul class="afterSaleBox">
+            <li>
+              <div class="itemAfterSale">
+                <p class="txtAfterSale">취소</p>
+                <a href="#" class="numAfterSale">0</a>
+              </div>
+            </li>
+            <li>
+              <div class="itemAfterSale">
+                <p class="txtAfterSale">교환/반품</p>
+                <a href="#" class="numAfterSale">0</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="bannerBox">
+          <a href="#" class="imgBox">
+            <img src="../images/img_mypage_banner.jpg" alt="BANNER" />
+          </a>
+        </div>
+        <div class="myPageMenuBox">
+          <ul class="myPageMenu">
+            <li>
+              <a href="#" class="itemMenu">
+                <span class="iconMenu iconFlag"></span>
+                <span class="txtMenu">찜리스트</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="itemMenu">
+                <span class="iconMenu iconReview"></span>
+                <span class="txtMenu">My 리뷰</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="itemMenu">
+                <span class="iconMenu iconQa"></span>
+                <span class="txtMenu">상품 Q&A</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="itemMenu">
+                <span class="iconMenu icon1v1"></span>
+                <span class="txtMenu">1:1 문의</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="itemMenu">
+                <span class="iconMenu iconAddr"></span>
+                <span class="txtMenu">배송지</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="itemMenu">
+                <span class="iconMenu iconLogout"></span>
+                <span class="txtMenu">회원탈퇴</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="itemMenu">
+                <span class="iconMenu iconSetting"></span>
+                <span class="txtMenu">APP 설정</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="companyInfoBox">
+          <h2 class="titCompany">기업고객 정보</h2>
+          <table class="tbl tblDataStyle1 borderBlack">
+            <thead>
+              <th>할인한도</th>
+              <th>사용금액</th>
+              <th>잔여한도</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1,000,000</td>
+                <td>0</td>
+                <td><span class="colorRed">1,000,000</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+       </div>
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- pop search -->
+    <div class="popBox" id="popSearch">
+      <div class="mask"></div>
+      <div class="popCont popSearch">
+        <div class="topBox">
+          <button class="btnClose" onclick="closePop(this);">닫기</button>
+          <div class="textSearchBox">
+            <input type="text" class="textSearch" placeholder="검색어를 입력해주세요"/>
+            <button class="btnSearch">Search</button>
+          </div>
+        </div>
+        <div class="searchRecordBox">
+          <div class="titBox">
+            <h2 class="titSearchRecord">최근 검색어</h2>
+            <button class="btnDel">검색기록 모두삭제</button>
+          </div>
+          <ul class="listSearchRecord">
+            <li>
+              <div class="itemSearchRecord">
+                <p class="txtRecord">해리스트위드</p>
+                <button class="btnItemDel">Delete</button>
+              </div>
+            </li>
+            <li>
+              <div class="itemSearchRecord">
+                <p class="txtRecord">셔츠</p>
+                <button class="btnItemDel">Delete</button>
+              </div>
+            </li>
+            <li>
+              <div class="itemSearchRecord">
+                <p class="txtRecord">팬츠</p>
+                <button class="btnItemDel">Delete</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- // pop search -->
+  </div>
+
+</body>
+
+</html>

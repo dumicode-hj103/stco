@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>STCO</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <link type="text/css" rel="stylesheet" href="../css/swiper-bundle.min.css" />
+  <link type="text/css" rel="stylesheet" href="../css/style.css" />
+
+  <script src="../js/jquery-3.7.0.min.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
+  <!-- ui js -->
+  <script src="../js/design.js"></script>
+</head>
+
+<body>
+
+  <div id="wrap">
+
+    <!-- header -->
+    <header id="header" class="bgWhite">
+      <a href="#" class="btnPrev black">Prev</a>
+      <h1 class="titPage black">1:1 문의</h1>
+      <div class="toolBox">
+        <a href="#" class="btnCart black">
+          <span class="num">0</span>
+        </a>
+        <a href="javascript:openPop('popSearch')" class="btnSearch black">Search</a>
+      </div>
+    </header>
+    <!--// header -->
+
+    <!-- container -->
+    <div id="container">
+      <div class="subContainer">
+       <div class="myPageWrap">
+        <div class="formBox formPadding">
+          <div class="formRow">
+            <h3 class="titRow">문의유형</h3>
+            <div class="contRow">
+              <select class="select">
+                <option value="">문의 유형을 선택해주세요.</option>
+                <option value="">회원정보</option>
+                <option value="">배송문의</option>
+                <option value="">상품문의</option>
+                <option value="">반품/교환문의</option>
+                <option value="">취소/환불문의</option>
+                <option value="">주문결제</option>
+                <option value="">마일리지/쿠폰문의</option>
+                <option value="">시스템문의</option>
+                <option value="">기타문의</option>
+              </select>
+            </div>
+          </div>
+          <div class="formRow">
+            <h3 class="titRow">주문상품</h3>
+            <div class="contRow">
+              <div class="inputBtnBox">
+                <input type="text" class="text" />
+                <button class="btnForm btnFormStyle1">주문내역보기</button>
+              </div>
+            </div>
+            <div class="rowAfterBox">
+              <div class="chkStyle1">
+                <input type="checkbox" id="chkOrder"/>
+                <label for="chkOrder">주문내역과 관계 없음</label>
+              </div>
+            </div>
+          </div>
+          <div class="formRow">
+            <h3 class="titRow">휴대폰 번호</h3>
+            <div class="contRow">
+              <div class="telBox">
+                <input type="text" class="text" placeholder="010" maxlength="3"/>
+                <input type="text" class="text" placeholder="0000" maxlength="4"/>
+                <input type="text" class="text" placeholder="0000" maxlength="4"/>
+              </div>
+            </div>
+          </div>
+          <div class="formRow">
+            <h3 class="titRow">문의내용</h3>
+            <div class="contRow">
+              <textarea class="textarea" placeholder="욕설이나 비속어를 입력할 경우, 글 전체 블라인드 처리되어 답변을 받지 못하실 수 있습니다."></textarea>
+            </div>
+          </div>
+          <div class="formRow">
+            <h3 class="titRow">사진첨부</h3>
+            <div class="contRow">
+              <div class="attaBox">
+                <button class="itemAtta"></button>
+                <button class="itemAtta"></button>
+                <button class="itemAtta"></button>
+              </div>
+              <div class="attaTxtBox">
+                <p class="txtItem">파일명은 영문만 가능하며 최대 5Mb 의 용량 제한이 있습니다.</p>
+                <p class="txtItem">첨부파일은 최대 3개까지 등록 가능합니다.</p>
+                <p class="txtItem">첨부파일은 jpg, png 형식으로 등록 가능합니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btnBox">
+          <a href="#" class="btn btnStyle1">
+            <span class="txtBtn">완료</span>
+          </a>
+        </div>
+       </div>
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- pop search -->
+    <div class="popBox" id="popSearch">
+      <div class="mask"></div>
+      <div class="popCont popSearch">
+        <div class="topBox">
+          <button class="btnClose" onclick="closePop(this);">닫기</button>
+          <div class="textSearchBox">
+            <input type="text" class="textSearch" placeholder="검색어를 입력해주세요"/>
+            <button class="btnSearch">Search</button>
+          </div>
+        </div>
+        <div class="searchRecordBox">
+          <div class="titBox">
+            <h2 class="titSearchRecord">최근 검색어</h2>
+            <button class="btnDel">검색기록 모두삭제</button>
+          </div>
+          <ul class="listSearchRecord">
+            <li>
+              <div class="itemSearchRecord">
+                <p class="txtRecord">해리스트위드</p>
+                <button class="btnItemDel">Delete</button>
+              </div>
+            </li>
+            <li>
+              <div class="itemSearchRecord">
+                <p class="txtRecord">셔츠</p>
+                <button class="btnItemDel">Delete</button>
+              </div>
+            </li>
+            <li>
+              <div class="itemSearchRecord">
+                <p class="txtRecord">팬츠</p>
+                <button class="btnItemDel">Delete</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- // pop search -->
+  </div>
+
+</body>
+
+</html>

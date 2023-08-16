@@ -134,7 +134,7 @@ body.openPop {overflow:hidden;}
 
 .btnMore {display: flex; justify-content: center; align-items: center; width: 180px; height:38px; margin:40px auto 0; box-shadow:inset 0 0 0 1px #444;}
 .btnMore .txtMore {color: #444444; font-size: 12px; line-height: 12px; font-weight: 400;}
-.btnMore .iconMore {margin-left: 10px; display: block; width: 3px; height:6px; background:url(../images/icon_btn_arrow_right.png) no-repeat center center; background-size: 100%;}
+.btnMore .iconMore {margin-left: 10px; display: block; width: 3px; height:6px; background:url(../images/icon_btn_arrow_right_black.png) no-repeat center center; background-size: 100%;}
 
 .listLook {display: flex; justify-content: space-between; align-items: center; flex-wrap:wrap; margin-top: -6px;}
 .listLook li {flex:0 0 calc(50% - 3px); margin-top: 6px;}
@@ -218,13 +218,30 @@ body.openPop {overflow:hidden;}
 .popBox .popNotice .closeBox .btnClose {color: #6a6a68; font-size: 12px; font-weight: 400; background: none;}
 
 .popBox .popShopByLook {position: fixed; left:0; top:0; right:0; bottom:0; margin-top: 50px; background: #FFF; overflow-y:auto;}
-.popBox .popShopByLook .closeBox {z-index: 11; position: fixed; left:0; top:0; right:0; background: #FFF; display: flex; height:50px; justify-content: end; align-items: center; padding:0 14px;}
+.popBox .popShopByLook .closeBox {z-index: 11; position: fixed; left:0; top:0; width:100%; background: #FFF; display: flex; height:50px; justify-content: end; align-items: center; padding:0 14px;}
 .popBox .popShopByLook .btnClose {display: block; width: 22px; height: 22px; background:url(../images/btn_close_x_black.png) no-repeat center center; background-size:100%; overflow:hidden; text-indent: -999px;}
 .popBox .popShopByLook .swiperProdImg {position: relative;}
 .popBox .popShopByLook .swiperProdImg .swiperCont {position: relative;}
 .popBox .popShopByLook .swiperProdImg .swiperCont .num {z-index: 10; position: absolute; left: 0; top: 0; width: 24px; height: 24px; border:1px solid #FFF; background: #1c1c1c; text-align: center; color:#fff; font-size: 15px; line-height: 24px; font-weight: 400; border-radius: 12px;}
 .popBox .popShopByLook .swiperProdImg .btnSwiperPrev {z-index: 2; position: absolute; left: 15px; top:50%; width: 22px; height: 40px; margin-top: -20px;; background:url(../images/btn_swiper_prev_2.png) no-repeat center center; background-size:100%;}
 .popBox .popShopByLook .swiperProdImg .btnSwiperNext {z-index: 2; position: absolute; right:15px; top:50%; width: 22px; height: 40px; margin-top: -20px; background:url(../images/btn_swiper_next_2.png) no-repeat center center; background-size:100%;}
+
+.popBox .popSearch {position: fixed; left:0; top:0; right:0; bottom:0; margin-top: 50px; background: #FFF; overflow-y:auto;}
+.popBox .popSearch .topBox {z-index: 11; position: fixed; left:0; top:0; width:100%; background: #FFF; display: flex; height:50px; align-items: center; padding:0 14px;}
+.popBox .popSearch .btnClose {flex:none; display: block; width: 30px; height: 30px; background:url(../images/btn_close_x_black.png) no-repeat center center; background-size:18px; overflow:hidden; text-indent: -999px;}
+.popBox .popSearch .searchRecordBox {padding:20px 10px;}
+.popBox .popSearch .textSearchBox {flex:1; position: relative;}
+.popBox .popSearch .textSearchBox .textSearch {width:100%; height:30px; padding:0 40px 0 20px; margin-left: 10px; background: #f6f6f6; border-radius: 15px; color:#1c1c1c; font-size: 16px; border:none;}
+.popBox .popSearch .textSearchBox .textSearch::placeholder {color:#8f8f8f;}
+.popBox .popSearch .textSearchBox .btnSearch {position: absolute; top:0; right:0; width: 30px; height: 30px; background: url(../images/icon_search_black.png) no-repeat center center; background-size:16px; overflow:hidden; text-indent:-999px;}
+.popBox .popSearch .titBox {display: flex; justify-content: space-between; align-items: center;}
+.popBox .popSearch .titBox .titSearchRecord {color: #1c1c1c; font-size: 18px; font-weight: 700; line-height: 20px;}
+.popBox .popSearch .titBox .btnDel {color: #8f8f8f; font-size: 14px; line-height: 16px; font-weight: 400; background: none;}
+.popBox .popSearch .listSearchRecord {margin-top: 30px;}
+.popBox .popSearch .listSearchRecord li + li {margin-top: 20px;}
+.popBox .popSearch .listSearchRecord .itemSearchRecord {display: flex; justify-content: space-between; align-items: center;}
+.popBox .popSearch .listSearchRecord .itemSearchRecord .txtRecord {color: #8f8f8f; font-size: 16px; line-height: 18px; font-weight: 400;}
+.popBox .popSearch .listSearchRecord .itemSearchRecord .btnItemDel {width: 16px; height: 16px; background: url(../images/icon_delete.png) no-repeat center center; background-size:8px; overflow:hidden; text-indent: -999px;}
 
 .popBox.on .popCategory {left:0;}
 .popBox.on .popCategory .popHeader {left:0;}
@@ -235,7 +252,7 @@ body.openPop {overflow:hidden;}
 .popBox .popCategory .categoryWrap {padding:0 20px;}
 .popBox .popCategory .accountBox {display: flex; justify-content: space-between; align-items: center; height:68px; border-bottom: 1px solid #d0d0d0;}
 .popBox .popCategory .accountBox .txtAccount {position: relative; display: flex; align-items: center; padding-right: 15px; color: #231f20; font-size: 17px; font-weight: 700;}
-.popBox .popCategory .accountBox .txtAccount::after {content:''; position: absolute; top:50%; right:0; width:6px; height:10.5px; margin-top:-6px; background:url(../images/icon_btn_arrow_right.png) no-repeat center center; background-size: 100%;}
+.popBox .popCategory .accountBox .txtAccount::after {content:''; position: absolute; top:50%; right:0; width:6px; height:10.5px; margin-top:-6px; background:url(../images/icon_btn_arrow_right_black.png) no-repeat center center; background-size: 100%;}
 .popBox .popCategory .accountBox .txtAccount .suffix {margin-left: 5px; font-weight: 400;}
 .popBox .popCategory .accountBox .listBtn {display: flex; align-items: center;}
 .popBox .popCategory .accountBox .listBtn li {position: relative;}
@@ -380,6 +397,121 @@ body.openPop {overflow:hidden;}
 .listExhibition .itemExhibition {text-align: center;}
 .listExhibition .itemExhibition .titExhibition {margin-top: 15px; color: #000; font-size: 12px; line-height: 14px; font-weight: 400;}
 .listExhibition .itemExhibition .txtExhibition {margin-top: 8px; color: #000; font-size: 18px; line-height: 20px; font-weight: 700;}
+
+
+.myPageWrap {padding:15px 0;}
+
+.accountBox1 {display: flex; justify-content: space-between; align-items: center; padding:0 12px 18px 12px;}
+.accountBox1 .leftBox {display: flex; justify-content: center; align-items: center;}
+.accountBox1 .btnLevel {display: flex; justify-content: center; align-items: center; width: 68px; height: 68px; border-radius: 34px; background: #1c1c1c; color:#FFF; font-size: 12px; line-height: 14px;}
+.accountBox1 .txtName {color: #1c1c1c; font-size: 15px; font-weight: 400; line-height: 17px;  margin-left: 18px;}
+.accountBox1 .rightBox .btnRight {position: relative; display: flex; justify-content: center; align-items: center; height:30px; padding:0 30px 0 20px; color:#858585; font-size: 12px; line-height: 14px; font-weight: 400; background: #FFF; box-shadow: inset 0 0 0 1px #cdcdcd;}
+.accountBox1 .rightBox .btnRight::after {content:''; position: absolute; top:50%; right:15px; width: 5px; height:9px; margin-top: -4.5px; background: url(../images/icon_btn_arrow_right_grey.png) no-repeat center center; background-size:100%;}
+.accountBox1 .rightBox .btnRight + .btnRight {margin-top: 5px;}
+
+.accountBox2 ul {display: flex; border-top:4px solid #f9f9f9; border-bottom:4px solid #f9f9f9;}
+.accountBox2 ul li {flex:0 0 33.33%; position: relative;}
+.accountBox2 ul li + li::before {content:''; position: absolute; left:-1px; top:0; bottom:0; width:2px; background: #f9f9f9;}
+.accountBox2 ul li .itemAccountBox2 {display: flex; justify-content: center; align-items: center; flex-direction: column; height:65px;}
+.accountBox2 ul li .itemAccountBox2 .titAccountBox2 {color: #1c1c1c; font-size: 19px; line-height: 21px; font-weight: 700;}
+.accountBox2 ul li .itemAccountBox2 .titAccountBox2.iconShipping {display: block; width: 23px; height: 17px; background:url('../images/icon_mypage_shipping.png') no-repeat center center; background-size:100%;}
+.accountBox2 ul li .itemAccountBox2 .txtAccountBox2 {color: #545454; font-size: 12px; line-height: 14px; font-weight: 400; margin-top: 10px;}
+
+.accountBox3 {padding:28px 12px;}
+
+.accountBox4 {padding:23px 13px;}
+
+.shopProcess {display: flex; justify-content: space-between; align-items: center;}
+.shopProcess li {position: relative; flex:0 0 calc(20% - 12px);}
+.shopProcess li+li::before {content:''; position: absolute; left:-10px; top:24px; width: 5px; height: 8px; background: url(../images/icon_process_arrow.png) no-repeat center center; background-size:100%;}
+.shopProcess li .itemProcess {display: flex; justify-content: center; align-items: center; flex-direction: column;}
+.shopProcess li .itemProcess .numProcess {display: flex; justify-content: center; align-items: center; width: 100%; height: 55px; color: #e5e5e5; font-size: 15px; font-weight: 700; line-height: 17px; background: #f5f5f5; border-radius: 5px;}
+.shopProcess li .itemProcess .numProcess.on {color: #d3132a;}
+.shopProcess li .itemProcess .txtProcess {margin-top: 13px; color: #545454; font-size: 12px; line-height: 14px; font-weight: 400; white-space: nowrap;}
+
+.afterSaleBox {display: flex; justify-content: center; align-items: center; background:#f5f5f5; border-radius: 5px;}
+.afterSaleBox li {position: relative; flex:0 0 50%; }
+.afterSaleBox li + li::before {content:''; position: absolute; left:0; top:50%; width: 1px; height: 20px; margin-top: -10px; background: #dbdbdb;}
+.afterSaleBox li .itemAfterSale {display: flex; justify-content: space-between; align-items: center; width:100%; height:45px; padding:0 22px;}
+.afterSaleBox li .itemAfterSale .txtAfterSale {color:#545454; font-size: 13px; font-weight: 400; line-height: 15px;}
+.afterSaleBox li .itemAfterSale .numAfterSale {color:#e5e5e5; font-size: 15px; font-weight: 700; line-height: 17px;}
+.afterSaleBox li .itemAfterSale .numAfterSale.on {color:#d3132a;}
+
+.myPageMenuBox {padding:35px 0;}
+.myPageContBox {padding:0 4px;}
+
+.myPageMenu {border-top: 1px solid #cdcdcd;}
+.myPageMenu li {border-bottom:1px solid #cdcdcd;}
+.myPageMenu li .itemMenu {display: flex; align-items: center; padding:0 12px; height:56px;}
+.myPageMenu li .itemMenu .iconMenu {display: block; width:20px; height:20px; background-repeat: no-repeat; background-position: center center; background-size:100%;}
+.myPageMenu li .itemMenu .iconMenu.iconFlag {background-image: url(../images/icon_mypage_flag.png); background-size:12px;}
+.myPageMenu li .itemMenu .iconMenu.iconReview {background-image: url(../images/icon_mypage_review.png); background-size:17px;}
+.myPageMenu li .itemMenu .iconMenu.iconQa {background-image: url(../images/icon_mypage_qa.png); background-size:16px;}
+.myPageMenu li .itemMenu .iconMenu.icon1v1 {background-image: url(../images/icon_mypage_1v1.png); background-size:17px;}
+.myPageMenu li .itemMenu .iconMenu.iconAddr {background-image: url(../images/icon_mypage_address.png); background-size:18px;}
+.myPageMenu li .itemMenu .iconMenu.iconLogout {background-image: url(../images/icon_mypage_logout.png); background-size:15px;}
+.myPageMenu li .itemMenu .iconMenu.iconSetting {background-image: url(../images/icon_mypage_setting.png); background-size:15px;}
+.myPageMenu li .itemMenu .txtMenu {margin-left: 10px; color: #545454; font-size: 14px; line-height: 16px; font-weight: 400;}
+
+.companyInfoBox {padding:48px 12px;}
+.companyInfoBox .titCompany {color: #1c1c1c; font-size: 15px; font-weight: 400; line-height: 17px;}
+.companyInfoBox .titCompany + .tbl {margin-top: 20px;}
+
+.tabLinkStyle1 {display: flex; justify-content: center; align-items: center;}
+.tabLinkStyle1 li {flex:1;}
+.tabLinkStyle1 li a {position: relative; display: flex; justify-content: center; align-items: center; height:40px; color: #aeaeae; font-size: 15px; line-height: 17px; font-weight: 400;}
+.tabLinkStyle1 li a::after {content:''; background: #f2f2f2;  position: absolute; left:0; bottom:0; right:0; height:1.5px; }
+.tabLinkStyle1 li a.on {color:#1c1c1c;}
+.tabLinkStyle1 li a.on::after {background: #1c1c1c;}
+.tab + .myPageContBox {margin-top: 24px;}
+
+.tbl .btnTblGrey {display: inline-flex; justify-content: center; align-items: center; height:20px; background: #545454; padding:0 5px; color:#FFF; font-size: 13px; font-weight: 400;}
+
+.tblDataStyle1.borderBlack {box-shadow: 0 0 0 1px #1c1c1c;}
+.tblDataStyle1 th {height:40px; background: #f5f5f5; color:#545454; font-size: 12px; font-weight: 400; line-height: 14px; text-align: center;}
+.tblDataStyle1 td {height:55px; background: #FFF; color:#545454; font-size: 12px; font-weight: 400; line-height: 14px; text-align: center;}
+.tblDataStyle1 tr td {border-bottom: 1px solid #f2f2f2;}
+
+.tbl1v1 .trToggle {display: none;}
+.tbl1v1 .trToggle.on {display: table-row;}
+.tbl1v1 .toggleBox {padding:24px 24px 24px 12px; background: #f9f9f9; text-align: left;}
+.tbl1v1 .toggleBox .titQa {padding:0 0 0 26px; position: relative; line-height: 20px; color: #939393; font-size: 13px; font-weight: 400;}
+.tbl1v1 .toggleBox .titQa::before {content:'Q'; position: absolute; display:flex; justify-content: center; align-items: center; left:0; top:0; width: 20px; height:20px; background: #b6b6b6; border-radius: 10px; color:#FFF;}
+.tbl1v1 .toggleBox .txtQa {margin-top:40px; padding:0 0 0 26px; position: relative; line-height: 20px; color: #939393; font-size: 13px; font-weight: 400;}
+.tbl1v1 .toggleBox .txtQa::before {content:'A'; position: absolute; display:flex; justify-content: center; align-items: center; left:0; top:0; width: 20px; height:20px; background: #e95026; border-radius: 10px; color:#FFF;}
+
+.btnBox {display: flex; justify-content: center; align-items: center; padding:0 12px; margin-top: 30px;}
+.btn {display: flex; justify-content: center; align-items: center;}
+.btnStyle1 {flex:1; height:45px; background: #000;}
+.btnStyle1 .txtBtn {display: block; color: #FFF;  font-size: 13px; line-height: 15px; font-weight: 40; color: #FFF;}
+.btnStyle2 {flex:1; height:45px; box-shadow: inset 0 0 0 1px #444;}
+.btnStyle2 .txtBtn {display: block; color: #444444;  font-size: 13px; line-height: 15px; font-weight: 40;}
+.btnStyle2 .iconArrow {display: block; width: 5px; height: 10px; background:url(../images/icon_btn_arrow_right_black.png) no-repeat center center; background-size:100%;}
+.btnStyle2 .txtBtn + .iconArrow {margin-left: 15px;}
+
+.formPadding {padding:0 12px;}
+.formBox .formRow + .formRow {margin-top: 25px;}
+.formBox .formRow .contRow {width:100%; margin-top: 12px;}
+.formBox .formRow .rowAfterBox {margin-top: 10px;}
+.formBox .formRow .titRow {color: #1c1c1c; font-size: 15px; line-height: 17px; font-weight: 400;}
+.formBox .select {width:100%; height:40px; box-shadow: inset 0 0 0 1px #d5d5d5; border:none; padding:0 15px; color: #848484; font-size: 13px; appearance:auto;}
+.formBox .text {height:40px; box-shadow: inset 0 0 0 1px #d5d5d5; border:none; color: #848484; font-size: 13px; line-height: 15px; font-weight: 400;}
+.formBox .textarea {width:100%; height:160px; padding:20px; box-shadow: inset 0 0 0 1px #d5d5d5; border:none; color: #848484; font-size: 13px; line-height: 20px; font-weight: 400; resize:none;}
+.formBox .btnFormStyle1 {display: flex; justify-content: center; align-items: center; height:40px; padding:0 17px; background: #1c1c1c; color:#FFF; font-size: 13px; line-height: 15px; font-weight: 400;}
+.formBox .inputBtnBox {display: flex; width: 100%;}
+.formBox .inputBtnBox * + * {margin-left: 6px;}
+.formBox .inputBtnBox * {flex:1;}
+.formBox .inputBtnBox .btnForm {flex:none;}
+.formBox .telBox {display: flex; width: 100%;}
+.formBox .telBox * + * {margin-left: 6px;}
+.formBox .telBox * {flex:0 0 calc(33.33% - 4px); width:100%; text-align: center;}
+.formBox .attaBox {display: flex; justify-content: center; align-items: center;}
+.formBox .attaBox .itemAtta + .itemAtta {margin-left: 10px;}
+.formBox .attaBox .itemAtta {flex:1; height:75px; background: #f5f5f5 url(../images/icon_atta_add.png) no-repeat center center; background-size:25px;}
+.formBox .attaTxtBox {margin-top: 15px;}
+.formBox .attaTxtBox .txtItem {position: relative; padding-left: 10px; color: #b3b3b3; font-size: 11px; line-height: 13px; font-weight: 400;}
+.formBox .attaTxtBox .txtItem::before {content:''; position: absolute; top:4px; left:0; width: 2px; height: 2px; border:2px; background: #b3b3b3;}
+.formBox .attaTxtBox .txtItem + .txtItem {margin-top: 10px;}
 
 .txtCenter {text-align: center;}
 

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>STCO</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <link type="text/css" rel="stylesheet" href="../css/swiper-bundle.min.css" />
+  <link type="text/css" rel="stylesheet" href="../css/style.css" />
+
+  <script src="../js/jquery-3.7.0.min.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
+  <!-- ui js -->
+  <script src="../js/design.js"></script>
+</head>
+
+<body>
+
+  <div id="wrap">
+
+    <!-- header -->
+    <header id="header" class="bgWhite">
+      <a href="#" class="btnPrev black">Prev</a>
+      <div class="toolBox">
+        <a href="#" class="btnCart black">
+          <span class="num">0</span>
+        </a>
+        <a href="javascript:openPop('popSearch')" class="btnSearch black">Search</a>
+      </div>
+    </header>
+    <!--// header -->
+
+    <!-- container -->
+    <div id="container">
+      <div class="subContainer">
+       
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="csBox">
+        <h2 class="titCs">고객센터 <a href="tel:070-4687-7342" class="txtPhone">070-4687-7342</a></h2>
+        <p class="txtCs">
+          운영시간 평일 10:00 - 17:00 (토∙일, 공휴일 휴무)
+          <br />
+          점심시간 평일 12:00 - 13:00
+        </p>
+      </div>
+      <div class="contactBox">
+        <p class="txtContact1">
+          <span>(주)에스티오</span>
+          <button class="toggleContact2">사업자 정보 <i class="iconArrow"></i></button>
+        </p>
+        <p class="txtContact2">
+          서울시 강서구 양천로 583 우림블루나인비지니스센터 B동 15층
+          <br />
+          대표자 : 김흥수 / 사업자등록번호 : 206-81-79031
+          <br />
+          통신판매업신고 : 제2009 서울강서 0684호 / 개인정보관리책임자 : 안중태
+          <br />
+          대표메일주소 : stoonline@stco.co.kr
+        </p>
+        <ul class="listLink">
+          <li><a href="#" class="linkContact">이용약관</a></li>
+          <li><a href="#" class="linkContact">개인정보처리방침</a></li>
+        </ul>
+        <ul class="listLink2">
+          <li><a href="#">회사소개</a></li>
+          <li><a href="#">고객센터</a></li>
+          <li><a href="#">에스크로가입확인</a></li>
+        </ul>
+      </div>
+      <p class="copyright ">Copyright© STO. All right reserved</p>
+    </footer>
+    <!--// footer end -->
+
+    <!-- Bot Menu -->
+    <div class="botMenuWrap">
+      <div class="botMenuBox">
+        <ul class="botMenu">
+          <li>
+            <a href="javascript:void(0);" class="itemMenu cate" onclick="openPop('popCategory')">카테고리</a>
+          </li>
+          <li>
+            <a id="btnBrand" href="javascript:void(0);" onclick="botBrandClick(this)" class="itemMenu brand">브랜드</a>
+          </li>
+          <li>
+            <a href="#" class="itemMenu home">홈</a>
+          </li>
+          <li>
+            <a href="#" class="itemMenu my">MY</a>
+          </li>
+          <li>
+            <a href="#" class="itemMenu flag">찜</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- // Bot Menu -->
+
+    <!-- float button -->
+    <div class="floatButtonBox">
+      <ul class="floatButton">
+        <li><a href="#" class="itemButton"><img src="../images/icon_record.png" alt="Record"></a></li>
+        <li><a href="#" id="btnTop" class="itemButton"><img src="../images/icon_top.png" alt="Top"></a></li>
+      </ul>
+    </div>
+    <!-- // float button -->
+
+    <!-- pop search -->
+    <div class="popBox" id="popSearch">
+      <div class="mask"></div>
+      <div class="popCont popSearch">
+        <div class="topBox">
+          <button class="btnClose" onclick="closePop(this);">닫기</button>
+          <div class="textSearchBox">
+            <input type="text" class="textSearch" placeholder="검색어를 입력해주세요"/>
+            <button class="btnSearch">Search</button>
+          </div>
+        </div>
+        <div class="searchRecordBox">
+          <div class="titBox">
+            <h2 class="titSearchRecord">최근 검색어</h2>
+            <button class="btnDel">검색기록 모두삭제</button>
+          </div>
+          <ul class="listSearchRecord">
+            <li>
+              <div class="itemSearchRecord">
+                <p class="txtRecord">해리스트위드</p>
+                <button class="btnItemDel">Delete</button>
+              </div>
+            </li>
+            <li>
+              <div class="itemSearchRecord">
+                <p class="txtRecord">셔츠</p>
+                <button class="btnItemDel">Delete</button>
+              </div>
+            </li>
+            <li>
+              <div class="itemSearchRecord">
+                <p class="txtRecord">팬츠</p>
+                <button class="btnItemDel">Delete</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- // pop search -->
+  </div>
+
+</body>
+
+</html>

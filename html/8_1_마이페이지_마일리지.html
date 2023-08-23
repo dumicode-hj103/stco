@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>STCO</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <link type="text/css" rel="stylesheet" href="../css/swiper-bundle.min.css" />
+  <link type="text/css" rel="stylesheet" href="../css/style.css" />
+
+  <script src="../js/jquery-3.7.0.min.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
+  <!-- ui js -->
+  <script src="../js/design.js"></script>
+</head>
+
+<body>
+
+  <div id="wrap">
+
+    <!-- header -->
+    <header id="header" class="bgWhite">
+      <a href="#" class="btnPrev black">Prev</a>
+      <h1 class="titPage black">마일리지</h1>
+      <div class="toolBox">
+        <a href="#" class="btnCart black">
+          <span class="num">0</span>
+        </a>
+        <a href="javascript:openPop('popSearch')" class="btnSearch black">Search</a>
+      </div>
+    </header>
+    <!--// header -->
+
+    <!-- container -->
+    <div id="container">
+      <div class="subContainer">
+        <div class="mileageBoxOuter">
+          
+          <div class="mileageBox">
+            <div class="mileage">
+              <h2 class="titMileage">보유 마일리지 </h2>
+              <p class="priceMileage">25,000원</p>
+            </div>
+            <div class="mileageDetailBox">
+              <a href="#" class="toggleMileageTitle">마일리지 적립 및 소멸 안내</a>
+              <div class="toggleMileageDetail">
+                <ul class="listTxtMmileageDetail">
+                  <li>
+                    <p class="txtMmileageDetail">
+                      온라인몰 및 오프라인 구매 시 총 구매하신 금액의 2%가적립됩니다. (배송료 제외)
+                    </p>
+                  </li>
+                  <li>
+                    <p class="txtMmileageDetail">
+                      온라인몰에서 구매후기를 작성 시 구매금액의 2%가추가 적립됩니다.
+                    </p>
+                  </li>
+                  <li>
+                    <p class="txtMmileageDetail">
+                      1년이상 로그인기록이 없으면 휴면 아이디로 변경되어,적립하신 마일리지는 소멸됩니다.
+                    </p>
+                  </li>
+                  <li>
+                    <p class="txtMmileageDetail">
+                      적립 후 4년이 경과한 마일리지는 만 4년이되는 날짜에서 자동 소멸됩니다.
+                    </p>
+                  </li>
+                  <li>
+                    <p class="txtMmileageDetail">
+                      모바일에서는 잔여금액이 있는 적립 내역만 보여집니다.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <script>
+              $('.toggleMileageTitle').click(function(){
+                $(this).next().toggleClass('on');
+                return false;
+              });
+            </script>
+          </div>
+          <div class="tabBox tabStyle2">
+            <ul class="tabTitle">
+              <li class="on"><a href="#" class="itemTitle">적립내역</a></li>
+              <li><a href="#" class="itemTitle">사용내역</a></li>
+            </ul>
+            <div class="tabCont on">
+              <div class="listMileageBox">
+                <ul class="listMileage">
+                  <li>
+                    <div class="itemMileage">
+                      <div class="imgMileage">
+                        <span class="iconMileage">사용</span>
+                        <span class="txtMileage">-1,295</span>
+                      </div>
+                      <div class="infoMileage">
+                        <p class="dateMileage">2023.04.11</p>
+                        <h3 class="titMileage">주문 결제 시 사용</h3>
+                        <p class="txtOrderNum">주문번호 : C60105154757496</p>
+                        <p class="txtDateRange">유효기간 2027-04-11</p>
+                      </div>
+                      <a href="#" class="btnList btnListStyle1">온라인몰</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="itemMileage">
+                      <div class="imgMileage">
+                        <span class="iconMileage">사용</span>
+                        <span class="txtMileage">-350</span>
+                      </div>
+                      <div class="infoMileage">
+                        <p class="dateMileage">2023.04.11</p>
+                        <h3 class="titMileage">주문 결제 시 사용</h3>
+                        <p class="txtOrderNum">주문번호 : C60105154757496</p>
+                        <p class="txtDateRange">유효기간 2027-04-11</p>
+                      </div>
+                      <a href="#" class="btnList btnListStyle1">온라인몰</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="itemMileage">
+                      <div class="imgMileage">
+                        <span class="iconMileage">사용</span>
+                        <span class="txtMileage">-500</span>
+                      </div>
+                      <div class="infoMileage">
+                        <p class="dateMileage">2023.04.11</p>
+                        <h3 class="titMileage">주문 결제 시 사용</h3>
+                        <p class="txtOrderNum">주문번호 : C60105154757496</p>
+                        <p class="txtDateRange">유효기간 2027-04-11</p>
+                      </div>
+                      <a href="#" class="btnList btnListStyle1">온라인몰</a>
+                    </div>
+                  </li>
+                </ul>
+                <a href="#" class="btnListMore">
+                  <span class="txtMore">더보기</span>
+                  <span class="iconMore"></span>
+                </a>
+              </div>
+            </div>
+            <div class="tabCont">
+              <div class="listMileageBox">
+                <ul class="listMileage">
+                  <li>
+                    <div class="itemMileage">
+                      <div class="imgMileage">
+                        <span class="iconMileage">사용</span>
+                        <span class="txtMileage">-1,295</span>
+                      </div>
+                      <div class="infoMileage">
+                        <p class="dateMileage">2023.04.11</p>
+                        <h3 class="titMileage">주문 결제 시 사용</h3>
+                        <p class="txtOrderNum">주문번호 : C60105154757496</p>
+                        <p class="txtDateRange">유효기간 2027-04-11</p>
+                      </div>
+                      <a href="#" class="btnList btnListStyle1">온라인몰</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="itemMileage">
+                      <div class="imgMileage">
+                        <span class="iconMileage">사용</span>
+                        <span class="txtMileage">-350</span>
+                      </div>
+                      <div class="infoMileage">
+                        <p class="dateMileage">2023.04.11</p>
+                        <h3 class="titMileage">주문 결제 시 사용</h3>
+                        <p class="txtOrderNum">주문번호 : C60105154757496</p>
+                        <p class="txtDateRange">유효기간 2027-04-11</p>
+                      </div>
+                      <a href="#" class="btnList btnListStyle1">온라인몰</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="itemMileage">
+                      <div class="imgMileage">
+                        <span class="iconMileage">사용</span>
+                        <span class="txtMileage">-500</span>
+                      </div>
+                      <div class="infoMileage">
+                        <p class="dateMileage">2023.04.11</p>
+                        <h3 class="titMileage">주문 결제 시 사용</h3>
+                        <p class="txtOrderNum">주문번호 : C60105154757496</p>
+                        <p class="txtDateRange">유효기간 2027-04-11</p>
+                      </div>
+                      <a href="#" class="btnList btnListStyle1">온라인몰</a>
+                    </div>
+                  </li>
+                </ul>
+                <a href="#" class="btnListMore">
+                  <span class="txtMore">더보기</span>
+                  <span class="iconMore"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// container -->
+  </div>
+</body>
+
+</html>

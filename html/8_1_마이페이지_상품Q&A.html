@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>STCO</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <link type="text/css" rel="stylesheet" href="../css/swiper-bundle.min.css" />
+  <link type="text/css" rel="stylesheet" href="../css/style.css" />
+
+  <script src="../js/jquery-3.7.0.min.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
+  <!-- ui js -->
+  <script src="../js/design.js"></script>
+</head>
+
+<body>
+
+  <div id="wrap">
+
+    <!-- header -->
+    <header id="header" class="bgWhite">
+      <a href="#" class="btnPrev black">Prev</a>
+      <h1 class="titPage black">상품 Q&A</h1>
+      <div class="toolBox">
+        <a href="#" class="btnCart black">
+          <span class="num">0</span>
+        </a>
+        <a href="javascript:openPop('popSearch')" class="btnSearch black">Search</a>
+      </div>
+    </header>
+    <!--// header -->
+
+    <!-- container -->
+    <div id="container">
+      <div class="subContainer">
+        <div class="prodQaBox">
+          <div class="tabBox tabStyle2">
+            <ul class="tabTitle">
+              <li class="on"><a href="#" class="itemTitle">전체</a></li>
+              <li><a href="#" class="itemTitle">답변완료</a></li>
+              <li><a href="#" class="itemTitle">답변대기</a></li>
+            </ul>
+            <div class="tabCont on">
+              <div class="listQaBox">
+                <ul class="listQa">
+                  <li>
+                    <div class="itemQa">
+                      <div class="prodBox">
+                        <a href="#" class="imgProd">
+                          <img src="../images/img_prod_temp_140_210.jpg" alt="" />
+                        </a>
+                        <div class="infoBox">
+                          <p class="txtDate">2023.03.28</p>
+                          <p class="titProd">아이보리 크림 데님 팬츠</p>
+                          <a href="#" class="btnToggle">배송 문의 입니다.</a>
+                        </div>
+
+                        <p class="txtStatus">답변대기</p>
+                        <div class="checkBox checkBoxStyle1">
+                          <input type="checkbox" id="check1_1">
+                          <label for="check1_1"></label>
+                        </div>
+                      </div>
+                      <div class="toggleBox">
+                        <div class="itemQaBox">
+                          <h3 class="titQa">상품은 언제 배송되나요?  상품은 언제 배송되나요? 상품은 언제 배송되나요?</h3>
+                          <p class="txtQa">
+                            고객님, 안녕하세요:)
+                            <br/>상품문의게시판에서는 주문내역이 확인되지 않아
+                            <br/>'마이페이지 > [1:1 문의]' 게시판이나
+                            <br/>당사 고객센터로 문의주시기 바랍니다.
+                            <br/>감사합니다.
+                          </p>
+                        </div>
+                    </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="itemQa">
+                      <div class="prodBox">
+                        <a href="#" class="imgProd">
+                          <img src="../images/img_prod_temp_140_210.jpg" alt="" />
+                        </a>
+                        <div class="infoBox">
+                          <p class="txtDate">2023.03.28</p>
+                          <p class="titProd">카키 스트레치 와이드 밴딩팬츠</p>
+                          <a href="#" class="btnToggle">상품은 언제 배송되나요?  상품은 언제 배송long text long text long text</a>
+                        </div>
+
+                        <p class="txtStatus on">답변완료</p>
+                        <div class="checkBox checkBoxStyle1">
+                          <input type="checkbox" id="check1_2">
+                          <label for="check1_2"></label>
+                        </div>
+                      </div>
+                      <div class="toggleBox">
+                        <div class="itemQaBox">
+                          <h3 class="titQa">상품은 언제 배송되나요?  상품은 언제 배송되나요? 상품은 언제 배송되나요?</h3>
+                          <p class="txtQa">
+                            고객님, 안녕하세요:)
+                            <br/>상품문의게시판에서는 주문내역이 확인되지 않아
+                            <br/>'마이페이지 > [1:1 문의]' 게시판이나
+                            <br/>당사 고객센터로 문의주시기 바랍니다.
+                            <br/>감사합니다.
+                          </p>
+                        </div>
+                    </div>
+                    </div>
+                  </li>
+                </ul>
+                <script>
+                  $(function () {
+                    $('.listQa .itemQa .btnToggle').click(function () {
+                      $(this).parents('.itemQa').toggleClass('on');
+                      return false;
+                    });
+                  });
+                </script>
+                <div class="btnBox">
+                  <a href="#" class="btn btnStyle1">
+                    <span class="txtBtn">삭제</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="tabCont"></div>
+            <div class="tabCont"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// container -->
+  </div>
+</body>
+
+</html>

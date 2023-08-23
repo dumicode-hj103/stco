@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>STCO</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <link type="text/css" rel="stylesheet" href="../css/swiper-bundle.min.css" />
+  <link type="text/css" rel="stylesheet" href="../css/style.css" />
+
+  <script src="../js/jquery-3.7.0.min.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
+  <!-- ui js -->
+  <script src="../js/design.js"></script>
+</head>
+
+<body>
+
+  <div id="wrap">
+
+    <!-- header -->
+    <header id="header" class="bgWhite">
+      <a href="#" class="btnPrev black">Prev</a>
+      <h1 class="titPage black">MY 리뷰</h1>
+      <div class="toolBox">
+        <a href="#" class="btnCart black">
+          <span class="num">0</span>
+        </a>
+        <a href="javascript:openPop('popSearch')" class="btnSearch black">Search</a>
+      </div>
+    </header>
+    <!--// header -->
+
+    <!-- container -->
+    <div id="container">
+      <div class="subContainer">
+        <div class="myReviewBox">
+          <div class="topTextBox">
+            <p class="topText">
+              ·구매후기 작성시 구매금액의 <span class="colorRed">2%가 마일리지</span>로 적립됩니다.
+              <br />·사진첨부는 선택사항입니다.
+              <br />
+              <br />·구매후기는 구매확정 후 3개월 이내로 작성 가능합니다.
+              <br />·처음 등록한 후기를 기준으로 마일리지가 지급됩니다.
+            </p>
+          </div>
+          <div class="tabBox tabStyle2">
+            <ul class="tabTitle">
+              <li class="on"><a href="#" class="itemTitle">내가 쓴 리뷰</a></li>
+              <li><a href="#" class="itemTitle">장바구니</a></li>
+            </ul>
+            <div class="tabCont on">
+              <div class="myReviewDetailBox">
+                <div class="noResultBox">
+                  <p class="txtNoResult">작성한 상품리뷰가 없습니다.</p>
+                </div>
+                <h2 class="titListMyReview">내가 작성한 리뷰 <strong class="colorRed">3</strong></h2>
+                <ul class="listMyReview">
+                  <li>
+                    <div class="itemMyReview">
+                      <div class="prodBox">
+                        <a href="#" class="imgProd">
+                          <img src="../images/img_prodMyReview.jpg" alt="" />
+                        </a>
+                        <div class="layoutBox">
+                          <div class="infoProd">
+                            <p class="dateProd">23.03.26</p>
+                            <h3 class="titProd">가먼트다잉 밴딩 와이드 치노 팬츠</h3>
+                            <p class="txtProd">샌드베이지 / 110</p>
+                          </div>
+                          <div class="toolBox">
+                            <a href="#" class="btnMyReview btnMyReviewStyle1">수정</a>
+                            <a href="#" class="btnMyReview btnMyReviewStyle2">구매확정</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="reviewDetailBox">
+                        <div class="starBox">
+                          <span class="itemStar"></span>
+                          <span class="itemStar"></span>
+                          <span class="itemStar"></span>
+                          <span class="itemStar"></span>
+                          <span class="itemStar half"></span>
+                        </div>
+                        <div class="reviewTag">
+                          <span class="itemTag">사이즈<strong>잘맞아요</strong></span>
+                          <span class="txtDot">·</span>
+                          <span class="itemTag">핏 <strong>적당해요</strong></span>
+                          <span class="txtDot">·</span>
+                          <span class="itemTag">착용감<strong>적당해요</strong></span>
+                        </div>
+                        <p class="textMyReview">
+                          일반적인 포켓 면티 입니다 평소에 m은 좀 작고 L은 좀 큰편인데
+                          중간사이즈인데 어깨가 딱 맞습니다 길이감도 적당하고 두께감은
+                          일반적인 흰색 면티 정도입니다 세일할때 사서 좋은가격에
+                          잘 구매했네요
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="itemMyReview">
+                      <div class="prodBox">
+                        <a href="#" class="imgProd">
+                          <img src="../images/img_prodMyReview.jpg" alt="" />
+                        </a>
+                        <div class="layoutBox">
+                          <div class="infoProd">
+                            <p class="dateProd">23.03.26</p>
+                            <h3 class="titProd">가먼트다잉 밴딩 와이드 치노 팬츠</h3>
+                            <p class="txtProd">샌드베이지 / 110</p>
+                          </div>
+                          <div class="toolBox">
+                            <a href="#" class="btnMyReview btnMyReviewStyle1">수정</a>
+                            <a href="#" class="btnMyReview btnMyReviewStyle2">구매확정</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="reviewDetailBox">
+                        <div class="starBox">
+                          <span class="itemStar"></span>
+                          <span class="itemStar"></span>
+                          <span class="itemStar"></span>
+                          <span class="itemStar"></span>
+                          <span class="itemStar half"></span>
+                        </div>
+                        <div class="reviewTag">
+                          <span class="itemTag">사이즈<strong>잘맞아요</strong></span>
+                          <span class="txtDot">·</span>
+                          <span class="itemTag">핏 <strong>적당해요</strong></span>
+                          <span class="txtDot">·</span>
+                          <span class="itemTag">착용감<strong>적당해요</strong></span>
+                        </div>
+                        <p class="textMyReview">
+                          재질하고 디자인 좋습니다! 외출복으로도 무난합니다
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="itemMyReview">
+                      <div class="prodBox">
+                        <a href="#" class="imgProd">
+                          <img src="../images/img_prodMyReview.jpg" alt="" />
+                        </a>
+                        <div class="layoutBox">
+                          <div class="infoProd">
+                            <p class="dateProd">23.03.26</p>
+                            <h3 class="titProd">가먼트다잉 밴딩 와이드 치노 팬츠</h3>
+                            <p class="txtProd">샌드베이지 / 110</p>
+                          </div>
+                          <div class="toolBox">
+                            <a href="#" class="btnMyReview btnMyReviewStyle1">수정</a>
+                            <a href="#" class="btnMyReview btnMyReviewStyle2">구매확정</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="reviewDetailBox">
+                        <div class="starBox">
+                          <span class="itemStar"></span>
+                          <span class="itemStar"></span>
+                          <span class="itemStar"></span>
+                          <span class="itemStar"></span>
+                          <span class="itemStar half"></span>
+                        </div>
+                        <div class="reviewTag">
+                          <span class="itemTag">사이즈<strong>슬림해요</strong></span>
+                          <span class="txtDot">·</span>
+                          <span class="itemTag">핏 <strong>적당해요</strong></span>
+                          <span class="txtDot">·</span>
+                          <span class="itemTag">착용감<strong>적당해요</strong></span>
+                        </div>
+                        <p class="textMyReview">
+                          세미오버 핏이라 사이즈가 넉넉하니 아주 편합니다~
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="tabCont">
+              <div class="myReviewDetailBox">
+                <h2 class="titListMyReview">내가 작성한 리뷰 <strong class="colorRed">3</strong></h2>
+                <ul class="listMyReview">
+                  <li>
+                    <div class="itemMyReview">
+                      <div class="prodBox">
+                        <a href="#" class="imgProd">
+                          <img src="../images/img_prodMyReview.jpg" alt="" />
+                        </a>
+                        <div class="layoutBox">
+                          <div class="infoProd">
+                            <p class="dateProd">23.03.26</p>
+                            <h3 class="titProd">가먼트다잉 밴딩 와이드 치노 팬츠</h3>
+                            <p class="txtProd">샌드베이지 / 110</p>
+                          </div>
+                          <div class="toolBox">
+                            <a href="#" class="btnMyReview btnMyReviewStyle2">리뷰쓰기</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="itemMyReview">
+                      <div class="prodBox">
+                        <a href="#" class="imgProd">
+                          <img src="../images/img_prodMyReview.jpg" alt="" />
+                        </a>
+                        <div class="layoutBox">
+                          <div class="infoProd">
+                            <p class="dateProd">23.03.26</p>
+                            <h3 class="titProd">가먼트다잉 밴딩 와이드 치노 팬츠</h3>
+                            <p class="txtProd">샌드베이지 / 110</p>
+                          </div>
+                          <div class="toolBox">
+                            <a href="#" class="btnMyReview btnMyReviewStyle2">리뷰쓰기</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="itemMyReview">
+                      <div class="prodBox">
+                        <a href="#" class="imgProd">
+                          <img src="../images/img_prodMyReview.jpg" alt="" />
+                        </a>
+                        <div class="layoutBox">
+                          <div class="infoProd">
+                            <p class="dateProd">23.03.26</p>
+                            <h3 class="titProd">가먼트다잉 밴딩 와이드 치노 팬츠</h3>
+                            <p class="txtProd">샌드베이지 / 110</p>
+                          </div>
+                          <div class="toolBox">
+                            <a href="#" class="btnMyReview btnMyReviewStyle2">리뷰쓰기</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// container -->
+
+  </div>
+</body>
+
+</html>

@@ -4,8 +4,7 @@
 <head>
   <title>STCO</title>
   <meta charset="UTF-8" />
-  <meta name="viewport"
-    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
   <meta name="format-detection" content="telephone=no" />
 
   <link type="text/css" rel="stylesheet" href="../css/swiper-bundle.min.css" />
@@ -37,7 +36,6 @@
     <!-- container -->
     <div id="container">
       <div class="subContainer">
-       <div class="myPageWrap">
         <div class="formBox formPadding">
           <div class="formRow">
             <h3 class="titRow">문의유형</h3>
@@ -61,12 +59,12 @@
             <div class="contRow">
               <div class="inputBtnBox">
                 <input type="text" class="text" />
-                <button class="btnForm btnFormStyle1">주문내역보기</button>
+                <button class="btnForm btnFormStyle1" onclick="openPop('popOrderList');">주문내역보기</button>
               </div>
             </div>
             <div class="rowAfterBox">
-              <div class="chkStyle1">
-                <input type="checkbox" id="chkOrder"/>
+              <div class="checkBoxStyle2">
+                <input type="checkbox" id="chkOrder" />
                 <label for="chkOrder">주문내역과 관계 없음</label>
               </div>
             </div>
@@ -75,9 +73,9 @@
             <h3 class="titRow">휴대폰 번호</h3>
             <div class="contRow">
               <div class="telBox">
-                <input type="text" class="text" placeholder="010" maxlength="3"/>
-                <input type="text" class="text" placeholder="0000" maxlength="4"/>
-                <input type="text" class="text" placeholder="0000" maxlength="4"/>
+                <input type="text" class="text" placeholder="010" maxlength="3" />
+                <input type="text" class="text" placeholder="0000" maxlength="4" />
+                <input type="text" class="text" placeholder="0000" maxlength="4" />
               </div>
             </div>
           </div>
@@ -102,57 +100,144 @@
               </div>
             </div>
           </div>
+          <div class="btnBox">
+            <a href="#" class="btn btnStyle1">
+              <span class="txtBtn">완료</span>
+            </a>
+          </div>
         </div>
-        <div class="btnBox">
-          <a href="#" class="btn btnStyle1">
-            <span class="txtBtn">완료</span>
-          </a>
-        </div>
-       </div>
       </div>
     </div>
     <!--// container -->
 
-    <!-- pop search -->
-    <div class="popBox" id="popSearch">
+    <!-- pop brand -->
+    <div class="popBox" id="popOrderList">
       <div class="mask"></div>
-      <div class="popCont popSearch">
-        <div class="topBox">
-          <button class="btnClose" onclick="closePop(this);">닫기</button>
-          <div class="textSearchBox">
-            <input type="text" class="textSearch" placeholder="검색어를 입력해주세요"/>
-            <button class="btnSearch">Search</button>
-          </div>
-        </div>
-        <div class="searchRecordBox">
-          <div class="titBox">
-            <h2 class="titSearchRecord">최근 검색어</h2>
-            <button class="btnDel">검색기록 모두삭제</button>
-          </div>
-          <ul class="listSearchRecord">
-            <li>
-              <div class="itemSearchRecord">
-                <p class="txtRecord">해리스트위드</p>
-                <button class="btnItemDel">Delete</button>
-              </div>
-            </li>
-            <li>
-              <div class="itemSearchRecord">
-                <p class="txtRecord">셔츠</p>
-                <button class="btnItemDel">Delete</button>
-              </div>
-            </li>
-            <li>
-              <div class="itemSearchRecord">
-                <p class="txtRecord">팬츠</p>
-                <button class="btnItemDel">Delete</button>
-              </div>
-            </li>
+      <div class="popCont popBot">
+        <div class="tabBox tabStyle2">
+          <ul class="tabTitle">
+            <li class="on"><a href="#" class="itemTitle">최근본상품</a></li>
+            <li><a href="#" class="itemTitle">장바구니</a></li>
+            <li><a href="#" class="itemTitle">주문내역</a></li>
           </ul>
+          <div class="tabCont on">
+            <div class="listOrderBox">
+              <ul class="listOrder">
+                <li>
+                  <div class="itemOrder">
+                    <a href="#" class="imgOrder">
+                      <img src="../images/img_prodListOrder.jpg" alt="" />
+                    </a>
+                    <div class="infoOrder">
+                      <h3 class="titOrder">카키 스트레치 와이드 밴딩팬츠</h3>
+                      <p class="priceOrder">27,900원</p>
+                    </div>
+                    <div class="checkBox checkBoxStyle1">
+                      <input type="checkbox" id="check1_1" />
+                      <label for="check1_1"></label>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="itemOrder">
+                    <a href="#" class="imgOrder">
+                      <img src="../images/img_prodListOrder.jpg" alt="" />
+                    </a>
+                    <div class="infoOrder">
+                      <h3 class="titOrder">카키 스트레치 와이드 밴딩팬츠</h3>
+                      <p class="priceOrder">27,900원</p>
+                    </div>
+                    <div class="checkBox checkBoxStyle1">
+                      <input type="checkbox" id="check1_2" />
+                      <label for="check1_2"></label>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <p class="txtListOrder">상담을 원하시는 상품을 선택해주세요.</p>
+            </div>
+          </div>
+          <div class="tabCont">
+            <div class="listOrderBox">
+              <ul class="listOrder">
+                <li>
+                  <div class="itemOrder">
+                    <a href="#" class="imgOrder">
+                      <img src="../images/img_prodListOrder.jpg" alt="" />
+                    </a>
+                    <div class="infoOrder">
+                      <h3 class="titOrder">카키 스트레치 와이드 밴딩팬츠</h3>
+                      <p class="priceOrder">27,900원</p>
+                    </div>
+                    <div class="checkBox checkBoxStyle1">
+                      <input type="checkbox" id="check2_1" />
+                      <label for="check2_1"></label>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="itemOrder">
+                    <a href="#" class="imgOrder">
+                      <img src="../images/img_prodListOrder.jpg" alt="" />
+                    </a>
+                    <div class="infoOrder">
+                      <h3 class="titOrder">카키 스트레치 와이드 밴딩팬츠</h3>
+                      <p class="priceOrder">27,900원</p>
+                    </div>
+                    <div class="checkBox checkBoxStyle1">
+                      <input type="checkbox" id="check2_2" />
+                      <label for="check2_2"></label>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <p class="txtListOrder">상담을 원하시는 상품을 선택해주세요.</p>
+            </div>
+          </div>
+          <div class="tabCont">
+            <div class="listOrderBox">
+              <p class="txtOrderNumber">주문번호:CA0106141302205</p>
+              <ul class="listOrder">
+                <li>
+                  <div class="itemOrder">
+                    <a href="#" class="imgOrder">
+                      <img src="../images/img_prodListOrder.jpg" alt="" />
+                    </a>
+                    <div class="infoOrder">
+                      <h3 class="titOrder">카키 스트레치 와이드 밴딩팬츠</h3>
+                      <p class="priceOrder">27,900원</p>
+                    </div>
+                    <div class="checkBox checkBoxStyle1">
+                      <input type="checkbox" id="check3_1" />
+                      <label for="check3_1"></label>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="itemOrder">
+                    <a href="#" class="imgOrder">
+                      <img src="../images/img_prodListOrder.jpg" alt="" />
+                    </a>
+                    <div class="infoOrder">
+                      <h3 class="titOrder">카키 스트레치 와이드 밴딩팬츠</h3>
+                      <p class="priceOrder">27,900원</p>
+                    </div>
+                    <div class="checkBox checkBoxStyle1">
+                      <input type="checkbox" id="check3_2" />
+                      <label for="check3_2"></label>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <p class="txtListOrder">상담을 원하시는 상품을 선택해주세요.</p>
+            </div>
+          </div>
         </div>
+        <button class="btnClose" onclick="closePop(this);">닫기</button>
       </div>
     </div>
-    <!-- // pop search -->
+    <!-- // pop brand -->
+
   </div>
 
 </body>

@@ -276,8 +276,7 @@ body.openPop { overflow:hidden; }
 
 .popBox .popCategory .category { padding:30px 0; border-bottom: 1px solid #d0d0d0; } 
 .popBox .popCategory .category > li + li { margin-top: 30px; } 
-.popBox .popCategory .category > li > a { position: relative; display: block; padding-right: 20px; color: #1c1c1c; font-size: 17px; font-weight: 500; { font-family: 'Red Hat Display', sans-serif; } 
- }
+.popBox .popCategory .category > li > a { position: relative; display: block; padding-right: 20px; color: #1c1c1c; font-size: 17px; font-weight: 500;}
 .popBox .popCategory .category > li > a::after { content:''; position: absolute; top:50%; right:0; width:7px; height:5px; margin-top: -3px; background: url(../images/icon_list_arrow_up.png) no-repeat center center; background-size: 100%; transform:rotate(180deg); transition: transform .1s; } 
 .popBox .popCategory .category > li.on > a::after { transform: rotate(0); } 
 .popBox .popCategory .category > li .subCategory { display: none; } 

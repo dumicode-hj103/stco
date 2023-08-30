@@ -38,6 +38,10 @@ $(function () {
   $('.filterOptionBox .itemFilterOption .titFilterOption').click(function(){
     $(this).parent('.itemFilterOption').toggleClass('on');
   });
+
+  $('.flag').click(function(){
+    $(this).toggleClass('on');
+  });
 });
 
 function openPop(id) {
@@ -69,4 +73,14 @@ function botBrandClick(obj) {
   $(obj).toggleClass('on');
   togglePop('popBrand');
   $('body').toggleClass('openBotBrand');
+}
+
+function delAllSearchRecord(obj){
+  $(obj).parents('.searchRecordBox').find('.listSearchRecord').empty();
+  //todo ....
+}
+
+function delSearchRecord(obj){
+  $(obj).parents('li').remove();
+  //todo ....
 }

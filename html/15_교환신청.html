@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>STCO</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <link type="text/css" rel="stylesheet" href="../css/swiper-bundle.min.css" />
+  <link type="text/css" rel="stylesheet" href="../css/style.css" />
+
+  <script src="../js/jquery-3.7.0.min.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
+  <!-- ui js -->
+  <script src="../js/design.js"></script>
+</head>
+
+<body>
+
+  <div id="wrap">
+
+    <!-- header -->
+    <header id="header" class="bgWhite">
+      <a href="#" class="btnPrev black">Prev</a>
+      <h1 class="titPage black">교환신청</h1>
+      <div class="toolBox">
+        <a href="#" class="btnCart black">
+          <span class="num">0</span>
+        </a>
+        <a href="javascript:openPop('popSearch')" class="btnSearch black">Search</a>
+      </div>
+    </header>
+    <!--// header -->
+
+    <!-- container -->
+    <div id="container">
+      <div class="subContainer">
+        <div class="replaceBox">
+          <div class="replaceNoticeBox">
+            <div class="imgBox">
+              <img src="../images/img_notice.png" alt="" />
+            </div>
+            <p class="txtReplaceNotice">
+              여러 상품을 동시에 교환하실 경우,
+              <br/>
+               각 상품의 온라인 배송/매장 배송여부와 관계없이
+              <br/>
+              <span class="colorOrange">물류센터로 ‘합포장 발송’</span>을 해주셔야 합니다.
+              <br/>
+              <br/>
+              택배기사님의 회수 누락 방지를 위해 
+              <br/>
+              <span class="colorOrange">1개의 박스에 한꺼번에 넣어서 보내주세요.</span>
+            </p>
+          </div>
+          <div class="replaceProdBox">
+            <div class="orderBarBox">
+              <div class="orderInfo">
+                <h2 class="titDate">2023.06.01</h2>
+                <p class="txtOrderNum">주문번호 : cb0615093813684</p>
+              </div>
+              <a href="#" class="btnDetail"> 상세보기 &gt;</a>
+            </div>
+            <div class="replaceProdDetailBox">
+              <div class="prodBoxStyle3">
+                <a href="#" class="imgProd">
+                  <img src="../images/img_prod_temp_140_210.jpg" alt="" />
+                </a>
+                <div class="infoBox">
+                  <h3 class="titProd">STCO</h3>
+                  <p class="txtProd">가먼트다잉 밴딩 와이드 치노 팬츠</p>
+                  <div class="optionBox">
+                    <span class="txtOption">그레이 / 86 / 1개</span>
+                  </div>
+                  <div class="priceBox">
+                    <span class="newPrice large">39,000원</span>
+                  </div>
+                </div>
+              </div>
+              <div class="formBox small mt20">
+                <div class="formRow">
+                  <select class="select">
+                    <option value="">교환 신청 사유를 선택해주세요.</option>
+                  </select>
+                </div>
+                <div class="formRow">
+                  <textarea class="textarea" placeholder="상세 내용 입력"></textarea>
+                </div>
+              </div>
+              <div class="replaceProdDetail">
+                <h2 class="titDetail">교환상품 변경</h2>
+                <ul class="listReplaceMethod">
+                  <li>
+                    <div class="radioStyle4">
+                      <input type="radio" id="radio_1_1" name="radio_1" value="otherSize" checked>
+                      <label for="radio_1_1" class="itemTitle">동일한 상품 사이즈 교환</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="radioStyle4">
+                      <input type="radio" id="radio_1_2" name="radio_1" value="otherProd">
+                      <label for="radio_1_2" class="itemTitle">다른 상품으로 교환</label>
+                    </div>
+                  </li>
+                </ul>
+                <div class="replaceProd">
+                  <a href="#" class="imgProd">
+                    <img src="../images/img_prod_temp_140_210.jpg" alt="" />
+                  </a>
+                  <div class="infoBox">
+                    <p class="txtProd">가먼트다잉 밴딩 와이드 치노 팬츠</p>
+                    <p class="txtOption">주문사이즈 : 100</p>
+                    <p class="txtPrice">14,950원</p>
+                    <!-- other size -->
+                    <div id="otherSize" class="radioHidden1">
+                      <div class="formBox">
+                        <select class="select">
+                          <option value="">변경하실 사이즈 선택</option>
+                        </select>
+                      </div>
+                    </div>
+                    <!-- //other size -->
+
+                    <!-- other product -->
+                    <div id="otherProd" class="radioHidden1">
+                      <a href="javascript:openPop('popSearchProd')" class="btn btnStyle1 btnSearch small">
+                        <span class="txtBtn">검색</span>
+                      </a>
+                    </div>
+                    <!-- //other product -->
+                  </div>
+                </div>
+
+                <h2 class="titDetail">교환방법</h2>
+                <h3 class="titSubDetail">교환 상품을 이미 발송 하셨나요? </h3>
+                <ul class="radioBox">
+                  <li>
+                    <div class="radioStyle4">
+                      <input type="radio" id="radio_2_1" name="radio_2" value="sendBySelf" checked>
+                      <label for="radio_2_1" class="itemTitle">예</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="radioStyle4">
+                      <input type="radio" id="radio_2_2" name="radio_2" value="sendByExpress">
+                      <label for="radio_2_2" class="itemTitle">아니오</label>
+                    </div>
+                  </li>
+                </ul>
+
+                <!-- 직접발송인경우 -->
+                <div id="sendBySelf" class="radioHidden2">
+                  <h2 class="titDetail">발송하신 택배사와 송장번호</h2>
+                  <div class="formBox">
+                    <div class="formRow">
+                      <h3 class="titRow">택배사</h3>
+                      <div class="contRow">
+                        <select class="select">
+                          <option value="">선택</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="formRow">
+                      <h3 class="titRow">발송일</h3>
+                      <div class="contRow">
+                        <input type="text" class="text">
+                      </div>
+                    </div>
+                    <div class="formRow">
+                      <h3 class="titRow">송장번호</h3>
+                      <div class="contRow">
+                        <input type="text" class="text">
+                      </div>
+                    </div>
+                    <div class="formRow">
+                      <h3 class="titRow">보내실 주소</h3>
+                      <div class="contRow">
+                        <div class="sendAddrBox">
+                          <p class="txtName">STCO 물류창고</p>
+                          <p class="txtAddr">
+                            <span class="txtTitle">주소 :</span><span class="txtText"> (467-851) 경기도 이천시 대월면 구시리 309-2 STCO물류창고(온라인) </span>
+                          </p>
+                          <p class="txtAddr">
+                            <span class="txtTitle">연락처 :</span><span class="txtText"> 070-4687-7342</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="titDetailBox">
+                    <h2 class="titDetail">교환상품 받으실 주소</h2>
+                    <a href="#" class="btnToolStyle1">배송지변경</a>
+                  </div>
+                  <div class="formBox">
+                    <div class="formRow">
+                      <h3 class="titRow">수령인</h3>
+                      <div class="contRow">
+                        <input type="text" class="text" placeholder="이름을 입력해주세요.">
+                      </div>
+                    </div>
+                    <div class="formRow">
+                      <h3 class="titRow">휴대폰 번호</h3>
+                      <div class="contRow">
+                        <div class="telBox">
+                          <input type="text" class="text" placeholder="010" maxlength="3">
+                          <input type="text" class="text" placeholder="0000" maxlength="4">
+                          <input type="text" class="text" placeholder="0000" maxlength="4">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="formRow">
+                      <h3 class="titRow">배송지 입력</h3>
+                      <div class="contRow">
+                        <div class="inputAddress">
+                          <div class="inputBtnBox">
+                            <input type="text" class="text">
+                            <button class="btnForm btnFormStyle1" onclick="">우편번호 찾기</button>
+                          </div>
+                          <input type="text" class="text">
+                          <input type="text" class="text" placeholder="상세주소를 입력해주세요.">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="formRow">
+                      <h3 class="titRow">배송 시 요청사항</h3>
+                      <div class="contRow">
+                        <select class="select">
+                          <option value="">교환 신청 사유를 선택해주세요.</option>
+                        </select>
+                        <textarea class="textarea small" placeholder="상세 내용 입력"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- // 직접발송인경우 -->
+
+                <!-- 택배사지정의경우 -->
+                <div id="sendByExpress" class="radioHidden2">
+                  <h3 class="titSubDetail mt40">
+                    <span class="colorOrange">판매자 지정 택배</span>로 신청시, 
+                    <br/>택배사에 연락 하지 않아도 1~3일(영업일 기준) 내 
+                    <br/>택배기사가 방문하여 편리합니다. 
+                  </h3>
+                  <ul class="radioBox">
+                    <li>
+                      <div class="radioStyle4">
+                        <input type="radio" id="radio_4_1" name="radio_4" checked>
+                        <label for="radio_4_1" class="itemTitle colorOrange">판매사 지정 택배 (롯데택배)</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="radioStyle4">
+                        <input type="radio" id="radio_4_2" name="radio_4">
+                        <label for="radio_4_2" class="itemTitle">직접발송</label>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <h3 class="titSubDetail mt40">
+                    상품 수거지 주소와 교환된 상품을 받으실 
+                    <br/>
+                    주소가 같은가요?
+                  </h3>
+                  <ul class="radioBox">
+                    <li>
+                      <div class="radioStyle4">
+                        <input type="radio" id="radio_5_1" name="radio_5" checked>
+                        <label for="radio_5_1" class="itemTitle">예</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="radioStyle4">
+                        <input type="radio" id="radio_5_2" name="radio_5">
+                        <label for="radio_5_2" class="itemTitle">아니오</label>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="line"></div>
+                  <div class="titDetailBox">
+                    <h2 class="titDetail">상품수거지 & 교환상품 받으실 주소</h2>
+                    <a href="#" class="btnToolStyle1">배송지변경</a>
+                  </div>
+                  <div class="formBox">
+                    <div class="formRow">
+                      <h3 class="titRow">수령인</h3>
+                      <div class="contRow">
+                        <input type="text" class="text" placeholder="이름을 입력해주세요.">
+                      </div>
+                    </div>
+                    <div class="formRow">
+                      <h3 class="titRow">휴대폰 번호</h3>
+                      <div class="contRow">
+                        <div class="telBox">
+                          <input type="text" class="text" placeholder="010" maxlength="3">
+                          <input type="text" class="text" placeholder="0000" maxlength="4">
+                          <input type="text" class="text" placeholder="0000" maxlength="4">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="formRow">
+                      <h3 class="titRow">배송지 입력</h3>
+                      <div class="contRow">
+                        <div class="inputAddress">
+                          <div class="inputBtnBox">
+                            <input type="text" class="text">
+                            <button class="btnForm btnFormStyle1" onclick="">우편번호 찾기</button>
+                          </div>
+                          <input type="text" class="text">
+                          <input type="text" class="text" placeholder="상세주소를 입력해주세요.">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="formRow">
+                      <h3 class="titRow">배송 시 요청사항</h3>
+                      <div class="contRow">
+                        <select class="select">
+                          <option value="">배송 요청사항 직접 입력하기</option>
+                        </select>
+                        <textarea class="textarea small" placeholder="상세 내용 입력"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- //택배사지정의경우 -->
+
+                <h2 class="titDetail">교환배송비 결제</h2>
+                <div class="replacePaymentBox">
+                  <p class="txtReplacePayment">
+                    단순 변심으로 인한 교환이므로 <span class="colorOrange">교환배송비 5,000원</span>을 부담하셔야 교환이 가능합니다.
+                  </p>
+                  <h2 class="titPrice">결제금액 5,000원</h2>
+
+                  <div class="radioBox radioStyle4">
+                    <input type="radio" id="radio_3" name="radio_3" checked>
+                    <label for="radio_3" class="itemTitle">즉시 결제 (배송비만 별도로 결제)</label>
+                  </div>
+                  
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="btnBox p012">
+            <a href="#" class="btn btnStyle2">
+              <span class="txtBtn">취소</span>
+            </a>
+            <a href="#" class="btn btnStyle1">
+              <span class="txtBtn">교환신청</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// container -->
+
+    <script>
+      $(function(){
+        $('.listReplaceMethod input[name="radio_1"]').change(function () {
+            var selectedOption = $('input[name="radio_1"]:checked').val();
+            $('.radioHidden1').hide();
+            $('#' + selectedOption).show();
+        }).trigger('change');
+
+        $('.radioBox input[name="radio_2"]').change(function () {
+            var selectedOption = $('input[name="radio_2"]:checked').val();
+            $('.radioHidden2').hide();
+            $('#' + selectedOption).show();
+        }).trigger('change');
+      })
+    </script>
+    <!-- footer -->
+    <footer id="footer">
+      <div class="csBox">
+        <h2 class="titCs">고객센터 <a href="tel:070-4687-7342" class="txtPhone">070-4687-7342</a></h2>
+        <p class="txtCs">
+          운영시간 평일 10:00 - 17:00 (토∙일, 공휴일 휴무)
+          <br />
+          점심시간 평일 12:00 - 13:00
+        </p>
+      </div>
+      <div class="contactBox">
+        <p class="txtContact1">
+          <span>(주)에스티오</span>
+          <button class="toggleContact2">사업자 정보 <i class="iconArrow"></i></button>
+        </p>
+        <p class="txtContact2">
+          서울시 강서구 양천로 583 우림블루나인비지니스센터 B동 15층
+          <br />
+          대표자 : 김흥수 / 사업자등록번호 : 206-81-79031
+          <br />
+          통신판매업신고 : 제2009 서울강서 0684호 / 개인정보관리책임자 : 안중태
+          <br />
+          대표메일주소 : stoonline@stco.co.kr
+        </p>
+        <ul class="listLink">
+          <li><a href="#" class="linkContact">이용약관</a></li>
+          <li><a href="#" class="linkContact">개인정보처리방침</a></li>
+        </ul>
+        <ul class="listLink2">
+          <li><a href="#">회사소개</a></li>
+          <li><a href="#">고객센터</a></li>
+          <li><a href="#">에스크로가입확인</a></li>
+        </ul>
+      </div>
+      <p class="copyright ">Copyright© STO. All right reserved</p>
+    </footer>
+    <!--// footer end -->
+
+    <!-- Bot Menu -->
+    <div class="botMenuWrap">
+      <div class="botMenuBox">
+        <ul class="botMenu">
+          <li>
+            <a href="javascript:void(0);" class="itemMenu cate" onclick="openPop('popCategory')">카테고리</a>
+          </li>
+          <li>
+            <a id="btnBrand" href="javascript:void(0);" onclick="botBrandClick(this)" class="itemMenu brand">브랜드</a>
+          </li>
+          <li>
+            <a href="#" class="itemMenu home">홈</a>
+          </li>
+          <li>
+            <a href="#" class="itemMenu my">MY</a>
+          </li>
+          <li>
+            <a href="#" class="itemMenu flag">찜</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- // Bot Menu -->
+
+    <!-- float button -->
+    <div class="floatButtonBox">
+      <ul class="floatButton">
+        <li><a href="#" class="itemButton"><img src="../images/icon_record.png" alt="Record"></a></li>
+        <li><a href="#" id="btnTop" class="itemButton"><img src="../images/icon_top.png" alt="Top"></a></li>
+      </ul>
+    </div>
+    <!-- // float button -->
+
+    <!-- <script>
+      $(function(){
+        openPop('popOption');
+      });
+    </script> -->
+    <!-- pop option -->
+    <div class="popBox" id="popOption">
+      <div class="mask"></div>
+      <div class="popCont popBotStyle2">
+        <div class="popOptionBox">
+          <h2 class="titPopOption">옵션변경</h2>
+          <div class="contPopOption">
+            <div class="formBox">
+              <div class="formRow">
+                <div class="contRow">
+                  <select class="select">
+                    <option value="">그레이</option>
+                  </select>
+                </div>
+              </div>
+              <div class="formRow">
+                <div class="contRow">
+                  <select class="select">
+                    <option value="">86</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btnBox">
+          <a href="javascript:void(0);" class="btn btnStyle4" onclick="closePop(this);">
+            <span class="txtBtn">취소</span>
+          </a>
+          <a href="#" class="btn btnStyle1">
+            <span class="txtBtn">변경</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- pop option -->
+
+    <!-- pop search product -->
+    <div class="popBox" id="popSearchProd">
+      <div class="mask"></div>
+      <div class="popCont popFull">
+
+        <div class="topBox">
+          <button class="btnPrev" onclick="closePop(this);">닫기</button>
+          <h2 class="titPop">교환 가능한 상품검색</h2>
+        </div>
+        <div class="searchProdBox">
+          <div class="searchProd">
+            <a href="#" class="imgProd">
+              <img src="../images/img_prod_temp_180_270.jpg" alt="">
+            </a>
+            <p class="txtPrice">14,950원</p>
+            <div class="formBox small">
+              <div class="formRow">
+                <select class="select">
+                  <option>아이템</option>
+                </select>
+              </div>
+              <div class="formRow">
+                <select class="select">
+                  <option>셔츠</option>
+                </select>
+              </div>
+              <p class="txtFormNotice">
+                동일한 가격으로만 교환이 가능합니다.
+                <br/>
+                원하시는 상품이 없을 시, 반품 후 재주문 부탁드립니다.
+              </p>
+              <div class="btnBox">
+                <a href="#" class="btn btnStyle1">
+                  <span class="txtBtn">검색</span>
+                </a>
+              </div>
+            </div>
+            <div class="listSearchProdBox">
+              <h2 class="titListSearchProd">상품리스트</h2>
+              <table class="tbl tblDataStyle1 txtCenter">
+                <colgroup>
+                  <col width="75"/>
+                  <col/>
+                  <col/>
+                  <col/>
+                </colgroup>
+                <thead>
+                  <th>이미지</th>
+                  <th>상품명</th>
+                  <th>사이즈</th>
+                  <th>선택</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="imgTblProd"><img src="../images/img_prod_temp_180_270.jpg" alt=""></div>
+                    </td>
+                    <td>
+                      가먼트다잉 밴딩 와이드 치노 팬츠
+                    </td>
+                    <td>105</td>
+                    <td>
+                      <a href="#" class="btnTblBlack">선택</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="imgTblProd"><img src="../images/img_prod_temp_180_270.jpg" alt=""></div>
+                    </td>
+                    <td>
+                      가먼트다잉 밴딩 와이드 치노 팬츠
+                    </td>
+                    <td>105</td>
+                    <td>
+                      <a href="#" class="btnTblBlack">선택</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- // pop search product -->
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>STCO</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <link type="text/css" rel="stylesheet" href="../css/swiper-bundle.min.css" />
+  <link type="text/css" rel="stylesheet" href="../css/style.css" />
+
+  <script src="../js/jquery-3.7.0.min.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
+  <!-- ui js -->
+  <script src="../js/design.js"></script>
+</head>
+
+<body>
+
+  <div id="wrap">
+
+    <!-- header -->
+    <header id="header" class="bgWhite">
+      <a href="#" class="btnPrev black">Prev</a>
+      <h1 class="titPage black">회원 등급별 혜택</h1>
+      <div class="toolBox">
+        <a href="#" class="btnCart black">
+          <span class="num">0</span>
+        </a>
+        <a href="javascript:openPop('popSearch')" class="btnSearch black">Search</a>
+      </div>
+    </header>
+    <!--// header -->
+
+    <!-- container -->
+    <div id="container">
+      <div class="subContainer">
+        <div class="memLevelBox">
+          <div class="myLevelBox bb">
+            <div class="imgMyLevel">
+              <img src="../images/img_level_welcome.png" alt="">
+              <!-- <img src="../images/img_level_silver.png" alt=""> -->
+              <!-- <img src="../images/img_level_gold.png" alt=""> -->
+              <!-- <img src="../images/img_level_platinum.png" alt=""> -->
+            </div>
+            <h2 class="titMyLevel">
+              홍길동님은
+              <br/>
+              소중한 <strong>WELCOME</strong> 등급 고객입니다.
+            </h2>
+            <div class="tipsBox">
+              <span class="iconArrow"></span>
+              <p class="txtTips">3 건 구매, 또는 100,000원이상 구매시 SILVER등급 달성!</p>
+            </div>
+            <ul class="listTxtMyLevel">
+              <li>
+                <span class="dot">※</span>
+                <p class="txtMyLevel">
+                  등급 변경 시점:매월 1일
+                </p>
+              </li>
+              <li>
+                <span class="dot">※</span>
+                <p class="txtMyLevel">
+                  등급 산정 기간 : 직전 11개월간 누적 금액 또는 누적 구매 횟수
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="levelDetailBox bb">
+            <h2 class="titLevelDetail">회원 등급 및 혜택 안내</h2>
+            <ul class="listLevelDetail">
+              <li>
+                <div class="itemLevelDetail">
+                  <div class="imgBox">
+                    <div class="imgLevel">
+                      <img src="../images/img_level_welcome.png" alt="" />                      
+                    </div>
+                    <span class="txtImgLevel">WELCOME</span>
+                  </div>
+                  <div class="infoBox">
+                    <h3 class="titLevelDetail">가입 즉시 </h3>
+                    <ul class="listLevelInfo">
+                      <li>
+                        <span class="dot">·</span>
+                        <p>무료배송 쿠폰</p>
+                      </li>
+                      <li>
+                        <span class="dot">·</span>
+                        <p>
+                          3천원 할인 쿠폰
+                          <br/>
+                          (3만원 이상 구매시 , 최초 1회 발급)
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="itemLevelDetail">
+                  <div class="imgBox">
+                    <div class="imgLevel">
+                      <img src="../images/img_level_silver.png" alt="" />                      
+                    </div>
+                    <span class="txtImgLevel">SILVER</span>
+                  </div>
+                  <div class="infoBox">
+                    <h3 class="titLevelDetail">3회 이상 구매 / 10만원 이상 구매</h3>
+                    <ul class="listLevelInfo">
+                      <li>
+                        <span class="dot">·</span>
+                        <p>
+                          3천원 할인 쿠폰
+                          <br/>
+                          (5만원 이상 구매시 , 월 1회 발급)
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="itemLevelDetail">
+                  <div class="imgBox">
+                    <div class="imgLevel">
+                      <img src="../images/img_level_gold.png" alt="" />                      
+                    </div>
+                    <span class="txtImgLevel">GOLD</span>
+                  </div>
+                  <div class="infoBox">
+                    <h3 class="titLevelDetail">3회 이상 구매 / 10만원 이상 구매</h3>
+                    <ul class="listLevelInfo">
+                      <li>
+                        <span class="dot">·</span>
+                        <p>
+                          3천원 할인 쿠폰
+                          <br/>
+                          (5만원 이상 구매시 , 월 1회 발급)
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="itemLevelDetail">
+                  <div class="imgBox">
+                    <div class="imgLevel">
+                      <img src="../images/img_level_platinum.png" alt="" />                      
+                    </div>
+                    <span class="txtImgLevel">PLATINUM</span>
+                  </div>
+                  <div class="infoBox">
+                    <h3 class="titLevelDetail">30회 이상 구매시 / 150만원 이상 구매</h3>
+                    <ul class="listLevelInfo">
+                      <li>
+                        <span class="dot">·</span>
+                        <p>
+                          1만원 할인 쿠폰
+                          <br/>
+                          (10만원 이상 구매시, 월 1회 발급)
+                        </p>
+                      </li>
+                      <li>
+                        <span class="dot">·</span>
+                        <p>
+                          5천원 할인 쿠폰
+                          <br/>
+                          (5만원 이상 구매시, 월 1회 발급)
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="levelNoticeBox">
+            <h2 class="titLevelNotice">회원 등급 유의 사항</h2>
+            <ul class="listLevelNotice">
+              <li>
+                <span class="dot">·</span>
+                <p>
+                  승급 기준과 적립의 기준은 구매확정이 된 실결제금액을 기준으로 합니다.
+                </p>
+              </li>
+              <li>
+                <span class="dot">·</span>
+                <p>
+                  구매적립과 후기적립은 마일리지로 적립해 드립니다.
+                </p>
+              </li>
+              <li>
+                <span class="dot">·</span>
+                <p>
+                  마일리지 상품 구매
+                  <span class="sub">– 온라인몰 (100마일리지부터 100원 단위로 사용 가능)</span>
+                  <span class="sub">– 오프라인 매장 (2,000마일리지부터)</span>
+                </p>
+              </li>
+              <li>
+                <span class="dot">·</span>
+                <p>
+                  반품 혹은 취소로 인한 등급 기준 미달 시, 반품 시점부터 해당 등급으로 적용이 됩니다.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// container -->
+  </div>
+</body>
+</html>

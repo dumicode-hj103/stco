@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>STCO</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <link type="text/css" rel="stylesheet" href="../css/swiper-bundle.min.css" />
+  <link type="text/css" rel="stylesheet" href="../css/style.css" />
+
+  <script src="../js/jquery-3.7.0.min.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
+  <!-- ui js -->
+  <script src="../js/design.js"></script>
+</head>
+
+<body>
+
+  <div id="wrap">
+
+    <!-- header -->
+    <header id="header" class="bgWhite">
+      <a href="#" class="btnPrev black">Prev</a>
+      <h1 class="titPage black">장바구니</h1>
+      <div class="toolBox">
+        <a href="#" class="btnCart black">
+          <span class="num">0</span>
+        </a>
+        <a href="javascript:openPop('popSearch')" class="btnSearch black">Search</a>
+      </div>
+    </header>
+    <!--// header -->
+
+    <!-- container -->
+    <div id="container">
+      <div class="subContainer">
+        <div class="myCartBox">
+          <div class="myCartLoginBox">
+            <h2 class="titMyCartLogin">
+              보유하신 쿠폰과 마일리지를
+              <br />
+              확인하시려면 로그인 해주세요.
+            </h2>
+            <a href="#" class="btnLogin">로그인</a>
+          </div>
+          <div class="listCartBox">
+            <div class="listHead">
+              <div class="checkBox checkBoxStyle1">
+                <input type="checkbox" id="check1_All">
+                <label for="check1_All">전체선택</label>
+              </div>
+              <div class="toolBox">
+                <a href="#" class="btnTool btnToolStyle1">선택삭제</a>
+                <a href="#" class="btnTool btnToolStyle1">전체삭제</a>
+              </div>
+            </div>
+            <div class="noResultBox">
+              <p class="txtNoResult">장바구니에 담긴 상품이 없습니다.</p>
+              <div class="btnBox">
+                <a href="#" class="btn btnNoResult">
+                  <span class="txtBtn">쇼핑 계속하기</span>
+                </a>
+              </div>
+              
+            </div>
+            <ul class="listCart">
+              <li>
+                <div class="itemCart">
+                  <div class="checkBox checkBoxStyle1">
+                    <input type="checkbox" id="check1_1">
+                    <label for="check1_1"></label>
+                  </div>
+                  <button class="btnDel">삭제</button>
+                  <div class="prodBoxStyle3">
+                    <a href="#" class="imgProd">
+                      <img src="../images/img_prod_temp_140_210.jpg" alt="">
+                    </a>
+                    <div class="infoBox">
+                      <h3 class="titProd">STCO</h3>
+                      <p class="txtProd">가먼트다잉 밴딩 와이드 치노 팬츠</p>
+                      <div class="optionBox">
+                        <span class="txtOption">그레이 / 86 / 1개</span>
+                        <span class="txtBind">묶음할인</span>
+                      </div>
+                      <div class="priceBox">
+                        <span class="oldPrice">329,000</span>
+                        <span class="newPrice">199,000원</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="buyBox">
+                    <div class="numBox">
+                      <button class="btnMinus">-</button>
+                      <input type="text" class="textNum" maxlength="3" value="1" />
+                      <button class="btnAdd">+</button>
+                    </div>
+                    <div class="buyBtnBox">
+                      <a href="javascript:openPop('popOption');" class="btn btnStyle2 small">
+                        <span class="txtBtn">옵션변경</span>
+                      </a>
+                      <a href="#" class="btn btnStyle1 small">
+                        <span class="txtBtn">바로구매</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="itemCart">
+                  <div class="checkBox checkBoxStyle1">
+                    <input type="checkbox" id="check1_2">
+                    <label for="check1_2"></label>
+                  </div>
+                  <button class="btnDel">삭제</button>
+                  <div class="prodBoxStyle3">
+                    <a href="#" class="imgProd">
+                      <img src="../images/img_prod_temp_140_210.jpg" alt="">
+                    </a>
+                    <div class="infoBox">
+                      <h3 class="titProd">STCO</h3>
+                      <p class="txtProd">가먼트다잉 밴딩 와이드 치노 팬츠</p>
+                      <div class="optionBox">
+                        <span class="txtOption">그레이 / 86 / 1개</span>
+                        <span class="txtBind">묶음할인</span>
+                      </div>
+                      <div class="priceBox">
+                        <span class="oldPrice">329,000</span>
+                        <span class="newPrice">199,000원</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="buyBox">
+                    <div class="numBox">
+                      <button class="btnMinus">-</button>
+                      <input type="text" class="textNum" maxlength="3" value="1" />
+                      <button class="btnAdd">+</button>
+                    </div>
+                    <div class="buyBtnBox">
+                      <a href="javascript:openPop('popOption');" class="btn btnStyle2 small">
+                        <span class="txtBtn">옵션변경</span>
+                      </a>
+                      <a href="#" class="btn btnStyle1 small">
+                        <span class="txtBtn">바로구매</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="priceInfoBox">
+            <ul class="listPrice">
+              <li>
+                <div class="itemPrice">
+                  <h3 class="titPrice">상품합계금액</h3>
+                  <p class="txtPrice">63,800원</p>
+                </div>
+              </li>
+              <li>
+                <div class="itemPrice">
+                  <h3 class="titPrice">배송비</h3>
+                  <p class="txtPrice">0원</p>
+                </div>
+              </li>
+              <li>
+                <div class="itemPrice">
+                  <h3 class="titPrice">묶음구매할인</h3>
+                  <p class="txtPrice">12,000원</p>
+                </div>
+              </li>
+              <li>
+                <div class="itemPrice total">
+                  <h3 class="titPrice">결제예상금액</h3>
+                  <p class="txtPrice"><strong class="colorRed">51,800</strong>원</p>
+                </div>
+              </li>
+            </ul>
+            <p class="txtTips">
+              ·쿠폰 및 마일리 지는 결제단계에서 적용됩니다.
+              <br />
+              ·장바구니에서는 온라인전용 쿠폰만 보여집니다.
+            </p>
+            <div class="btnBox p012">
+              <a href="#" class="btn btnStyle2">
+                <span class="txtBtn">선택상품주문</span>
+              </a>
+              <a href="#" class="btn btnStyle1">
+                <span class="txtBtn">전체상품주문</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="otherProdBox">
+            <h2 class="titOtherProd">함께 보면 좋은 상품</h2>
+            <div class="swiperProdStyle3 swpProd">
+              <div class="swiperScrollbar"></div>
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="swiperCont">
+                      <div class="prodBoxStyle1">
+                        <div class="prodImgBox">
+                          <a href="#" class="imgProd">
+                            <img src="../images/img_SUIT&SETUP_prod_01.jpg" alt="" />
+                          </a>
+                          <a href="javascript:void(0);" class="flag"></a>
+                        </div>
+                        <p class="txtProd">워싱 린넨 수트</p>
+                        <div class="priceBox">
+                          <span class="newPrice">89,000</span>
+                        </div>
+                        <div class="colorBox">
+                          <a href="javascript:void(0);" class="itemColor" style="background-color:#e7e7e7;"></a>
+                          <a href="javascript:void(0);" class="itemColor" style="background-color:#e6dfd5;"></a>
+                          <a href="javascript:void(0);" class="itemColor" style="background-color:#b7cce6;"></a>
+                          <a href="javascript:void(0);" class="itemColor" style="background-color:#e5d5e6;"></a>
+                          <a href="javascript:void(0);" class="itemColor" style="background-color:#9ea79d;"></a>
+                          <a href="javascript:void(0);" class="btnColorAdd"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="prodBoxStyle1">
+                      <div class="prodImgBox">
+                        <a href="#" class="imgProd">
+                          <img src="../images/img_SUIT&amp;SETUP_prod_02.jpg" alt="">
+                        </a>
+                        <a href="javascript:void(0);" class="flag"></a>
+                      </div>
+                      <p class="txtProd">다이드 네이비 블루 린 long text test</p>
+                      <div class="priceBox">
+                        <span class="newPrice">89,000</span>
+                      </div>
+                      <div class="colorBox">
+                        <a href="javascript:void(0);" class="itemColor" style="background-color:#e7e7e7;"></a>
+                        <a href="javascript:void(0);" class="itemColor" style="background-color:#e6dfd5;"></a>
+                        <a href="javascript:void(0);" class="itemColor" style="background-color:#b7cce6;"></a>
+                        <a href="javascript:void(0);" class="itemColor" style="background-color:#e5d5e6;"></a>
+                        <a href="javascript:void(0);" class="itemColor" style="background-color:#9ea79d;"></a>
+                        <a href="javascript:void(0);" class="btnColorAdd"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="prodBoxStyle1">
+                      <div class="prodImgBox">
+                        <a href="#" class="imgProd">
+                          <img src="../images/img_SUIT&amp;SETUP_prod_03.jpg" alt="">
+                        </a>
+                        <a href="javascript:void(0);" class="flag"></a>
+                      </div>
+                      <p class="txtProd">텍스처드 린넨 수트</p>
+                      <div class="priceBox">
+                        <span class="newPrice">89,000</span>
+                      </div>
+                      <div class="colorBox">
+                        <a href="javascript:void(0);" class="itemColor" style="background-color:#2c2c2c;"></a>
+                        <a href="javascript:void(0);" class="itemColor" style="background-color:#e6dfd5;"></a>
+                        <a href="javascript:void(0);" class="itemColor" style="background-color:#b7cce6;"></a>
+                        <a href="javascript:void(0);" class="itemColor" style="background-color:#e5d5e6;"></a>
+                        <a href="javascript:void(0);" class="itemColor" style="background-color:#9ea79d;"></a>
+                        <a href="javascript:void(0);" class="btnColorAdd"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiperCont">
+                      <div class="prodBoxStyle1">
+                        <div class="prodImgBox">
+                          <a href="#" class="imgProd">
+                            <img src="../images/img_SUIT&SETUP_prod_01.jpg" alt="" />
+                          </a>
+                          <a href="javascript:void(0);" class="flag"></a>
+                        </div>
+                        <p class="txtProd">워싱 린넨 수트</p>
+                        <div class="priceBox">
+                          <span class="newPrice">89,000</span>
+                        </div>
+                        <div class="colorBox">
+                          <a href="javascript:void(0);" class="itemColor" style="background-color:#e7e7e7;"></a>
+                          <a href="javascript:void(0);" class="itemColor" style="background-color:#e6dfd5;"></a>
+                          <a href="javascript:void(0);" class="itemColor" style="background-color:#b7cce6;"></a>
+                          <a href="javascript:void(0);" class="itemColor" style="background-color:#e5d5e6;"></a>
+                          <a href="javascript:void(0);" class="itemColor" style="background-color:#9ea79d;"></a>
+                          <a href="javascript:void(0);" class="btnColorAdd"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="prodBoxStyle1">
+                      <div class="prodImgBox">
+                        <a href="#" class="imgProd">
+                          <img src="../images/img_SUIT&amp;SETUP_prod_02.jpg" alt="">
+                        </a>
+                        <a href="javascript:void(0);" class="flag"></a>
+                      </div>
+                      <p class="txtProd">다이드 네이비 블루 린 long text test</p>
+                      <div class="priceBox">
+                        <span class="newPrice">89,000</span>
+                      </div>
+                      <div class="colorBox">
+                        <a href="javascript:void(0);" class="itemColor" style="background-color:#e7e7e7;"></a>
+                        <a href="javascript:void(0);" class="itemColor" style="background-color:#e6dfd5;"></a>
+                        <a href="javascript:void(0);" class="itemColor" style="background-color:#b7cce6;"></a>
+                        <a href="javascript:void(0);" class="itemColor" style="background-color:#e5d5e6;"></a>
+                        <a href="javascript:void(0);" class="itemColor" style="background-color:#9ea79d;"></a>
+                        <a href="javascript:void(0);" class="btnColorAdd"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="prodBoxStyle1">
+                      <div class="prodImgBox">
+                        <a href="#" class="imgProd">
+                          <img src="../images/img_SUIT&amp;SETUP_prod_03.jpg" alt="">
+                        </a>
+                        <a href="javascript:void(0);" class="flag"></a>
+                      </div>
+                      <p class="txtProd">텍스처드 린넨 수트</p>
+                      <div class="priceBox">
+                        <span class="newPrice">89,000</span>
+                      </div>
+                      <div class="colorBox">
+                        <a href="javascript:void(0);" class="itemColor" style="background-color:#2c2c2c;"></a>
+                        <a href="javascript:void(0);" class="itemColor" style="background-color:#e6dfd5;"></a>
+                        <a href="javascript:void(0);" class="itemColor" style="background-color:#b7cce6;"></a>
+                        <a href="javascript:void(0);" class="itemColor" style="background-color:#e5d5e6;"></a>
+                        <a href="javascript:void(0);" class="itemColor" style="background-color:#9ea79d;"></a>
+                        <a href="javascript:void(0);" class="btnColorAdd"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <script>
+              $(function () {
+                var swpProd = new Swiper(".swpProd .swiper", {
+                  slidesPerView: 'auto',
+                  scrollbar: {
+                    el: ".swpProd .swiperScrollbar",
+                  },
+                });
+              })
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="csBox">
+        <h2 class="titCs">고객센터 <a href="tel:070-4687-7342" class="txtPhone">070-4687-7342</a></h2>
+        <p class="txtCs">
+          운영시간 평일 10:00 - 17:00 (토∙일, 공휴일 휴무)
+          <br />
+          점심시간 평일 12:00 - 13:00
+        </p>
+      </div>
+      <div class="contactBox">
+        <p class="txtContact1">
+          <span>(주)에스티오</span>
+          <button class="toggleContact2">사업자 정보 <i class="iconArrow"></i></button>
+        </p>
+        <p class="txtContact2">
+          서울시 강서구 양천로 583 우림블루나인비지니스센터 B동 15층
+          <br />
+          대표자 : 김흥수 / 사업자등록번호 : 206-81-79031
+          <br />
+          통신판매업신고 : 제2009 서울강서 0684호 / 개인정보관리책임자 : 안중태
+          <br />
+          대표메일주소 : stoonline@stco.co.kr
+        </p>
+        <ul class="listLink">
+          <li><a href="#" class="linkContact">이용약관</a></li>
+          <li><a href="#" class="linkContact">개인정보처리방침</a></li>
+        </ul>
+        <ul class="listLink2">
+          <li><a href="#">회사소개</a></li>
+          <li><a href="#">고객센터</a></li>
+          <li><a href="#">에스크로가입확인</a></li>
+        </ul>
+      </div>
+      <p class="copyright ">Copyright© STO. All right reserved</p>
+    </footer>
+    <!--// footer end -->
+
+
+    <!-- Bot Menu -->
+    <div class="botMenuWrap">
+      <div class="botMenuBox">
+        <ul class="botMenu">
+          <li>
+            <a href="javascript:void(0);" class="itemMenu cate" onclick="openPop('popCategory')">카테고리</a>
+          </li>
+          <li>
+            <a id="btnBrand" href="javascript:void(0);" onclick="botBrandClick(this)" class="itemMenu brand">브랜드</a>
+          </li>
+          <li>
+            <a href="#" class="itemMenu home">홈</a>
+          </li>
+          <li>
+            <a href="#" class="itemMenu my">MY</a>
+          </li>
+          <li>
+            <a href="#" class="itemMenu flag">찜</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- // Bot Menu -->
+
+    <!-- float button -->
+    <div class="floatButtonBox">
+      <ul class="floatButton">
+        <li><a href="#" class="itemButton"><img src="../images/icon_record.png" alt="Record"></a></li>
+        <li><a href="#" id="btnTop" class="itemButton"><img src="../images/icon_top.png" alt="Top"></a></li>
+      </ul>
+    </div>
+    <!-- // float button -->
+  </div>
+
+  <!-- pop option -->
+  <div class="popBox" id="popOption">
+    <div class="mask"></div>
+    <div class="popCont popBotStyle2">
+      <div class="popOptionBox">
+        <h2 class="titPopOption">옵션변경</h2>
+        <div class="contPopOption">
+          <div class="formBox">
+            <div class="formRow">
+              <div class="contRow">
+                <select class="select">
+                  <option value="">그레이</option>
+                </select>
+              </div>
+            </div>
+            <div class="formRow">
+              <div class="contRow">
+                <select class="select">
+                  <option value="">86</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btnBox">
+        <a href="javascript:void(0);" class="btn btnStyle4" onclick="closePop(this);">
+          <span class="txtBtn">취소</span>
+        </a>
+        <a href="#" class="btn btnStyle1">
+          <span class="txtBtn">변경</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- pop option -->
+</body>
+
+</html>

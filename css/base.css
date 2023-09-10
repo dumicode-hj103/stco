@@ -52,11 +52,11 @@ caption,
 
 
 /* Base */
-body { background: #fff; color: #222; font-size: 13px; line-height: 1.5; font-weight: 400; font-family: "Red Hat Display", "Spoqa Han Sans Neo", sans-serif; text-align: left; overflow-x: hidden; } 
+body { background: #fff; color: #222; font-size: 13px; line-height: 1.5; font-weight: 400; font-family: "Red Hat Display","Spoqa Han Sans Neo", sans-serif; text-align: left; overflow-x: hidden; } 
 input,
 textarea,
 select,
-button { color: #222; font-size: 13px; line-height: 1.5; font-weight: 400; font-family: "Red Hat Display", "Spoqa Han Sans Neo", sans-serif; vertical-align: middle; } 
+button { color: #222; font-size: 13px; line-height: 1.5; font-weight: 400; font-family: "Spoqa Han Sans Neo", sans-serif; vertical-align: middle; } 
 a { color: #222; text-decoration: none; } 
 input:not([type="radio"]):not([type="checkbox"]),
 textarea,

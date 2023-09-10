@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>STCO</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <link type="text/css" rel="stylesheet" href="../css/swiper-bundle.min.css" />
+  <link type="text/css" rel="stylesheet" href="../css/style.css" />
+
+  <script src="../js/jquery-3.7.0.min.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
+  <!-- ui js -->
+  <script src="../js/design.js"></script>
+</head>
+
+<body>
+
+  <div id="wrap">
+
+    <!-- header -->
+    <header id="header" class="bgWhite">
+      <a href="#" class="btnPrev black">Prev</a>
+      <h1 class="titPage black">주문결제</h1>
+      <div class="toolBox">
+        <a href="#" class="btnCart black">
+          <span class="num">0</span>
+        </a>
+        <a href="javascript:openPop('popSearch')" class="btnSearch black">Search</a>
+      </div>
+    </header>
+    <!--// header -->
+
+    <!-- container -->
+    <div id="container">
+      <div class="subContainer">
+        <div class="orderPaymentBox">
+          <div class="itemOrderPayment">
+            <div class="shippingAddrBox">
+              <div class="shippingAddHeadBox">
+                <h2 class="titShippingAddr">배송지</h2>
+                <a href="#" class="btnShippingAddr">배송지변경</a>
+              </div>
+              <ul class="shippingAddr">
+                <li>
+                  <h3 class="titItem">받는 분</h3>
+                  <p class="txtItem">홍길동</p>
+                </li>
+                <li>
+                  <h3 class="titItem">주소</h3>
+                  <p class="txtItem">
+                    서울시 강서구 양천로 583
+                    <br />
+                    우림블루나인비지니스센터 B동 15층
+                  </p>
+                </li>
+                <li>
+                  <h3 class="titItem">연락처</h3>
+                  <p class="txtItem">
+                    010-1111-2222
+                  </p>
+                </li>
+              </ul>
+              <div class="shippingAddrForm">
+                <div class="formBox small">
+                  <div class="formRow">
+                    <select class="select">
+                      <option value="">배송 요청사항 직접 입력하기</option>
+                    </select>
+                  </div>
+                  <div class="formRow">
+                    <textarea class="textarea" placeholder="배송 요청사항을 입력해주세요."></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="itemOrderPayment">
+            <h2 class="titOrderPayment">주문상품</h2>
+            <ul class="listOrderStyle2">
+              <li>
+                <div class="itemOrder">
+                  <div class="prodBoxStyle3">
+                    <a href="#" class="imgProd">
+                      <img src="../images/img_prod_temp_140_210.jpg" alt="">
+                    </a>
+                    <div class="infoBox">
+                      <h3 class="titProd">STCO</h3>
+                      <p class="txtProd">가먼트다잉 밴딩 와이드 치노 팬츠</p>
+                      <div class="optionBox">
+                        <span class="txtOption">그레이 / 86 / 1개</span>
+                        <span class="txtBind">묶음할인</span>
+                      </div>
+                      <div class="priceBox">
+                        <span class="oldPrice">329,000</span>
+                        <span class="newPrice">199,000원</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="itemOrder">
+                  <div class="prodBoxStyle3">
+                    <a href="#" class="imgProd">
+                      <img src="../images/img_prod_temp_140_210.jpg" alt="">
+                    </a>
+                    <div class="infoBox">
+                      <h3 class="titProd">STCO</h3>
+                      <p class="txtProd">가먼트다잉 밴딩 와이드 치노 팬츠</p>
+                      <div class="optionBox">
+                        <span class="txtOption">그레이 / 86 / 1개</span>
+                        <span class="txtBind">묶음할인</span>
+                      </div>
+                      <div class="priceBox">
+                        <span class="oldPrice">329,000</span>
+                        <span class="newPrice">199,000원</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="itemOrderPayment">
+            <h2 class="titOrderPayment">쿠폰 & 마일리지</h2>
+            <div class="formBox formCoupon">
+              <div class="formRow">
+                <h3 class="titRow">할인쿠폰 <span class="titSubRow">1장 적용가능</span></h3>
+                <div class="contRow">
+                  <div class="inputBtnBox">
+                    <input type="text" class="text txtRight" value="0">
+                    <button class="btnForm btnFormStyle2">쿠폰선택</button>
+                  </div>
+                </div>
+              </div>
+              <div class="formRow">
+                <h3 class="titRow">마일리지 <span class="titSubRow">사용가능 마일리지 877원</span></h3>
+                <div class="contRow">
+                  <div class="inputBtnBox">
+                    <input type="text" class="text txtRight" value="0">
+                    <button class="btnForm btnFormStyle2">전부사용</button>
+                  </div>
+                  <p class="txtFormNotice">※ 마일리지는 100원부터 사용가능합니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="itemOrderPayment pl0 pr0">
+            <div class="priceInfoBox">
+              <ul class="listPrice">
+                <li>
+                  <div class="itemPrice">
+                    <h3 class="titPrice">상품합계금액</h3>
+                    <p class="txtPrice"><strong class="colorBlack">78,000원</strong></p>
+                  </div>
+                </li>
+                <li>
+                  <div class="itemPrice">
+                    <h3 class="titPrice">할인</h3>
+                    <p class="txtPrice">2,000원</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="itemPrice">
+                    <h3 class="titPrice">묶음구매할인</h3>
+                    <p class="txtPrice">0원</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="itemPrice">
+                    <h3 class="titPrice">쿠폰 할인</h3>
+                    <p class="txtPrice">5,000원</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="itemPrice">
+                    <h3 class="titPrice">마일리지</h3>
+                    <p class="txtPrice">500원</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="itemPrice">
+                    <h3 class="titPrice">배송비</h3>
+                    <p class="txtPrice">2,500원</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="itemPrice total">
+                    <h3 class="titPrice">결제예상금액</h3>
+                    <p class="txtPrice"><strong class="colorRed">73,000</strong>원</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="itemOrderPayment">
+            <h2 class="titOrderPayment">결제수단</h2>
+            <div class="listPaymentBox">
+              <ul class="listPayment">
+                <li>
+                  <div class="radioPayment">
+                    <input type="radio" name="radioPayment" id="radioPayment_1" checked>
+                    <label for="radioPayment_1">
+                      <span class="imgPay imgPay_card"></span>
+                      <span class="txtPayment">신용카드</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="radioPayment">
+                    <input type="radio" name="radioPayment" id="radioPayment_2">
+                    <label for="radioPayment_2">
+                      <span class="imgPay imgPay_kakao"></span>
+                      <span class="txtPayment">카카오페이</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="radioPayment">
+                    <input type="radio" name="radioPayment" id="radioPayment_3">
+                    <label for="radioPayment_3">
+                      <span class="imgPay imgPay_naver"></span>
+                      <span class="txtPayment">네이버페이</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="radioPayment">
+                    <input type="radio" name="radioPayment" id="radioPayment_4">
+                    <label for="radioPayment_4">
+                      <span class="imgPay imgPay_payco"></span>
+                      <span class="txtPayment">페이코</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="radioPayment">
+                    <input type="radio" name="radioPayment" id="radioPayment_5">
+                    <label for="radioPayment_5">
+                      <span class="imgPay imgPay_lpay"></span>
+                      <span class="txtPayment">L.PAY</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="radioPayment">
+                    <input type="radio" name="radioPayment" id="radioPayment_6">
+                    <label for="radioPayment_6">
+                      <span class="imgPay imgPay_toss"></span>
+                      <span class="txtPayment">토스</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="radioPayment">
+                    <input type="radio" name="radioPayment" id="radioPayment_7">
+                    <label for="radioPayment_7">
+                      <span class="imgPay imgPay_nocard"></span>
+                      <span class="txtPayment">무통장입금</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="radioPayment">
+                    <input type="radio" name="radioPayment" id="radioPayment_8">
+                    <label for="radioPayment_8">
+                      <span class="imgPay imgPay_trans"></span>
+                      <span class="txtPayment">실시간 계좌이체</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="radioPayment">
+                    <input type="radio" name="radioPayment" id="radioPayment_9">
+                    <label for="radioPayment_9">
+                      <span class="imgPay imgPay_phone"></span>
+                      <span class="txtPayment">휴대폰결제</span>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+              <div class="formBox small">
+                <div class="formRow">
+                  <select class="select">
+                    <option value="">카드선택</option>
+                  </select>
+                </div>
+                <div class="formRow">
+                  <select class="select">
+                    <option value="">일시불</option>
+                  </select>
+                </div>
+                <div class="formRow mt20">
+                  <div class="checkBoxStyle1">
+                    <input type="checkbox" id="checkPayment" />
+                    <label for="checkPayment">선택한 결제수단 다음에도 사용</label>
+                  </div>
+                </div>
+                <div class="btnBox">
+                  <a href="#" class="btn btnStyle1">
+                    <span class="txtBtn">결제하기</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// container -->
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="csBox">
+        <h2 class="titCs">고객센터 <a href="tel:070-4687-7342" class="txtPhone">070-4687-7342</a></h2>
+        <p class="txtCs">
+          운영시간 평일 10:00 - 17:00 (토∙일, 공휴일 휴무)
+          <br />
+          점심시간 평일 12:00 - 13:00
+        </p>
+      </div>
+      <div class="contactBox">
+        <p class="txtContact1">
+          <span>(주)에스티오</span>
+          <button class="toggleContact2">사업자 정보 <i class="iconArrow"></i></button>
+        </p>
+        <p class="txtContact2">
+          서울시 강서구 양천로 583 우림블루나인비지니스센터 B동 15층
+          <br />
+          대표자 : 김흥수 / 사업자등록번호 : 206-81-79031
+          <br />
+          통신판매업신고 : 제2009 서울강서 0684호 / 개인정보관리책임자 : 안중태
+          <br />
+          대표메일주소 : stoonline@stco.co.kr
+        </p>
+        <ul class="listLink">
+          <li><a href="#" class="linkContact">이용약관</a></li>
+          <li><a href="#" class="linkContact">개인정보처리방침</a></li>
+        </ul>
+        <ul class="listLink2">
+          <li><a href="#">회사소개</a></li>
+          <li><a href="#">고객센터</a></li>
+          <li><a href="#">에스크로가입확인</a></li>
+        </ul>
+      </div>
+      <p class="copyright ">Copyright© STO. All right reserved</p>
+    </footer>
+    <!--// footer end -->
+
+    <!-- Bot Menu -->
+    <div class="botMenuWrap">
+      <div class="botMenuBox">
+        <ul class="botMenu">
+          <li>
+            <a href="javascript:void(0);" class="itemMenu cate" onclick="openPop('popCategory')">카테고리</a>
+          </li>
+          <li>
+            <a id="btnBrand" href="javascript:void(0);" onclick="botBrandClick(this)" class="itemMenu brand">브랜드</a>
+          </li>
+          <li>
+            <a href="#" class="itemMenu home">홈</a>
+          </li>
+          <li>
+            <a href="#" class="itemMenu my">MY</a>
+          </li>
+          <li>
+            <a href="#" class="itemMenu flag">찜</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- // Bot Menu -->
+
+    <!-- float button -->
+    <div class="floatButtonBox">
+      <ul class="floatButton">
+        <li><a href="#" class="itemButton"><img src="../images/icon_record.png" alt="Record"></a></li>
+        <li><a href="#" id="btnTop" class="itemButton"><img src="../images/icon_top.png" alt="Top"></a></li>
+      </ul>
+    </div>
+    <!-- // float button -->
+  </div>
+</body>
+
+</html>

@@ -36,12 +36,13 @@
     <!-- container -->
     <div id="container">
       <div class="subContainer">
+        <!--
         <div class="listCouponBox">
           <ul class="listCouponStyle2">
             <li>
               <div class="itemCoupon">
                 <span class="txtStatus">APP전용</span>
-                <div class="mask"></div>
+                <div class="maskCoupon"></div>
                 <div class="tagBox">
                   <span class="itemTag">전체</span>
                   <span class="itemTag">상품쿠폰</span>
@@ -61,7 +62,7 @@
             <li>
               <div class="itemCoupon">
                 <span class="txtStatus">오프라인 전용</span>
-                <div class="mask"></div>
+                <div class="maskCoupon"></div>
                 <div class="tagBox">
                   <span class="itemTag">기획전</span>
                   <span class="itemTag">장바구니쿠폰</span>
@@ -77,10 +78,142 @@
             </li>
           </ul>
         </div>
+        -->
+        <div class="couponBox">
+          <div class="cartCouponBox">
+            <p class="txtCoupon">‘장바구니 쿠폰’과 ‘상품 쿠폰’은 동시 적용이 불가합니다.</p>
+            <h2 class="titCoupon">장바구니 쿠폰</h2>
+            <div class="formBox">
+              <select class="select">
+                <option value="">-30,000원  추석 맞이 세일 쿠폰 15%</option>
+              </select>
+            </div>
+          </div>
+          <div class="cartProdCoupon">
+            <h2 class="titCartProdCoupon">주문상품</h2>
+            <ul class="listOrderStyle2">
+              <li>
+                <div class="itemOrder">
+                  <div class="prodBoxStyle3">
+                    <a href="#" class="imgProd">
+                      <img src="../images/img_prod_temp_140_210.jpg" alt="">
+                    </a>
+                    <div class="infoBox">
+                      <h3 class="titProd">STCO</h3>
+                      <p class="txtProd">가먼트다잉 밴딩 와이드 치노 팬츠</p>
+                      <div class="optionBox">
+                        <span class="txtOption">그레이 / 86 / 1개</span>
+                        <span class="txtBind">묶음할인</span>
+                      </div>
+                      <div class="priceBox">
+                        <span class="oldPrice">329,000</span>
+                        <span class="newPrice">199,000원</span>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="txtStatus">매장배송</p>
+                  <div class="formBox mt15">
+                    <select class="select">
+                      <option value="">4월 기획전 상품 쿠폰 10%</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="itemOrder">
+                  <div class="prodBoxStyle3">
+                    <a href="#" class="imgProd">
+                      <img src="../images/img_prod_temp_140_210.jpg" alt="">
+                    </a>
+                    <div class="infoBox">
+                      <h3 class="titProd">STCO</h3>
+                      <p class="txtProd">가먼트다잉 밴딩 와이드 치노 팬츠</p>
+                      <div class="optionBox">
+                        <span class="txtOption">그레이 / 86 / 1개</span>
+                        <span class="txtBind">묶음할인</span>
+                      </div>
+                      <div class="priceBox">
+                        <span class="oldPrice">329,000</span>
+                        <span class="newPrice">199,000원</span>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="txtStatus">온라인배송</p>
+                  <div class="formBox mt15">
+                    <select class="select">
+                      <option value="">4월 기획전 상품 쿠폰 10%</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="couponNoticeBox on">
+            <div class="toggleHead">
+              <a href="#" class="titToggle">주문배송단계안내</a>
+            </div>
+            <div class="toggleBox">
+              <p class="txtNotice">
+                <span class="dot">·</span>
+                <span>‘장바구니 쿠폰’은 총 결제예정 금액에 적용되며, ‘상품쿠폰’과 동시에 사용 불가합니다.</span>
+              </p>
+              <p class="txtNotice">
+                <span class="dot">·</span>
+                <span>‘상품쿠폰’은 상품 단위로만 적용 가능하며, 한 상품 당 한 개의 쿠폰을 적용할 수 있습니다.</span>
+              </p>
+              <p class="txtNotice">
+                <span class="dot">·</span>
+                <span>‘상품쿠폰’은 묶음구매 할인 및 타임특가세일과 중복적용이 불가합니다.</span>
+              </p>
+              <p class="txtNotice">
+                <span class="dot">·</span>
+                <span>쿠폰 할인 제외 상품이 포함되어 있는 경우, 해당 제품을 제외하고 할인이 적용됩니다.</span>
+              </p>
+              <p class="txtNotice">
+                <span class="dot">·</span>
+                <span>일부 상품에는 쿠폰 할인이 적용되지 않을 수 있습니다.</span>
+              </p>
+            </div>
+          </div>
+          <div class="btnBox">
+            <a href="#" class="btn btnStyle1">
+              <span class="txtBtn">14,580원 쿠폰 적용하기</span>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
     <!--// container -->
   </div>
 </body>
+<style>
 
+  .couponBox {padding:30px 12px;}
+  .cartCouponBox {padding:30px 12px; border-bottom: 10px solid #f8f8f8;}
+  .cartCouponBox .titCoupon {margin-top: 25px;}
+  .cartCouponBox .titCoupon + * {margin-top: 15px;}
+  .couponBox .txtCoupon {color:#848484; font-size:15px; line-height: 20px; font-weight: 400;}
+  .couponBox .titCoupon {color:#1c1c1c; font-size:18px; line-height: 20px; font-weight: 700;}
+
+  .cartProdCoupon {padding:30px 12px;}
+  .cartProdCoupon .titCartProdCoupon {color:#1c1c1c; font-size:18px; font-weight: 700; line-height: 20px;}
+
+
+  .couponNoticeBox { padding:0 12px; } 
+  .couponNoticeBox .toggleHead { position: relative; display: flex; justify-content: space-between; align-items: center; height:60px; border-bottom:1px solid #dcdcdc;} 
+  .couponNoticeBox .toggleHead::after { content:''; position: absolute; top:50%; right:12px; width: 12px; height:12px; margin-top: -6px; background:url(../images/icon_btnMore_arrowDown.png) no-repeat center center/100%; } 
+  .couponNoticeBox .toggleBox { display: none; margin-top: 20px; } 
+  .couponNoticeBox .titToggle { display: block; width: 100%; color:#1c1c1c; font-size:18px; font-weight: 400; line-height: 20px; } 
+  .couponNoticeBox .txtNotice { display: flex; color:#8f8f8f; font-size:12px; font-weight: 400; line-height: 20px; } 
+  .couponNoticeBox .txtNotice + .txtNotice {margin-top: 10px;}
+  .couponNoticeBox .txtNotice .dot {flex:none;}
+  .couponNoticeBox.on .toggleBox { display: block; } 
+  .couponNoticeBox.on .toggleHead::after { transform: rotate(-180deg); } 
+</style>
+<script>
+  $('.couponNoticeBox .titToggle').click(function () {
+    $(this).parents('.couponNoticeBox').toggleClass('on');
+    return false;
+  });
+</script>
 </html>

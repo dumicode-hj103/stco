@@ -198,7 +198,7 @@
                             <p class="txtProd">샌드베이지 / 110</p>
                           </div>
                           <div class="toolBox">
-                            <a href="#" class="btnMyReview btnMyReviewStyle2">리뷰쓰기</a>
+                            <a href="javascript:openPop('popReviewAdd')" class="btnMyReview btnMyReviewStyle2">리뷰쓰기</a>
                           </div>
                         </div>
                       </div>
@@ -217,7 +217,7 @@
                             <p class="txtProd">샌드베이지 / 110</p>
                           </div>
                           <div class="toolBox">
-                            <a href="#" class="btnMyReview btnMyReviewStyle2">리뷰쓰기</a>
+                            <a href="javascript:openPop('popReviewAdd')" class="btnMyReview btnMyReviewStyle2">리뷰쓰기</a>
                           </div>
                         </div>
                       </div>
@@ -236,7 +236,7 @@
                             <p class="txtProd">샌드베이지 / 110</p>
                           </div>
                           <div class="toolBox">
-                            <a href="#" class="btnMyReview btnMyReviewStyle2">리뷰쓰기</a>
+                            <a href="javascript:openPop('popReviewAdd')" class="btnMyReview btnMyReviewStyle2">리뷰쓰기</a>
                           </div>
                         </div>
                       </div>
@@ -251,7 +251,210 @@
     </div>
     <!--// container -->
 
+    <!-- pop review add -->
+    <div class="popBox" id="popReviewAdd">
+      <div class="popCont popFull">
+        <div class="topBox">
+          <button class="btnPrev" onclick="closePop(this);">닫기</button>
+          <h2 class="titPop">리뷰 작성하기</h2>
+        </div>
+        <div class="popReviewAddBox">
+          <div class="popBox prodBoxStyle3">
+            <a href="#" class="imgProd">
+              <img src="../images/img_prod_temp_140_210.jpg" alt="">
+            </a>
+            <div class="infoBox">
+              <h3 class="titProd">STCO</h3>
+              <p class="txtProd">가먼트다잉 밴딩 와이드 치노 팬츠</p>
+              <div class="optionBox">
+                <span class="txtOption">카키 / 86</span>
+              </div>
+            </div>
+          </div>
+          <div class="writeStarBox">
+            <div class="writeStarHead">
+              <h2 class="titWriteStar">상품은 만족하셨나요?</h2>
+              <div class="writeStar">
+                <div class="itemWriteStar"></div>
+                <div class="itemWriteStar"></div>
+                <div class="itemWriteStar half"></div>
+                <div class="itemWriteStar none"></div>
+                <div class="itemWriteStar none"></div>
+              </div>
+            </div>
+            <div class="writeStarBody">
+              <div class="formBox">
+                <select class="select">
+                  <option value="">0점</option>
+                  <option value="">1점</option>
+                  <option value="">2점</option>
+                  <option value="">3점</option>
+                  <option value="">4점</option>
+                  <option value="">5점</option>
+                  <option value="">6점</option>
+                  <option value="">7점</option>
+                  <option value="">8점</option>
+                  <option value="">9점</option>
+                  <option value="">10점</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="formBox">
+            <ul class="listReviewAdd">
+              <li>
+                <div class="formRow">
+                  <h3 class="titRow">핏</h3>
+                  <div class="contRow">
+                    <div class="radioFormBox">
+                      <div class="radioStyle5">
+                        <input type="radio" name="radio1" id="radio1_1">
+                        <label for="radio1_1">
+                          <span class="iconRadio"></span>
+                          <span class="txtRadio">작아요</span>
+                        </label>
+                      </div>
+                      <div class="radioStyle5">
+                        <input type="radio" name="radio1" id="radio1_2" checked>
+                        <label for="radio1_2">
+                          <span class="iconRadio"></span>
+                          <span class="txtRadio">잘맞아요</span>
+                        </label>
+                      </div>
+                      <div class="radioStyle5">
+                        <input type="radio" name="radio1" id="radio1_3">
+                        <label for="radio1_3">
+                          <span class="iconRadio"></span>
+                          <span class="txtRadio">커요</span>
+                        </label>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="formRow">
+                  <h3 class="titRow">핏</h3>
+                  <div class="contRow">
+                    <div class="radioFormBox">
+                      <div class="radioStyle5">
+                        <input type="radio" name="radio2" id="radio2_1">
+                        <label for="radio2_1">
+                          <span class="iconRadio"></span>
+                          <span class="txtRadio">슬림해요</span>
+                        </label>
+                      </div>
+                      <div class="radioStyle5">
+                        <input type="radio" name="radio2" id="radio2_2" checked>
+                        <label for="radio2_2">
+                          <span class="iconRadio"></span>
+                          <span class="txtRadio">적당해요</span>
+                        </label>
+                      </div>
+                      <div class="radioStyle5">
+                        <input type="radio" name="radio2" id="radio2_3">
+                        <label for="radio2_3">
+                          <span class="iconRadio"></span>
+                          <span class="txtRadio">커요</span>
+                        </label>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="formRow">
+                  <h3 class="titRow">착용감</h3>
+                  <div class="contRow">
+                    <div class="radioFormBox">
+                      <div class="radioStyle5">
+                        <input type="radio" name="radio3" id="radio3_1">
+                        <label for="radio3_1">
+                          <span class="iconRadio"></span>
+                          <span class="txtRadio">불편해요</span>
+                        </label>
+                      </div>
+                      <div class="radioStyle5">
+                        <input type="radio" name="radio3" id="radio3_2" checked>
+                        <label for="radio3_2">
+                          <span class="iconRadio"></span>
+                          <span class="txtRadio">적당해요</span>
+                        </label>
+                      </div>
+                      <div class="radioStyle5">
+                        <input type="radio" name="radio3" id="radio3_3">
+                        <label for="radio3_3">
+                          <span class="iconRadio"></span>
+                          <span class="txtRadio">편해요</span>
+                        </label>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="formRow">
+                  <h3 class="titRow">신체정보핏</h3>
+                  <div class="contRow">
+                    <div class="inputTxtBox">
+                      <input type="text" class="text" placeholder="고객님의 키를 입력해주세요. ">
+                      <span class="txtInput">cm</span>
+                    </div>
+                    <div class="inputTxtBox">
+                      <input type="text" class="text" placeholder="고객님의 몸무게를 입력해주세요.">
+                      <span class="txtInput">kg</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="formRow">
+                  <h3 class="titRow">내용</h3>
+                  <div class="contRow">
+                    <textarea class="textarea" placeholder="상품에 대한 평가를 써주세요."></textarea>
+                  </div>
+                </div>
+                <div class="formRow">
+                  <h3 class="titRow">사진첨부</h3>
+                  <div class="contRow">
+                    <div class="attaBox">
+                      <button class="itemAtta"></button>
+                      <button class="itemAtta"></button>
+                      <button class="itemAtta"></button>
+                      <button class="itemAtta"></button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="btnBox mt0">
+              <a href="#" class="btn btnStyle1">
+                <span class="txtBtn">완료</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- // pop review add -->
+
   </div>
 </body>
+<style>
+  .radioFormBox {display: flex; width: 100%;}
+  .radioFormBox > * {width: 100%;}
+  .radioFormBox > * + * {margin-left: 2px;}
+  .radioStyle5 input {display: none;}
+  .radioStyle5 input + label {display: flex; justify-content: center; align-items: center; height:32px; border-radius: 30px; background: #FFF; box-shadow: inset 0 0 0 1px #a7a7a7;}
+  .radioStyle5 input + label .iconRadio {display: block; width: 13px; height: 9px; background: url(../images/img_radioStyle5.png) no-repeat center center/100%;}
+  .radioStyle5 input + label .txtRadio {color: #969696; font-size: 13px; line-height: 15px; font-weight: 400;}
+  .radioStyle5 input + label * + .txtRadio {margin-left: 5px;}
+  .radioStyle5 input:checked + label {box-shadow: inset 0 0 0 1px #d0162e;}
+  .radioStyle5 input:checked + label .iconRadio {background-image: url(../images/img_radioStyle5_on.png);}
+  .radioStyle5 input:checked + label .txtRadio {color:#d0162e; }
 
+  .listReviewAdd li {padding:20px 0;}
+  .listReviewAdd li + li {border-top:1px solid #ececec;}
+</style>
 </html>

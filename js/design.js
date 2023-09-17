@@ -41,6 +41,7 @@ $(function () {
 
   $('.flag').click(function () {
     $(this).toggleClass('on');
+    return false;
   });
 
   $('input[data=checkAll]').change(function () {

@@ -14,6 +14,14 @@
   <script src="../js/swiper-bundle.min.js"></script>
   <!-- ui js -->
   <script src="../js/design.js"></script>
+  <script>
+    $(function () {
+      $('.listQuitOption input[name="radio1"]').change(function () {
+        var selectedOption = $('input[name="radio1"]:checked');
+        $('#textOther').attr('disabled',!Boolean(selectedOption.attr('data')));
+      }).trigger('change');
+    })
+  </script>
 </head>
 
 <body>
@@ -41,7 +49,7 @@
             <p class="txtQuitEmail">
               혹시 메일 수신 문자 메시지 수신이 불편하셔서
               회원 탈퇴를 원하시나요?
-              <br/>
+              <br />
               아래 버튼을 클릭하시면 불편을 해결하실 수 있습니다.
             </p>
             <a href="#" class="btnQuitEmail">
@@ -50,64 +58,64 @@
             </a>
           </div>
           <div class="quitOptionBox">
-            <h2 class="titQuitOption">회원 탈퇴 신청 전, <br/>탈퇴 사유를 체크해주세요.</h2>
+            <h2 class="titQuitOption">회원 탈퇴 신청 전, <br />탈퇴 사유를 체크해주세요.</h2>
             <div class="formBox">
               <ul class="listQuitOption">
                 <li>
                   <div class="radio radioStyle1">
-                    <input type="radio" id="radio1_1" name="radio1"/>
+                    <input type="radio" id="radio1_1" name="radio1" />
                     <label for="radio1_1">아이디 변경을 위해 탈퇴 후 재가입</label>
                   </div>
                 </li>
                 <li>
                   <div class="radio radioStyle1">
-                    <input type="radio" id="radio1_2" name="radio1"/>
+                    <input type="radio" id="radio1_2" name="radio1" />
                     <label for="radio1_2">상품 가격 불만</label>
                   </div>
                 </li>
                 <li>
                   <div class="radio radioStyle1">
-                    <input type="radio" id="radio1_3" name="radio1"/>
+                    <input type="radio" id="radio1_3" name="radio1" />
                     <label for="radio1_3">장기간 부재 (군입대, 유학 등)</label>
                   </div>
                 </li>
                 <li>
                   <div class="radio radioStyle1">
-                    <input type="radio" id="radio1_4" name="radio1"/>
+                    <input type="radio" id="radio1_4" name="radio1" />
                     <label for="radio1_4">배송 불만</label>
                   </div>
                 </li>
                 <li>
                   <div class="radio radioStyle1">
-                    <input type="radio" id="radio1_5" name="radio1"/>
+                    <input type="radio" id="radio1_5" name="radio1" />
                     <label for="radio1_5">개인정보 누출 우려</label>
                   </div>
                 </li>
                 <li>
                   <div class="radio radioStyle1">
-                    <input type="radio" id="radio1_6" name="radio1"/>
+                    <input type="radio" id="radio1_6" name="radio1" />
                     <label for="radio1_6">교환/환불/반품 불만</label>
                   </div>
                 </li>
                 <li>
                   <div class="radio radioStyle1">
-                    <input type="radio" id="radio1_7" name="radio1"/>
+                    <input type="radio" id="radio1_7" name="radio1" />
                     <label for="radio1_7">상품의 다양성/품질 불만</label>
                   </div>
                 </li>
                 <li>
                   <div class="radio radioStyle1">
-                    <input type="radio" id="radio1_8" name="radio1"/>
+                    <input type="radio" id="radio1_8" name="radio1" />
                     <label for="radio1_8">사후조치 불만</label>
                   </div>
                 </li>
                 <li>
                   <div class="radio radioStyle1">
-                    <input type="radio" id="radio1_9" data="other" name="radio1"/>
+                    <input type="radio" id="radio1_9" data="other" name="radio1" />
                     <label for="radio1_9">기타</label>
                   </div>
                   <div class="otherBox">
-                    <input type="text" class="text" placeholder="회원 탈퇴 사유를 입력해주세요." disabled="true">
+                    <input id="textOther" type="text" class="text" placeholder="회원 탈퇴 사유를 입력해주세요." disabled="true">
                   </div>
                 </li>
               </ul>
@@ -116,8 +124,8 @@
           <div class="quitOptionBox">
             <h2 class="titQuitOption">
               아래 체 리스트에 전부 동의를
-              <br/>해주셔야 회원 탈퇴가 진행됩니다. 
-              <br/>꼼꼼히 읽고 체크박스에 체크해주세요.
+              <br />해주셔야 회원 탈퇴가 진행됩니다.
+              <br />꼼꼼히 읽고 체크박스에 체크해주세요.
             </h2>
             <div class="formBox">
               <ul class="listQuitOption">

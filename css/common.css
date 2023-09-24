@@ -159,7 +159,7 @@ body.openPop { overflow:hidden; }
 .prodBoxStyle3 .priceBox .oldPrice + .newPrice { margin-left: 10px; } 
 .prodBoxStyle3 .priceBox .newPrice + .discount { margin-left: 10px; } 
 .prodBoxStyle3 .priceBox .newPrice.large { font-size: 18px; line-height: 20px; } 
-.prodBoxStyle3 .priceBox .txtAfter {margin-left: 7px; font-size:13px; line-height:15px; font-weight: 400;}
+.prodBoxStyle3 .priceBox .txtAfter { margin-left: 7px; font-size:13px; line-height:15px; font-weight: 400; } 
 
 .btnMore { display: flex; justify-content: center; align-items: center; width: 180px; height:38px; margin:40px auto 0; box-shadow:inset 0 0 0 1px #444; } 
 .btnMore .txtMore { color: #444444; font-size: 12px; line-height: 12px; font-weight: 400; } 
@@ -255,7 +255,7 @@ body.openPop { overflow:hidden; }
 .popBox .popShopByLook .swiperProdImg .btnSwiperPrev { z-index: 2; position: absolute; left: 15px; top:50%; width: 22px; height: 40px; margin-top: -20px;; background:url(../images/btn_swiper_prev_2.png) no-repeat center center; background-size:100%; } 
 .popBox .popShopByLook .swiperProdImg .btnSwiperNext { z-index: 2; position: absolute; right:15px; top:50%; width: 22px; height: 40px; margin-top: -20px; background:url(../images/btn_swiper_next_2.png) no-repeat center center; background-size:100%; } 
 
-.popBox .popSearch { position: fixed; left:0; top:0; right:0; bottom:0; margin-top: 50px; background: #FFF; overflow-y:auto; } 
+.popBox .popSearch { position: absolute; left:0; top:0; right:0; bottom:0; padding-top: 50px; background: #FFF; overflow-y:auto; } 
 .popBox .popSearch .topBox { z-index: 11; position: fixed; left:0; top:0; width:100%; background: #FFF; display: flex; height:50px; align-items: center; padding:0 12px; } 
 .popBox .popSearch .btnClose { flex:none; display: block; width: 30px; height: 30px; background:url(../images/btn_close_x_black.png) no-repeat center center; background-size:18px; overflow:hidden; text-indent: -999px; } 
 .popBox .btnPrev { display: block; width: 24px; height: 24px; background:url(../images/btn_prev_black.png) no-repeat center center; background-size: 12px; overflow:hidden; text-indent: -999px; } 
@@ -347,7 +347,7 @@ body.openPop { overflow:hidden; }
 
 .popBox .popFull { position: fixed; z-index: 9; left:0; top:0; right:0; bottom:0; margin-top: 50px; background: #FFF; overflow-y:auto; } 
 .popBox .popFull.layerTop { position: fixed; z-index: 11; left:0; top:0; right:0; bottom:0; margin-top: 50px; background: #FFF; overflow-y:auto; } 
-.popBox .popFull .topBox { z-index: 11; position: fixed; left:0; top:0; width:100%; background: #FFF; display: flex; height:50px; align-items: center; padding:0 12px; border-bottom:5px solid #fafafa; } 
+.popBox .popFull .topBox { z-index: 11; position: absolute; left:0; top:0; width:100%; background: #FFF; display: flex; height:50px; align-items: center; padding:0 12px; border-bottom:5px solid #fafafa; } 
 .popBox .popFull .topBox .titPop { position: absolute; left:50%; top:50%; transform: translate(-50%,-50%); color:#000000; font-size: 20px; font-weight: 700; line-height: 22px; } 
 .popBox .popFull .btnClose { flex:none; display: block; width: 30px; height: 30px; background:url(../images/btn_close_x_black.png) no-repeat center center; background-size:18px; overflow:hidden; text-indent: -999px; } 
 
@@ -440,6 +440,7 @@ body.openPop { overflow:hidden; }
 .filterOptionBox .itemFilterOption .listFilter.color { margin-top: -5.25px; } 
 .filterOptionBox .itemFilterOption .listFilter.color li { width:calc(14.285% - 5.25px); } 
 .filterOptionBox .itemFilterOption .listFilter.color li .filterOption input:checked ~ label { box-shadow: inset 0 0 0 2px #1c1c1c; } 
+.filterOptionBox .itemFilterOption .listFilter.color li .filterOption input ~ label { overflow:hidden; text-indent: -999px; } 
 .filterOptionBox .itemFilterOption.on .contFilter { display: block; } 
 .filterOptionBox .itemFilterOption.on .titFilterOption { border-bottom: 1px solid #ececec; } 
 .filterOptionBox .itemFilterOption.on .titFilterOption::after { transform: rotate(0); } 
@@ -455,9 +456,9 @@ body.openPop { overflow:hidden; }
 .filterOptionBox .priceFilter .priceRangeInput .sign { flex:none; padding:0 6px; } 
 .filterOptionBox .priceFilter .priceRangeInput .textPrice { width:100%; height:30px; padding:0 10px; border:none; box-shadow: inset 0 0 0 1px #d3d3d3; text-align: right; color: #6f6f6f; font-size: 13px; font-weight: 400; } 
 .filterOptionBox .priceFilter .priceRangeInput .textPrice::placeholder { color: #6f6f6f; } 
-.filterOptionBox .filterResult { display:flex; align-items: center; overflow-x: auto; margin-top: 30px; padding:30px 0; border-top: 1px solid #e4e4e4; } 
+.filterOptionBox .filterResult { display:flex; align-items: center; overflow-x: auto; margin-top: 30px; padding:30px 0; height:90px; border-top: 1px solid #e4e4e4; } 
 .filterOptionBox .filterResult .buttonFilterResult { position: relative; display: block; height:30px; border-radius: 15px; padding:0 30px 0 15px; background: #1c1c1c; color:#FFF; font-size: 14px; white-space: nowrap; } 
-.filterOptionBox .filterResult .buttonFilterResult::after { content:''; position: absolute; top:50%; right:12px; width: 12px; height: 12px; margin-top: -6px; background: url(../images/btn_close_x_white.png) no-repeat center center; background-size: 100%; } 
+.filterOptionBox .filterResult .buttonFilterResult .btnDel { position: absolute; top:50%; right:12px; width: 12px; height: 12px; margin-top: -6px; background: url(../images/btn_close_x_white.png) no-repeat center center; background-size: 100%; overflow:hidden; text-indent: -999px; } 
 .filterOptionBox .filterResult .buttonFilterResult + .buttonFilterResult { margin-left: 5px; } 
 .filterOptionBox .btnFilterBox { display: flex; margin:0 -20px; padding:20px 10px; border-top: 1px solid #ddd; } 
 .filterOptionBox .btnFilterBox * + * { margin-left: 7px; } 
@@ -598,7 +599,7 @@ body.openPop { overflow:hidden; }
 .formBox .formRow .titRow { color: #1c1c1c; font-size: 15px; line-height: 17px; font-weight: 400; } 
 .formBox .formRow .titRow .titSubRow { margin-left: 5px; color: #b1b1b1; font-size: 13px; line-height: 17px; font-weight: 400; } 
 .formBox .formRow .contRow > * + * { margin-top: 5px; } 
-.formBox .select { width:100%; height:40px; box-shadow: inset 0 0 0 1px #d5d5d5; border:none; padding:0 12px; color: #848484; font-size: 13px; appearance:auto; } 
+.formBox .select { width:100%; height:40px; box-shadow: inset 0 0 0 1px #d5d5d5; border:none; padding:0 12px; color: #848484; font-size: 13px; background:url(../images/icon_select_arrow_down.png) right 10px center no-repeat #fff; background-size: 10px; } 
 .formBox .text { width: 100%; height:40px; padding:0 12px; box-shadow: inset 0 0 0 1px #d5d5d5; border:none; color: #848484; font-size: 13px; line-height: 15px; font-weight: 400; } 
 .formBox .textarea { width:100%; height:160px; padding:12px; box-shadow: inset 0 0 0 1px #d5d5d5; border:none; color: #848484; font-size: 13px; line-height: 20px; font-weight: 400; resize:none; } 
 .formBox .textarea.small { padding:12px; height:60px; } 
@@ -815,7 +816,7 @@ body.openPop { overflow:hidden; }
 .listCoupon .itemCoupon .targetBox .txtTarget { color: #aaa; font-size: 12px; font-weight: 400; line-height: 14px; } 
 .listCoupon .itemCoupon .txtStatus { z-index: 2; position: absolute; top:12px; right:12px; display: flex; justify-content: center; align-items: center; height:20px; padding:0 12px; color: #ffffff; font-size: 11px; line-height: 14px; font-weight: 400; background: #bdbdbd; border-radius: 20px; } 
 .listCoupon .itemCoupon .txtStatus.black { background: #1c1c1c; } 
-.listCoupon .itemCoupon .btnDownload {position: absolute; right:12px; bottom:12px; width: 27px; height: 27px; background: url(../images/btn_download.png) no-repeat center center/100%; overflow: hidden; text-indent: -999px;}
+.listCoupon .itemCoupon .btnDownload { position: absolute; right:12px; bottom:12px; width: 27px; height: 27px; background: url(../images/btn_download.png) no-repeat center center/100%; overflow: hidden; text-indent: -999px; } 
 
 .listCoupon .itemCoupon.used .maskCoupon { position: absolute; left:0; top:0; right: 0; border-radius: 6px; bottom: 0; z-index: 1; background: rgba(255, 255, 255, .5); } 
 .listCoupon .itemCoupon.used .maskCoupon { position: absolute; left:0; top:0; right: 0; border-radius: 6px; bottom: 0; z-index: 1; background: rgba(255, 255, 255, .5); } 
@@ -1144,7 +1145,7 @@ body.openPop { overflow:hidden; }
 
 .listOrderStyle2 li { border-bottom: 1px solid #ececec; } 
 .listOrderStyle2 .itemOrder { position: relative; padding: 20px 0; } 
-.listOrderStyle2 .itemOrder .txtStatus {position: absolute; top:24px; right: 10px; color:#545454; font-size:12px; line-height: 14px; font-weight: 400;}
+.listOrderStyle2 .itemOrder .txtStatus { position: absolute; top:24px; right: 10px; color:#545454; font-size:12px; line-height: 14px; font-weight: 400; } 
 
 
 .orderPaymentBox .itemOrderPayment { padding:30px 12px; } 
@@ -1599,7 +1600,7 @@ body.openPop { overflow:hidden; }
 
 .prodDetailQaBox .listProdQa .itemProdQa.on .btnToggle::after { transform: rotate(-90deg); } 
 .prodDetailQaBox .listProdQa .itemProdQa.on .toggleBox { display: block; } 
-.prodDetailQaBox .listProdQa .itemProdQa .toggleBox { display: none; padding:24px 24px 24px 12px; background: #f9f9f9; text-align: left; } 
+.prodDetailQaBox .listProdQa .itemProdQa .toggleBox { display: none; margin:15px 0; padding:24px 24px 24px 12px; background: #f9f9f9; text-align: left; } 
 .prodDetailQaBox .listProdQa .itemProdQa .toggleBox .titQa { padding:0 0 0 26px; position: relative; line-height: 20px; color: #939393; font-size: 13px; font-weight: 400; } 
 .prodDetailQaBox .listProdQa .itemProdQa .toggleBox .titQa::before { content:'Q'; position: absolute; display:flex; justify-content: center; align-items: center; left:0; top:0; width: 20px; height:20px; background: #b6b6b6; border-radius: 10px; color:#FFF; } 
 .prodDetailQaBox .listProdQa .itemProdQa .toggleBox .txtQa { margin-top:40px; padding:0 0 0 26px; position: relative; line-height: 20px; color: #939393; font-size: 13px; font-weight: 400; } 
@@ -1748,9 +1749,10 @@ body.openPop { overflow:hidden; }
 .dateFilterBox .dataRangeBox .dot { margin: 0 5px; } 
 .dateFilterBox .dataRangeBox .btnSearch { display: flex; flex:1; justify-content: center; align-items: center; height:35px; border:1px solid #cfcfcf; background: #1c1c1c; color:#FFF; font-size:13px; font-weight: 400; line-height: 15px; } 
 
-.popCouponBox {padding:6px 12px 30px;}
-.popCouponBox .titPopCoupon {color:#000000; font-size: 15px; line-height: 17px; font-weight: 400;}
-.popCouponBox .txtPopCoupon {margin-top: 15px; color: #8e8e8e; font-size: 13px; font-weight: 400; line-height: 20px;}
+.popCouponBox { padding:6px 12px 30px; } 
+.popCouponBox .titPopCoupon { color:#000000; font-size: 15px; line-height: 17px; font-weight: 400; } 
+.popCouponBox .txtPopCoupon { margin-top: 15px; color: #8e8e8e; font-size: 13px; font-weight: 400; line-height: 20px; } 
+
 
 .fRHD { font-family: "Red Hat Display", sans-serif; } 
 
@@ -1763,7 +1765,7 @@ body.openPop { overflow:hidden; }
 .mt40 { margin-top: 40px !important; } 
 .ml15 { margin-left: 15px !important; } 
 .p012 { padding:0 12px; } 
-.p0 {padding:0 !important;}
+.p0 { padding:0 !important; } 
 .pl0 { padding-left: 0 !important; } 
 .pr0 { padding-right: 0 !important; } 
 .pt0 { padding-top: 0 !important; } 

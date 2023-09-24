@@ -4,8 +4,7 @@
 <head>
   <title>STCO</title>
   <meta charset="UTF-8" />
-  <meta name="viewport"
-    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
   <meta name="format-detection" content="telephone=no" />
 
   <link type="text/css" rel="stylesheet" href="../css/swiper-bundle.min.css" />
@@ -16,6 +15,39 @@
   <!-- ui js -->
   <script src="../js/design.js"></script>
 </head>
+<script>
+  $(function () {
+
+
+    $('.filterOptionBox input[type=checkbox]').change(function () {
+      if ($(this).prop('checked')) {
+        console.log(1);
+
+        var btnOption = $('<button class="buttonFilterResult" data="' + $(this).attr('id') + '">' + $(this).next().html() + '<span class="btnDel">Delete</span></button>');
+        btnOption.find('.btnDel').click(function () {
+
+          var targetId = $(this).parent().attr('data');
+          console.log(targetId);
+          $('#' + targetId).prop('checked', false);
+          $(this).parent().remove();
+        });
+
+        $('.filterResult').append(btnOption);
+
+      } else {
+        console.log(2);
+        $('.buttonFilterResult[data=' + $(this).attr('id') + ']').remove();
+      }
+    });
+
+    $('.filterOptionBox input[type=checkbox]:checked').trigger('change');
+  })
+
+  function filterReset() {
+    $('.filterOptionBox input[type=checkbox]').prop('checked', false);
+    $('.filterResult .buttonFilterResult').remove();
+  }
+</script>
 
 <body>
 
@@ -455,127 +487,127 @@
                   <li>
                     <div class="filterOption">
                       <input type="checkbox" name="checkColor" id="checkColor1">
-                      <label for="checkColor1" style="background-color: #1c1c1c;"></label>
+                      <label for="checkColor1" style="background-color: #1c1c1c;">ColorName1</label>
                     </div>
                   </li>
                   <li>
                     <div class="filterOption">
                       <input type="checkbox" name="checkColor" id="checkColor2">
-                      <label for="checkColor2" style="background-color: #ffffff;"></label>
+                      <label for="checkColor2" style="background-color: #ffffff;">ColorName2</label>
                     </div>
                   </li>
                   <li>
                     <div class="filterOption">
                       <input type="checkbox" name="checkColor" id="checkColor3">
-                      <label for="checkColor3" style="background-color: #959595;"></label>
+                      <label for="checkColor3" style="background-color: #959595;">ColorName3</label>
                     </div>
                   </li>
                   <li>
                     <div class="filterOption">
                       <input type="checkbox" name="checkColor" id="checkColor4">
-                      <label for="checkColor4" style="background-color: #083047;"></label>
+                      <label for="checkColor4" style="background-color: #083047;">ColorName4</label>
                     </div>
                   </li>
                   <li>
                     <div class="filterOption">
-                      <input type="checkbox" name="checkColor" id="checkColor5">
-                      <label for="checkColor5" style="background-color: #077dbf;"></label>
+                      <input type="checkbox" name="checkColor" id="checkColor5" checked>
+                      <label for="checkColor5" style="background-color: #077dbf;">ColorName5</label>
                     </div>
                   </li>
                   <li>
                     <div class="filterOption">
                       <input type="checkbox" name="checkColor" id="checkColor6">
-                      <label for="checkColor6" style="background-color: #1e7a36;"></label>
+                      <label for="checkColor6" style="background-color: #1e7a36;">ColorName6</label>
                     </div>
                   </li>
                   <li>
                     <div class="filterOption">
                       <input type="checkbox" name="checkColor" id="checkColor7">
-                      <label for="checkColor7" style="background-color: #5d5c3b;"></label>
+                      <label for="checkColor7" style="background-color: #5d5c3b;">ColorName7</label>
                     </div>
                   </li>
                   <li>
                     <div class="filterOption">
                       <input type="checkbox" name="checkColor" id="checkColor8">
-                      <label for="checkColor8" style="background-color: #f32569;"></label>
+                      <label for="checkColor8" style="background-color: #f32569;">ColorName8</label>
                     </div>
                   </li>
                   <li>
                     <div class="filterOption">
                       <input type="checkbox" name="checkColor" id="checkColor9">
-                      <label for="checkColor9" style="background-color: #197f8d;"></label>
+                      <label for="checkColor9" style="background-color: #197f8d;">ColorName9</label>
                     </div>
                   </li>
                   <li>
                     <div class="filterOption">
                       <input type="checkbox" name="checkColor" id="checkColor10">
-                      <label for="checkColor10" style="background-color: #82391a;"></label>
+                      <label for="checkColor10" style="background-color: #82391a;">ColorName10</label>
                     </div>
                   </li>
                   <li>
                     <div class="filterOption">
                       <input type="checkbox" name="checkColor" id="checkColor11">
-                      <label for="checkColor11" style="background-color: #ffda37;"></label>
+                      <label for="checkColor11" style="background-color: #ffda37;">ColorName11</label>
                     </div>
                   </li>
                   <li>
                     <div class="filterOption">
                       <input type="checkbox" name="checkColor" id="checkColor12">
-                      <label for="checkColor12" style="background-color: #e50c1f;"></label>
+                      <label for="checkColor12" style="background-color: #e50c1f;">ColorName12</label>
                     </div>
                   </li>
                   <li>
                     <div class="filterOption">
                       <input type="checkbox" name="checkColor" id="checkColor13">
-                      <label for="checkColor13" style="background-color: #7e1b6d;"></label>
+                      <label for="checkColor13" style="background-color: #7e1b6d;">ColorName13</label>
                     </div>
                   </li>
                   <li>
                     <div class="filterOption">
                       <input type="checkbox" name="checkColor" id="checkColor14">
-                      <label for="checkColor14" style="background-color: #fe711f;"></label>
+                      <label for="checkColor14" style="background-color: #fe711f;">ColorName14</label>
                     </div>
                   </li>
                   <li>
                     <div class="filterOption">
                       <input type="checkbox" name="checkColor" id="checkColor15">
-                      <label for="checkColor15" style="background-color: #fe711f;"></label>
+                      <label for="checkColor15" style="background-color: #fe711f;">ColorName15</label>
                     </div>
                   </li>
                   <li>
                     <div class="filterOption">
                       <input type="checkbox" name="checkColor" id="checkColor16">
-                      <label for="checkColor16" style="background-color: #c4d74c;"></label>
+                      <label for="checkColor16" style="background-color: #c4d74c;">ColorName16</label>
                     </div>
                   </li>
                   <li>
                     <div class="filterOption">
                       <input type="checkbox" name="checkColor" id="checkColor17">
-                      <label for="checkColor17" style="background-color: #4a1976;"></label>
+                      <label for="checkColor17" style="background-color: #4a1976;">ColorName17</label>
                     </div>
                   </li>
                   <li>
                     <div class="filterOption">
                       <input type="checkbox" name="checkColor" id="checkColor18">
-                      <label for="checkColor18" style="background-color: #b5ddf3;"></label>
+                      <label for="checkColor18" style="background-color: #b5ddf3;">ColorName18</label>
                     </div>
                   </li>
                   <li>
                     <div class="filterOption">
                       <input type="checkbox" name="checkColor" id="checkColor19">
-                      <label for="checkColor19" style="background-color: #fae1b0;"></label>
+                      <label for="checkColor19" style="background-color: #fae1b0;">ColorName19</label>
                     </div>
                   </li>
                   <li>
                     <div class="filterOption">
                       <input type="checkbox" name="checkColor" id="checkColor20">
-                      <label for="checkColor20" style="background-color: #d1cab9;"></label>
+                      <label for="checkColor20" style="background-color: #d1cab9;">ColorName20</label>
                     </div>
                   </li>
                   <li>
                     <div class="filterOption">
                       <input type="checkbox" name="checkColor" id="checkColor21">
-                      <label for="checkColor21" style="background-color: #b5f3e2;"></label>
+                      <label for="checkColor21" style="background-color: #b5f3e2;">ColorName21</label>
                     </div>
                   </li>
                 </ul>
@@ -751,26 +783,105 @@
               <button class="titFilterOption">가격대 설정</button>
               <div class="contFilter">
                 <div class="priceFilter">
-                  <div id="priceRangeScroll" class="priceRangeScroll">
+                  <!-- <div id="priceRangeScroll" class="priceRangeScroll">
                     <button class="begin"><span>0원</span></button>
                     <button class="end"><span>1,000,000+</span></button>
-                  </div>
+                  </div> -->
+                  <div id="priceRangeScroll"></div>
                   <div class="priceRangeInput">
-                    <input type="text" class="textPrice" placeholder="0원">
+                    <input type="text" class="textPrice" id="minPrice" placeholder="0원">
                     <span class="sign">~</span>
-                    <input type="text" class="textPrice" placeholder="1,000,000원">
+                    <input type="text" class="textPrice" id="maxPrice" placeholder="1,000,000원">
                   </div>
                 </div>
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.js"></script>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.css">
+                <script>
+                  $(document).ready(function () {
+                    var slider = document.getElementById('priceRangeScroll');
+
+                    function formatValue(value) {
+                      if (!isNaN(value)) {
+                        value = parseInt(value);
+                        return value.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                      } else {
+                        return value;
+                      }
+                    }
+
+                    var minPriceInput = $('#minPrice');
+                    var maxPriceInput = $('#maxPrice');
+
+                    noUiSlider.create(slider, {
+                      start: [0, 1000000], 
+                      connect: true,   
+                      range: {
+                        'min': 0,
+                        'max': 1000000
+                      },
+                      step: 1000, 
+                      tooltips: [true, true], 
+                      format: {
+                        to: function (value) {
+                          return formatValue(value);
+                        },
+                        from: function (value) {
+                          return Number(value.replace(/,/g, '').replace('원', ''));
+                        }
+                      }
+                    });
+
+                    slider.noUiSlider.on('slide', function (values) {
+                      minPriceInput.val(formatValue(values[0]) + '원');
+                      maxPriceInput.val(formatValue(values[1]) + '원');
+                    });
+
+                    minPriceInput.on('blur', function () {
+                      var minPrice = parseFloat(minPriceInput.val().replace('원', '').replace(/,/g, ''));
+                      var maxPrice = parseFloat(maxPriceInput.val().replace('원', '').replace(/,/g, ''));
+                      if (!isNaN(minPrice) && !isNaN(maxPrice) && minPrice <= maxPrice) {
+                        slider.noUiSlider.set([minPrice, maxPrice]);
+                      } else {
+                        var values = slider.noUiSlider.get();
+                        minPriceInput.val(formatValue(values[0]) + '원');
+                      }
+                    });
+
+                    maxPriceInput.on('blur', function () {
+                      var minPrice = parseFloat(minPriceInput.val().replace('원', '').replace(/,/g, ''));
+                      var maxPrice = parseFloat(maxPriceInput.val().replace('원', '').replace(/,/g, ''));
+                      if (!isNaN(minPrice) && !isNaN(maxPrice) && maxPrice <= 1000000) {
+                        slider.noUiSlider.set([minPrice, maxPrice]);
+                      } else {
+                        var values = slider.noUiSlider.get();
+                        maxPriceInput.val(formatValue(values[1]) + '원');
+                      }
+                    });
+                  });
+                </script>
+                <style>
+                  #priceRangeScroll {margin:30px 6px;}
+                  .noUi-handle[data-handle="0"] .noUi-tooltip { left: 0; right: auto; transform: translateX(0); max-width: 60px; } 
+                  .noUi-handle[data-handle="1"] .noUi-tooltip { right: 0; left: auto; transform: translateX(0); max-width: 60px; } 
+
+                  .noUi-horizontal { height:2px; background: #000; border-radius: 0; box-shadow: none; border:none; } 
+                  .noUi-connect { background: #000; } 
+                  .noUi-horizontal .noUi-handle { top:-5px; left:auto; width: 12px; height: 12px; right:-6px; box-shadow: none; border:1px solid #000; border-radius: 12px; } 
+                  .noUi-horizontal .noUi-handle::before { display: none; } 
+                  .noUi-horizontal .noUi-handle::after { display: none; } 
+                  .noUi-tooltip { border:none; padding:0; border-radius: none; font-size: 12px; line-height: 14px; color:#a0a0a0; } 
+                </style>
               </div>
+
             </div>
             <div class="filterResult">
-              <button class="buttonFilterResult">블루</button>
-              <button class="buttonFilterResult">2-BUTTON</button>
-              <button class="buttonFilterResult">릴렉스핏</button>
-              <button class="buttonFilterResult">기능성소재</button>
+              <!-- <button class="buttonFilterResult">2-BUTTON<span class="btnDel">Delete</span></button>
+              <button class="buttonFilterResult">릴렉스핏<span class="btnDel">Delete</span></button>
+              <button class="buttonFilterResult">기능성소재<span class="btnDel">Delete</span></button> -->
             </div>
             <div class="btnFilterBox">
-              <button class="btnFilterReset">Resize</button>
+              <button class="btnFilterReset" onclick="filterReset()">Resize</button>
               <button class="btnFilterSubmit">상품보기</button>
             </div>
           </div>

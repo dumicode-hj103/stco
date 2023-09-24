@@ -61,7 +61,7 @@ a { color: #222; text-decoration: none; }
 input:not([type="radio"]):not([type="checkbox"]),
 textarea,
 select,
-button { appearance: auto; } 
+button {border-radius: 0; appearance: none;} 
 label,
 button,
 select { cursor: pointer; } 

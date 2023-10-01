@@ -21,13 +21,11 @@
 
     $('.filterOptionBox input[type=checkbox]').change(function () {
       if ($(this).prop('checked')) {
-        console.log(1);
 
         var btnOption = $('<button class="buttonFilterResult" data="' + $(this).attr('id') + '">' + $(this).next().html() + '<span class="btnDel">Delete</span></button>');
         btnOption.find('.btnDel').click(function () {
 
           var targetId = $(this).parent().attr('data');
-          console.log(targetId);
           $('#' + targetId).prop('checked', false);
           $(this).parent().remove();
         });
@@ -35,7 +33,6 @@
         $('.filterResult').append(btnOption);
 
       } else {
-        console.log(2);
         $('.buttonFilterResult[data=' + $(this).attr('id') + ']').remove();
       }
     });

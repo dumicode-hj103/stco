@@ -63,7 +63,7 @@
                   <span class="txtBtn">쇼핑 계속하기</span>
                 </a>
               </div>
-              
+
             </div>
             <ul class="listCart">
               <li>
@@ -92,9 +92,9 @@
                   </div>
                   <div class="buyBox">
                     <div class="numBox">
-                      <button class="btnMinus">-</button>
+                      <button class="btnMinus" onclick="clickBtnMinus(this)">-</button>
                       <input type="text" class="textNum" maxlength="3" value="1" />
-                      <button class="btnAdd">+</button>
+                      <button class="btnAdd" onclick="clickBtnAdd(this)">+</button>
                     </div>
                     <div class="buyBtnBox">
                       <a href="javascript:openPop('popOption');" class="btn btnStyle2 small">
@@ -133,9 +133,9 @@
                   </div>
                   <div class="buyBox">
                     <div class="numBox">
-                      <button class="btnMinus">-</button>
+                      <button class="btnMinus" onclick="clickBtnMinus(this)">-</button>
                       <input type="text" class="textNum" maxlength="3" value="1" />
-                      <button class="btnAdd">+</button>
+                      <button class="btnAdd" onclick="clickBtnAdd(this)">+</button>
                     </div>
                     <div class="buyBtnBox">
                       <a href="javascript:openPop('popOption');" class="btn btnStyle2 small">
@@ -462,6 +462,18 @@
     </div>
   </div>
   <!-- pop option -->
+
+  <script>
+    function clickBtnMinus(obj) {
+      var curNum = parseInt($(obj).next().val());
+      $(obj).next().val(curNum - 1)
+    }
+
+    function clickBtnAdd(obj) {
+      var curNum = parseInt($(obj).prev().val());
+      $(obj).prev().val(curNum + 1)
+    }
+  </script>
 </body>
 
 </html>

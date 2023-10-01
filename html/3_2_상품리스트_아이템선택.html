@@ -4,8 +4,7 @@
 <head>
   <title>STCO</title>
   <meta charset="UTF-8" />
-  <meta name="viewport"
-    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
   <meta name="format-detection" content="telephone=no" />
 
   <link type="text/css" rel="stylesheet" href="../css/swiper-bundle.min.css" />
@@ -119,7 +118,7 @@
               $(function () {
                 var swiperProdStyle1 = new Swiper(".swiperProdStyle1 .swiper", {
                   slidesPerView: 2.5,
-                  spaceBetween:4,
+                  spaceBetween: 4,
                   scrollbar: {
                     el: ".swiperProdStyle1 .swiperScrollbar",
                   },
@@ -128,7 +127,7 @@
             </script>
           </div>
         </div>
-        
+
 
         <!-- list Product -->
         <div class="listProdBox">
@@ -140,7 +139,7 @@
             </div>
           </div>
           <div class="listCont">
-            <ul class="listProdStyle1">
+            <ul id="dataList" class="listProdStyle1">
               <li>
                 <div class="prodBoxStyle1">
                   <div class="prodImgBox border">
@@ -263,6 +262,67 @@
               </li>
             </ul>
           </div>
+
+          <script>
+            $(document).ready(function () {
+              var dataList = $("#dataList");
+
+              $(window).scroll(function () {
+                if ($(window).scrollTop() + $(window).height() >= dataList.height() - 10 && !loading) {
+                  loadMoreData();
+                }
+              });
+
+              var loading = false;
+              function loadMoreData() {
+                if (loading) return;
+                loading = true;
+
+                setTimeout(function () {
+                  var newData = "";
+                  for (var i = 0; i < 10; i++) {
+                    newData += '<li>';
+                    newData += '  <div class="prodBoxStyle1">';
+                    newData += '    <div class="prodImgBox border">';
+                    newData += '      <a href="#" class="imgProd">';
+                    newData += '        <img src="../images/img_prod_01.jpg" alt="" />';
+                    newData += '      </a>';
+                    newData += '      <a href="javascript:void(0);" class="flag"></a>';
+                    newData += '      <div class="activityBox">';
+                    newData += '        <span class="itemActivity red">타임특가</span>';
+                    newData += '        <span class="itemActivity white">묶음할인</span>';
+                    newData += '      </div>';
+                    newData += '      <a href="#" class="btnPlay">Play</a>';
+                    newData += '    </div>';
+                    newData += '    <h3 class="titProd ">STCO</h3>';
+                    newData += '    <p class="txtProd">베이직핏 워셔블 가디건</p>';
+                    newData += '    <div class="priceBox">';
+                    newData += '      <span class="oldPrice">329,000</span>';
+                    newData += '      <span class="newPrice">199,000</span>';
+                    newData += '      <span class="discount">20%</span>';
+                    newData += '    </div>';
+                    newData += '    <div class="colorBox">';
+                    newData += '      <a href="javascript:void(0);" class="itemColor" style="background-color:#e7e7e7;"></a>';
+                    newData += '      <a href="javascript:void(0);" class="itemColor" style="background-color:#e6dfd5;"></a>';
+                    newData += '      <a href="javascript:void(0);" class="itemColor" style="background-color:#b7cce6;"></a>';
+                    newData += '      <a href="javascript:void(0);" class="itemColor" style="background-color:#e5d5e6;"></a>';
+                    newData += '      <a href="javascript:void(0);" class="itemColor" style="background-color:#9ea79d;"></a>';
+                    newData += '      <a href="javascript:void(0);" class="btnColorAdd"></a>';
+                    newData += '    </div>';
+                    newData += '    <div class="tagBox">';
+                    newData += '      <a href="#" class="itemTag ">BIG</a>';
+                    newData += '      <a href="#" class="itemTag">오늘출발</a>';
+                    newData += '    </div>';
+                    newData += '  </div>';
+                    newData += '</li>';
+                  }
+
+                  dataList.append(newData);
+                  loading = false;
+                }, 1000);
+              }
+            });
+          </script>
         </div>
       </div>
     </div>

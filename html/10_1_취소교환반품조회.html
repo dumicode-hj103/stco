@@ -46,9 +46,9 @@
               <a href="#" class="btnDate">1년</a>
             </div>
             <div class="dataRangeBox">
-              <input type="text" class="textDateStart" value="2023-03-20">
+              <input type="date" class="textDateStart" value="2023-03-20">
              <span class="dot">~</span>
-              <input type="text" class="textDateEnd" value="2023-03-20">
+              <input type="date" class="textDateEnd" value="2023-03-20">
               <a href="#" class="btnSearch">조회</a>
             </div>
           </div>
@@ -282,6 +282,10 @@
       $('.prodSRRStyle2Box .toggleHead').click(function () {
         $(this).parent('.prodSRRStyle2Box').toggleClass('on');
         return false;
+      });
+
+      $('.dateFilterBox .monthBox .btnDate').click(function(){
+        $(this).addClass('on').siblings().removeClass('on');
       });
     })
   </script>

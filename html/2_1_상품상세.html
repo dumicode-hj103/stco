@@ -98,6 +98,10 @@
           </div>
           <div class="shareBox">
             <a href="#" class="btnShare">Share</a>
+            <ul class="listShare">
+              <li><a href="#" class="itemButton"><img src="../images/icon_share_kakaotalk.png" alt="KakaoTalk"></a></li>
+              <li><a href="#" class="itemButton"><img src="../images/icon_share_url.png" alt="URL"></a></li>
+            </ul>
           </div>
           <a href="javascript:openPop('popCoupon')" class="btnCoupon">
             <span class="iconBtn"></span>
@@ -316,6 +320,7 @@
                       <h4 class="titMateDetail">안감</h4>
                       <span class="txtMateDetail on">없음</span>
                       <span class="txtMateDetail">부분안감</span>
+                      <span class="txtMateDetail">전체안감</span>
                     </li>
                   </ul>
                   <p class="txtListMateInfo">상기 정보는 주관적 내용이므로 참고해주세요.</p>
@@ -727,7 +732,7 @@
                 <li>
                   <p class="txtSize">100</p>
                 </li>
-                <li class="on">
+                <li>
                   <p class="txtSize">105</p>
                 </li>
                 <li>
@@ -747,22 +752,19 @@
                 사이즈는 측정하는 방법이나 위치에 따라 1~3cm가량 오차가 생길 수 있습니다.
               </p>
               <div class="tableSizeBox">
-                <div class="borderBox" style="left:49.998%;"></div>
                 <table class="tblSize">
                   <colgroup>
-                    <col width="16.666%" />
-                    <col width="16.666%" />
-                    <col width="16.666%" />
-                    <col width="16.666%" />
-                    <col width="16.666%" />
+                    <col width="70px" />
+                    <col/>
                   </colgroup>
                   <thead>
                     <th></th>
-                    <th>95</th>
-                    <th>100</th>
-                    <th>105</th>
-                    <th>110</th>
-                    <th>115</th>
+                    <td>95</td>
+                    <td>100</td>
+                    <td>105</td>
+                    <td>110</td>
+                    <td>115</td>
+                    <td>120</td>
                   </thead>
                   <tbody>
                     <tr>
@@ -772,6 +774,7 @@
                       <td>43.5</td>
                       <td>103</td>
                       <td>61</td>
+                      <td>61</td>
                     </tr>
                     <tr>
                       <th>가슴둘레</th>
@@ -779,6 +782,7 @@
                       <td>103</td>
                       <td>45</td>
                       <td>108</td>
+                      <td>62</td>
                       <td>62</td>
                     </tr>
                     <tr>
@@ -788,6 +792,7 @@
                       <td>46.5</td>
                       <td>113</td>
                       <td>63</td>
+                      <td>63</td>
                     </tr>
                     <tr>
                       <th>허리둘레</th>
@@ -796,6 +801,7 @@
                       <td>48</td>
                       <td>120</td>
                       <td>64.5</td>
+                      <td>64.5</td>
                     </tr>
                     <tr>
                       <th>소매길이</th>
@@ -803,6 +809,7 @@
                       <td>118</td>
                       <td>50</td>
                       <td>127</td>
+                      <td>66</td>
                       <td>66</td>
                     </tr>
                   </tbody>
@@ -1203,7 +1210,7 @@
     <!--// footer end -->
 
     <!-- bot buy Box -->
-    <div class="botBuyBox">
+    <div id="botBuyBox" class="botBuyBox">
       <a href="#" class="btnBotFlag flag"></a>
       <a href="javascript:openPop('popOption')" class="btnBotBuy">구매하기</a>
     </div>
@@ -1214,8 +1221,6 @@
       <ul class="floatButton">
         <!-- <li><a href="#" class="itemButton"><img src="../images/icon_record.png" alt="Record"></a></li> -->
         <li><a href="#" id="btnTop" class="itemButton"><img src="../images/icon_top.png" alt="Top"></a></li>
-        <li><a href="#" class="itemButton"><img src="../images/icon_share_kakaotalk.png" alt="KakaoTalk"></a></li>
-        <li><a href="#" class="itemButton"><img src="../images/icon_share_url.png" alt="URL"></a></li>
       </ul>
     </div>
     <!-- // float button -->
@@ -1408,9 +1413,9 @@
                       <h3 class="titOptionSelected">그레이/L</h3>
                       <div class="cntPriceBox">
                         <div class="cntBox">
-                          <a href="#" class="btnMinus">-</a>
+                          <button class="btnMinus" onclick="clickBtnMinus(this)">-</button>
                           <input type="text" class="textNum" maxlength="2" value="1" />
-                          <a href="#" class="btnAdd">+</a>
+                          <button class="btnAdd" onclick="clickBtnAdd(this)">+</button>
                         </div>
                         <p class="txtCntPrice"><strong>39,900</strong>원</p>
                         <a href="#" class="btnDel">Del</a>
@@ -1420,9 +1425,9 @@
                       <h3 class="titOptionSelected">블랙/L</h3>
                       <div class="cntPriceBox">
                         <div class="cntBox">
-                          <a href="#" class="btnMinus">-</a>
+                          <button class="btnMinus" onclick="clickBtnMinus(this)">-</button>
                           <input type="text" class="textNum" maxlength="2" value="1" />
-                          <a href="#" class="btnAdd">+</a>
+                          <button class="btnAdd" onclick="clickBtnAdd(this)">+</button>
                         </div>
                         <p class="txtCntPrice"><strong>39,900</strong>원</p>
                         <a href="#" class="btnDel">Del</a>
@@ -1952,7 +1957,7 @@
             </a>
           </div>
         </div>
-        
+
 
         <button class="btnClose" onclick="closePop(this);">닫기</button>
       </div>
@@ -1983,7 +1988,48 @@
       return false;
     });
 
+    var $botBuyBoxElement = $("#botBuyBox");
+
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > 200) {
+        $botBuyBoxElement.addClass('on');
+      } else {
+        $botBuyBoxElement.removeClass('on');
+      }
+    });
+
+    $('.btnShare').click(function(){
+      $(this).toggleClass('on');
+      return false;
+    });
+
+    $('.topAndPants li').click(function(){
+      $(this).addClass('on').siblings().removeClass('on');
+    });
+
+    $('.listTxtSize li').click(function(){
+      $(this).addClass('on').siblings().removeClass('on');
+      var curIdx = $(this).index();
+      $('.tblSize tr').each(function(){
+        $(this).find('td:eq('+curIdx+')').addClass('on').siblings().removeClass('on');
+      })
+    });
+
+    $('.listTxtSize li:eq(3)').trigger('click');
+
   });
+
+  function clickBtnMinus(obj){
+    var curNum = parseInt($(obj).next().val());
+    $(obj).next().val(curNum-1)
+  }
+
+  function clickBtnAdd(obj){
+    var curNum = parseInt($(obj).prev().val());
+    $(obj).prev().val(curNum+1)
+  }
+
+  
 </script>
 
 </html>

@@ -4,8 +4,7 @@
 <head>
   <title>STCO</title>
   <meta charset="UTF-8" />
-  <meta name="viewport"
-    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
   <meta name="format-detection" content="telephone=no" />
 
   <link type="text/css" rel="stylesheet" href="../css/swiper-bundle.min.css" />
@@ -16,7 +15,7 @@
   <!-- ui js -->
   <script src="../js/design.js"></script>
   <script>
-    $(function(){
+    $(function () {
       openPop('popNotice');
       openPop('popBotSlide');
     })
@@ -787,7 +786,7 @@
     <!-- float button -->
     <div class="floatButtonBox">
       <ul class="floatButton">
-        <li><a href="#" class="itemButton"><img src="../images/icon_record.png" alt="Record"></a></li>
+        <li><a href="javascript:openPop('popRecentViews');" class="itemButton"><img src="../images/icon_record.png" alt="Record"></a></li>
         <li><a href="#" id="btnTop" class="itemButton"><img src="../images/icon_top.png" alt="Top"></a></li>
       </ul>
     </div>
@@ -839,7 +838,7 @@
                 stopOnLastSlide: false,
                 disableOnInteraction: true,
               },
-              effect:'fade',
+              effect: 'fade',
               pagination: {
                 el: ".swiperPopVisual .swipePagination",
                 type: "fraction",
@@ -1158,11 +1157,11 @@
                 </div>
               </div>
             </div>
-            <script>        
-              var swiperCateProd = new Swiper ('.swiperCateProd .swiper', {
+            <script>
+              var swiperCateProd = new Swiper('.swiperCateProd .swiper', {
                 slidesPerView: 'auto',
               })        
-              </script>
+            </script>
           </div>
           <ul class="menu">
             <li><a href="#">고객센터</a></li>
@@ -1173,6 +1172,121 @@
       </div>
     </div>
     <!-- //pop category -->
+
+
+    <!-- pop review detail -->
+    <div class="popBox" id="popRecentViews">
+      <div class="popCont popFull">
+        <div class="topBox">
+          <button class="btnPrev" onclick="closePop(this);">닫기</button>
+          <h2 class="titPop">최근본상품</h2>
+        </div>
+        <div class="listRecentViewsBox">
+          <div class="listHead">
+            <h2 class="titList">총 4개</h2>
+            <div class="toolBox">
+              <a href="#" class="btnTool btnToolStyle1">선택삭제</a>
+              <a href="#" class="btnTool btnToolStyle1">전체삭제</a>
+            </div>
+          </div>
+          <ul class="listRecentViews">
+            <li>
+              <div class="itemRecentViews">
+                <div class="checkBox checkBoxStyle1">
+                  <input type="checkbox" id="check1_1">
+                  <label for="check1_1"></label>
+                </div>
+                <button class="flag">Flag</button>
+                <div class="prodBoxStyle3">
+                  <a href="#" class="imgProd">
+                    <img src="../images/img_prod_temp_140_210.jpg" alt="" />
+                  </a>
+                  <div class="infoBox">
+                    <h3 class="titProd">STCO</h3>
+                    <p class="txtProd">가먼트다잉 밴딩 와이드 치노 팬츠</p>
+                    <div class="priceBox">
+                      <span class="oldPrice">329,000</span>
+                      <span class="newPrice">199,000</span>
+                      <span class="discount">20%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="itemRecentViews">
+                <div class="checkBox checkBoxStyle1">
+                  <input type="checkbox" id="check1_2">
+                  <label for="check1_2"></label>
+                </div>
+                <button class="flag">Flag</button>
+                <div class="prodBoxStyle3">
+                  <a href="#" class="imgProd">
+                    <img src="../images/img_prod_temp_140_210.jpg" alt="" />
+                  </a>
+                  <div class="infoBox">
+                    <h3 class="titProd">STCO</h3>
+                    <p class="txtProd">가먼트다잉 밴딩 와이드 치노 팬츠</p>
+                    <div class="priceBox">
+                      <span class="oldPrice">329,000</span>
+                      <span class="newPrice">199,000</span>
+                      <span class="discount">20%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="itemRecentViews">
+                <div class="checkBox checkBoxStyle1">
+                  <input type="checkbox" id="check1_3">
+                  <label for="check1_3"></label>
+                </div>
+                <button class="flag">Flag</button>
+                <div class="prodBoxStyle3">
+                  <a href="#" class="imgProd">
+                    <img src="../images/img_prod_temp_140_210.jpg" alt="" />
+                  </a>
+                  <div class="infoBox">
+                    <h3 class="titProd">STCO</h3>
+                    <p class="txtProd">가먼트다잉 밴딩 와이드 치노 팬츠</p>
+                    <div class="priceBox">
+                      <span class="oldPrice">329,000</span>
+                      <span class="newPrice">199,000</span>
+                      <span class="discount">20%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="itemRecentViews">
+                <div class="checkBox checkBoxStyle1">
+                  <input type="checkbox" id="check1_4">
+                  <label for="check1_4"></label>
+                </div>
+                <button class="flag">Flag</button>
+                <div class="prodBoxStyle3">
+                  <a href="#" class="imgProd">
+                    <img src="../images/img_prod_temp_140_210.jpg" alt="" />
+                  </a>
+                  <div class="infoBox">
+                    <h3 class="titProd">STCO</h3>
+                    <p class="txtProd">가먼트다잉 밴딩 와이드 치노 팬츠</p>
+                    <div class="priceBox">
+                      <span class="oldPrice">329,000</span>
+                      <span class="newPrice">199,000</span>
+                      <span class="discount">20%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- // pop review detail -->
   </div>
 
 </body>
